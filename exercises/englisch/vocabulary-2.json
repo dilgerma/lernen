@@ -1,0 +1,23 @@
+{
+  "id": "eng-voc-2",
+  "title": "Kapitel 2 – Tiere & Natur",
+  "description": "Vokabular zu Tieren, Pflanzen und der Natur",
+  "type": "vocabulary",
+  "items": [
+    { "question": "the dog", "answers": ["der Hund", "Hund"] },
+    { "question": "the cat", "answers": ["die Katze", "Katze"] },
+    { "question": "the bird", "answers": ["der Vogel", "Vogel"] },
+    { "question": "the fish", "answers": ["der Fisch", "Fisch"] },
+    { "question": "the horse", "answers": ["das Pferd", "Pferd"] },
+    { "question": "the tree", "answers": ["der Baum", "Baum"] },
+    { "question": "the flower", "answers": ["die Blume", "Blume"] },
+    { "question": "the forest", "answers": ["der Wald", "Wald"] },
+    { "question": "the river", "answers": ["der Fluss", "Fluss"] },
+    { "question": "the mountain", "answers": ["der Berg", "Berg"] },
+    { "question": "the sun", "answers": ["die Sonne", "Sonne"] },
+    { "question": "the moon", "answers": ["der Mond", "Mond"] },
+    { "question": "the rain", "answers": ["der Regen", "Regen"] },
+    { "question": "the snow", "answers": ["der Schnee", "Schnee"] },
+    { "question": "the water", "answers": ["das Wasser", "Wasser"] }
+  ]
+}

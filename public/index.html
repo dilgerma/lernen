@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vincents Lernquest</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{font-family:'Exo 2',system-ui,sans-serif;background:#080b14;color:#e0eaf8;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,180,255,.03)1px,transparent 1px),linear-gradient(90deg,rgba(0,180,255,.03)1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+#app{position:relative;z-index:1}
+.screen{display:none}.screen.active{display:block}
+.neon{color:#00d4ff;text-shadow:0 0 12px rgba(0,212,255,.7),0 0 24px rgba(0,212,255,.3)}
+.gold{color:#ffd700;text-shadow:0 0 10px rgba(255,215,0,.5)}
+.xp-fill{background:linear-gradient(90deg,#0080ff,#00d4ff,#00ffcc);box-shadow:0 0 8px #00d4ff;transition:width 1s ease}
+.card{background:linear-gradient(135deg,rgba(10,20,40,.95),rgba(8,15,30,.95));border:1px solid rgba(0,180,255,.2);transition:all .2s ease}
+.card-hover:hover{border-color:#00d4ff;box-shadow:0 0 20px rgba(0,212,255,.15);transform:translateY(-2px)}
+.card-hover:active{transform:translateY(0)}
+.btn{font-weight:800;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:all .15s ease;border:none;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)}
+.btn-blue{background:linear-gradient(135deg,#0070cc,#00a0ff);color:#fff}.btn-blue:hover{box-shadow:0 0 20px rgba(0,160,255,.5);transform:translateY(-1px)}
+.btn-green{background:linear-gradient(135deg,#00a030,#00cc50);color:#fff}.btn-green:hover{box-shadow:0 0 20px rgba(0,200,80,.5)}
+.btn-gold{background:linear-gradient(135deg,#cc8800,#ffb300);color:#fff}.btn-gold:hover{box-shadow:0 0 20px rgba(255,180,0,.5)}
+.btn-ghost{background:transparent;border:2px solid rgba(0,212,255,.35);color:#00d4ff;clip-path:none;font-weight:700}.btn-ghost:hover{border-color:#00d4ff;background:rgba(0,212,255,.08)}
+.chip{border:2px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);transition:all .4s ease}
+.chip.on{border-color:rgba(255,215,0,.6);background:rgba(255,215,0,.08);box-shadow:0 0 12px rgba(255,215,0,.2)}
+.chip.pop{animation:chipPop .8s ease}
+@keyframes chipPop{0%{transform:scale(1)}35%{transform:scale(1.18);box-shadow:0 0 28px rgba(255,215,0,.7)}100%{transform:scale(1)}}
+.ans-input{background:rgba(0,180,255,.05);border:2px solid rgba(0,180,255,.25);color:#e0eaf8;font-family:'Exo 2',sans-serif;font-size:1.2rem;transition:all .15s ease;width:100%;border-radius:8px;padding:12px 16px}
+.ans-input:focus{outline:none;border-color:#00d4ff;background:rgba(0,180,255,.08);box-shadow:0 0 15px rgba(0,212,255,.15)}
+.ans-input.ok{border-color:#00ff88;background:rgba(0,255,136,.08)}
+.ans-input.err{border-color:#ff3355;background:rgba(255,51,85,.08)}
+.toast-box{position:fixed;top:20px;right:20px;z-index:9999;animation:tIn .35s ease}
+@keyframes tIn{from{transform:translateX(80px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp .35s ease}
+.q-word{font-size:clamp(2rem,6vw,3.8rem);font-weight:900;letter-spacing:-.02em;color:#fff;text-shadow:0 0 30px rgba(0,212,255,.25)}
+.sep{height:1px;background:linear-gradient(90deg,transparent,rgba(0,180,255,.25),transparent)}
+</style>
+</head>
+<body>
+<div id="app" class="min-h-screen">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b border-blue-900/30" style="background:rgba(8,11,20,.96);backdrop-filter:blur(10px)">
+  <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+    <div class="font-black text-xl tracking-tight" style="letter-spacing:-.01em">
+      <span class="neon">VINCENTS</span> <span class="text-white">LERNQUEST</span>
+    </div>
+    <div class="flex items-center gap-2 text-sm flex-shrink-0">
+      <div id="h-rank" class="flex items-center gap-1.5 rounded px-2.5 py-1 font-bold" style="background:rgba(0,180,255,.1);border:1px solid rgba(0,180,255,.3)">
+        <span id="h-badge"></span><span id="h-rname" class="text-blue-200 uppercase text-xs"></span>
+      </div>
+      <div class="font-bold text-blue-300/60">⏱ <span id="h-min">0</span> MIN</div>
+    </div>
+  </div>
+  <div class="h-1.5 bg-gray-900/80"><div id="rank-bar" class="xp-fill h-full" style="width:0%"></div></div>
+</header>
+
+<!-- DÖNER STRIP -->
+<div class="border-b border-blue-900/20" style="background:rgba(5,8,18,.85)">
+  <div class="max-w-4xl mx-auto px-4 py-2 flex items-center gap-2 flex-wrap">
+    <span class="text-xs font-bold uppercase text-blue-400/50 mr-1">🥙 Döner</span>
+    <div id="doner-row" class="flex gap-1.5 flex-wrap"></div>
+    <span id="doner-pct" class="ml-auto text-xs font-bold text-blue-300/30"></span>
+  </div>
+</div>
+
+<!-- TOAST HOST -->
+<div id="toasts"></div>
+
+<!-- ════════════════════════════════════
+     SCREEN 1 – SUBJECTS
+     ════════════════════════════════════ -->
+<div id="s-subjects" class="screen active">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-4xl font-black uppercase tracking-wider mb-1">Wähle dein <span class="neon">Fach</span></h1>
+      <p class="text-blue-300/40 font-semibold text-sm">Was lernst du heute?</p>
+    </div>
+    <div id="subj-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
+    <div class="sep mt-10 mb-6"></div>
+    <div class="card rounded-xl p-5 grid grid-cols-3 gap-4 text-center">
+      <div><div id="st-total" class="text-2xl font-black gold">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Min. gesamt</div></div>
+      <div><div id="st-today" class="text-2xl font-black" style="color:#00ff88">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Min. heute</div></div>
+      <div><div id="st-doners" class="text-2xl font-black" style="color:#ff9800">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Döner</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     SCREEN 2 – EXERCISE LIST
+     ════════════════════════════════════ -->
+<div id="s-exlist" class="screen">
+  <div class="max-w-4xl mx-auto px-4 py-6 fade-up">
+    <div class="flex items-center gap-3 mb-6">
+      <button class="btn btn-ghost rounded px-3 py-2 text-xs" onclick="goSubjects()">← Zurück</button>
+      <span id="el-flag" class="text-2xl"></span>
+      <span id="el-name" class="text-xl font-black uppercase text-white"></span>
+    </div>
+    <div id="ex-cards" class="flex flex-col gap-3"></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     SCREEN 3A – VOCABULARY WIZARD
+     ════════════════════════════════════ -->
+<div id="s-vocab" class="screen">
+  <div class="max-w-xl mx-auto px-4 py-6 fade-up">
+    <div class="flex items-center justify-between mb-4">
+      <button class="btn btn-ghost rounded px-3 py-1.5 text-xs" onclick="cancelEx()">✕ Stopp</button>
+      <div class="text-center">
+        <div id="vt-title" class="font-bold text-white text-xs uppercase tracking-wide"></div>
+        <div class="text-blue-300/40 text-xs font-bold mt-0.5">
+          Wort <span id="vt-cur">1</span> / <span id="vt-tot">?</span>
+        </div>
+      </div>
+      <div id="vt-timer" class="font-bold text-blue-300/50 text-sm" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
+    </div>
+
+    <div class="h-2 bg-gray-800/80 rounded-full mb-6 overflow-hidden">
+      <div id="vt-bar" class="xp-fill h-full rounded-full" style="width:0%;transition:width .3s ease"></div>
+    </div>
+
+    <div class="flex justify-center gap-8 mb-5">
+      <div class="text-center"><div id="vt-ok" class="text-3xl font-black" style="color:#00ff88">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Richtig</div></div>
+      <div class="text-center"><div id="vt-bad" class="text-3xl font-black" style="color:#ff3355">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Falsch</div></div>
+    </div>
+
+    <div class="card rounded-xl p-8 mb-4 text-center flex flex-col items-center justify-center" style="min-height:170px">
+      <div id="vt-instr" class="text-xs text-blue-300/30 uppercase font-bold mb-3 tracking-wider"></div>
+      <div id="vt-q" class="q-word"></div>
+      <div id="vt-fb" class="mt-3 text-lg font-black" style="min-height:1.6rem"></div>
+      <div id="vt-reveal" class="text-red-400/70 text-sm mt-1 hidden"></div>
+    </div>
+
+    <div class="flex gap-3">
+      <input id="vt-input" class="ans-input" type="text" placeholder="Deutsche Übersetzung…" autocomplete="off" autocorrect="off" spellcheck="false">
+      <button class="btn btn-blue rounded-lg px-5 py-3 text-sm flex-shrink-0" onclick="checkVocab()">PRÜFEN</button>
+    </div>
+    <p class="text-xs text-center text-blue-300/20 mt-2 font-semibold">Enter zum Bestätigen</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     SCREEN 3B – TRANSLATION
+     ════════════════════════════════════ -->
+<div id="s-trans" class="screen">
+  <div class="max-w-xl mx-auto px-4 py-6 fade-up">
+    <div class="flex items-center justify-between mb-5">
+      <button class="btn btn-ghost rounded px-3 py-1.5 text-xs" onclick="cancelEx()">✕ Stopp</button>
+      <div id="tt-title" class="font-bold text-white text-xs uppercase tracking-wide text-center"></div>
+      <div id="tt-timer" class="font-bold text-blue-300/50 text-sm" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
+    </div>
+    <div class="card rounded-xl p-5 mb-4">
+      <div class="text-xs text-blue-300/30 uppercase font-bold mb-2 tracking-wider">📖 Originaltext</div>
+      <div id="tt-src" class="text-white leading-relaxed" style="font-size:1.05rem"></div>
+    </div>
+    <div class="card rounded-xl p-4 mb-4">
+      <div class="text-xs text-blue-300/30 uppercase font-bold mb-2 tracking-wider">✏️ Deine Übersetzung</div>
+      <textarea id="tt-input" class="w-full bg-transparent text-white leading-relaxed resize-none focus:outline-none" style="min-height:120px;font-size:1.05rem;font-family:'Exo 2',sans-serif" placeholder="Schreibe hier deine Übersetzung…" spellcheck="false"></textarea>
+    </div>
+    <details class="mb-4">
+      <summary class="text-xs text-blue-300/20 cursor-pointer font-semibold uppercase hover:text-blue-300/50">💡 Hilfe anzeigen</summary>
+      <div id="tt-ref" class="mt-2 text-blue-300/35 text-sm italic leading-relaxed card rounded p-3"></div>
+    </details>
+    <button class="btn btn-blue w-full rounded-lg py-4 text-base" onclick="submitTrans()">ÜBERSETZUNG ABGEBEN</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     SCREEN 4 – RESULTS
+     ════════════════════════════════════ -->
+<div id="s-results" class="screen">
+  <div class="max-w-xl mx-auto px-4 py-8 text-center fade-up">
+    <div id="res-emoji" class="text-5xl mb-3">🏆</div>
+    <h2 class="text-3xl font-black uppercase mb-1">Übung abgeschlossen!</h2>
+    <div id="res-sub" class="text-blue-300/50 font-semibold mb-7"></div>
+
+    <div class="grid grid-cols-3 gap-3 mb-5">
+      <div class="card rounded-xl p-4"><div id="res-min" class="text-2xl font-black neon">0</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Minuten</div></div>
+      <div class="card rounded-xl p-4"><div id="res-ok" class="text-2xl font-black" style="color:#00ff88">–</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Richtig</div></div>
+      <div class="card rounded-xl p-4"><div id="res-dpct" class="text-2xl font-black gold">0%</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Döner</div></div>
+    </div>
+
+    <div id="res-unlock" class="hidden mb-5">
+      <div class="text-sm font-bold uppercase mb-3" style="color:rgba(255,215,0,.75)">🔓 Neue Zutat freigeschaltet!</div>
+      <div id="res-unlock-list" class="flex gap-3 justify-center flex-wrap"></div>
+    </div>
+
+    <div id="res-rankup" class="hidden mb-5 card rounded-xl p-4" style="border-color:rgba(255,215,0,.3);box-shadow:0 0 20px rgba(255,215,0,.08)">
+      <div class="text-xs font-black uppercase mb-1" style="color:rgba(255,215,0,.7)">⬆️ RANG AUFGESTIEGEN!</div>
+      <div id="res-newrank" class="text-xl font-black gold"></div>
+    </div>
+
+    <div class="card rounded-xl p-4 mb-6">
+      <div class="flex justify-between text-xs font-bold text-blue-300/40 uppercase mb-2">
+        <span id="res-rname"></span><span id="res-rnext"></span>
+      </div>
+      <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
+        <div id="res-rbar" class="xp-fill h-full rounded-full" style="width:0%"></div>
+      </div>
+      <div id="res-rhint" class="text-xs text-blue-300/30 mt-2 font-semibold"></div>
+    </div>
+
+    <div class="flex gap-3 justify-center">
+      <button class="btn btn-ghost rounded-lg px-5 py-3 text-sm" onclick="goExList()">WEITERE ÜBUNGEN</button>
+      <button class="btn btn-blue rounded-lg px-5 py-3 text-sm" onclick="goSubjects()">FACH WECHSELN</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     SCREEN 5 – DÖNER CELEBRATION
+     ════════════════════════════════════ -->
+<div id="s-doner" class="screen" style="background:radial-gradient(ellipse at center,rgba(255,215,0,.08) 0%,transparent 65%),#080b14">
+  <div class="max-w-xl mx-auto px-4 py-14 text-center fade-up">
+    <div class="text-8xl mb-5 animate-bounce">🥙</div>
+    <h1 class="text-5xl font-black uppercase gold mb-2" style="text-shadow:0 0 40px rgba(255,215,0,.35)">DÖNER VERDIENT!</h1>
+    <div class="text-xl font-bold text-white mb-2">Glückwunsch, Vincent!</div>
+    <div class="text-blue-300/50 font-semibold mb-8">
+      Du hast 5 Stunden fleißig gelernt!<br>
+      Einlösen bei Papa gegen einen <strong class="text-white">echten Döner</strong>! 🎉
+    </div>
+    <div class="flex justify-center gap-2 flex-wrap mb-8">
+      <div class="chip on rounded-lg px-3 py-2 text-center"><div class="text-2xl">🥙</div><div class="text-xs font-bold text-yellow-300 mt-1">Brot</div></div>
+      <div class="chip on rounded-lg px-3 py-2 text-center"><div class="text-2xl">🥗</div><div class="text-xs font-bold text-yellow-300 mt-1">Salat</div></div>
+      <div class="chip on rounded-lg px-3 py-2 text-center"><div class="text-2xl">🍅</div><div class="text-xs font-bold text-yellow-300 mt-1">Tomate</div></div>
+      <div class="chip on rounded-lg px-3 py-2 text-center"><div class="text-2xl">🧅</div><div class="text-xs font-bold text-yellow-300 mt-1">Zwiebel</div></div>
+      <div class="chip on rounded-lg px-3 py-2 text-center"><div class="text-2xl">🥩</div><div class="text-xs font-bold text-yellow-300 mt-1">Fleisch</div></div>
+      <div class="chip on rounded-lg px-3 py-2 text-center"><div class="text-2xl">🧄</div><div class="text-xs font-bold text-yellow-300 mt-1">Soße</div></div>
+    </div>
+    <div class="text-blue-300/30 font-semibold mb-8">Bisherige Döner: <span id="dc-count" class="text-orange-400 font-black text-xl">0</span></div>
+    <button class="btn btn-gold rounded-lg px-8 py-4 text-lg" onclick="doResetDoner()">🔄 NEUER DÖNER STARTEN</button>
+  </div>
+</div>
+
+</div><!-- #app -->
+
+<script>
+// ── STATE ──────────────────────────────
+let scoreState = null;
+let subj = null;
+let exercise = null;
+let exFilename = null;
+let t0 = null;
+let timerTick = null;
+
+// vocab session
+let vItems = [], vIdx = 0, vOk = 0, vBad = 0, vWaiting = false;
+let vKeyHandler = null;
+
+// ── API ────────────────────────────────
+async function req(method, path, body) {
+  const r = await fetch(path, {
+    method,
+    headers: body ? {'Content-Type':'application/json'} : {},
+    body: body ? JSON.stringify(body) : undefined
+  });
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(data.error || `HTTP ${r.status}`);
+  return data;
+}
+
+// ── TIMER ──────────────────────────────
+function startClock(elId) {
+  t0 = Date.now();
+  timerTick = setInterval(() => {
+    const s = Math.floor((Date.now()-t0)/1000);
+    const el = document.getElementById(elId);
+    if (el) el.textContent = `⏱ ${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+  }, 1000);
+}
+function stopClock() { clearInterval(timerTick); timerTick = null; }
+function elapsedMin(minFloor = 1) { return Math.max(minFloor, Math.floor((Date.now()-t0)/60000)); }
+
+// ── TOAST ──────────────────────────────
+function toast(emoji, title, msg, color='#00d4ff') {
+  const el = document.createElement('div');
+  el.className = 'toast-box card rounded-lg p-4 min-w-60';
+  el.style.cssText = `border-color:${color};box-shadow:0 0 18px ${color}33`;
+  el.innerHTML = `<div class="flex gap-3 items-start"><span class="text-2xl">${emoji}</span><div><div class="font-black uppercase text-xs" style="color:${color}">${title}</div><div class="text-blue-200/60 text-sm mt-0.5">${msg}</div></div></div>`;
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(() => el.remove(), 4000);
+}
+
+// ── SCREEN ─────────────────────────────
+function show(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  const el = document.getElementById('s-'+id);
+  el.classList.add('active');
+  el.classList.remove('fade-up');
+  requestAnimationFrame(() => el.classList.add('fade-up'));
+}
+
+// ── HEADER / DÖNER STRIP ───────────────
+function applyScore(s) {
+  scoreState = s;
+  document.getElementById('h-badge').textContent = s.rank.badge;
+  document.getElementById('h-rname').textContent = s.rank.name;
+  document.getElementById('rank-bar').style.width = s.rank.progressPercent+'%';
+  document.getElementById('h-min').textContent = s.minutesToday;
+  document.getElementById('st-total').textContent = s.minutesTotal;
+  document.getElementById('st-today').textContent = s.minutesToday;
+  document.getElementById('st-doners').textContent = s.donersEarned;
+
+  const row = document.getElementById('doner-row');
+  row.innerHTML = '';
+  s.ingredients.forEach(ing => {
+    const c = document.createElement('div');
+    c.id = 'chip-'+ing.id;
+    c.className = 'chip rounded px-2 py-1 text-xs font-bold flex items-center gap-1' + (ing.unlocked ? ' on' : '');
+    c.innerHTML = ing.unlocked
+      ? `<span>${ing.emoji}</span><span class="text-yellow-200">${ing.name}</span>`
+      : `<span>🔒</span><span class="text-blue-300/35">${ing.name}</span><span class="text-blue-400/25"> -${ing.minutesRemaining}m</span>`;
+    row.appendChild(c);
+  });
+  const cnt = s.ingredients.filter(i => i.minutesRequired > 0 && i.unlocked).length;
+  const pct = document.getElementById('doner-pct');
+  pct.textContent = cnt+'/5'+(s.donerComplete?' 🎉':'');
+  pct.style.color = s.donerComplete ? '#ffd700' : '';
+}
+
+// ── SUBJECT SCREEN ─────────────────────
+async function goSubjects() {
+  show('subjects');
+  try {
+    const [subs, sc] = await Promise.all([req('GET','/api/subjects'), req('GET','/api/score')]);
+    applyScore(sc);
+    if (sc.donerComplete) { document.getElementById('dc-count').textContent=sc.donersEarned; show('doner'); return; }
+
+    const grid = document.getElementById('subj-grid');
+    grid.innerHTML = '';
+    for (const s of subs.subjects) {
+      const card = document.createElement('div');
+      card.className = 'card card-hover rounded-xl p-6 cursor-pointer';
+      card.innerHTML = `<div class="text-5xl mb-3">${s.flag}</div><div class="text-xl font-black uppercase text-white">${s.label}</div><div class="text-blue-300/35 text-sm font-semibold mt-1 uppercase" id="cnt-${s.id}">…</div>`;
+      card.onclick = () => selectSubj(s);
+      grid.appendChild(card);
+      req('GET',`/api/subjects/${s.id}/exercises`).then(d => {
+        const el = document.getElementById('cnt-'+s.id);
+        if (el) el.textContent = d.exercises.length+' Übungen';
+      }).catch(()=>{});
+    }
+  } catch(e) { toast('❌','Fehler',e.message,'#ff3355'); }
+}
+
+function selectSubj(s) { subj = s; goExList(); }
+
+// ── EXERCISE LIST ──────────────────────
+async function goExList() {
+  if (!subj) { goSubjects(); return; }
+  show('exlist');
+  document.getElementById('el-flag').textContent = subj.flag;
+  document.getElementById('el-name').textContent = subj.label;
+  const list = document.getElementById('ex-cards');
+  list.innerHTML = '<div class="text-blue-300/30 text-center py-10 font-semibold">Lädt…</div>';
+  try {
+    const {exercises} = await req('GET',`/api/subjects/${subj.id}/exercises`);
+    list.innerHTML = '';
+    if (!exercises.length) { list.innerHTML='<div class="text-blue-300/30 text-center py-10 font-semibold">Keine Übungen gefunden.<br>Lege JSON-Dateien in exercises/'+subj.id+'/ an.</div>'; return; }
+    exercises.forEach(ex => {
+      const card = document.createElement('div');
+      card.className = 'card card-hover rounded-xl p-5 cursor-pointer';
+      const isVoc = ex.type === 'vocabulary';
+      const badge = isVoc
+        ? '<span style="background:rgba(0,212,255,.12);color:#00d4ff;border:1px solid rgba(0,212,255,.3)" class="rounded px-2 py-0.5 text-xs font-black uppercase">VOKABELN</span>'
+        : '<span style="background:rgba(255,150,0,.12);color:#ff9800;border:1px solid rgba(255,150,0,.3)" class="rounded px-2 py-0.5 text-xs font-black uppercase">ÜBERSETZUNG</span>';
+      const cnt = ex.itemCount ? `<span style="background:rgba(0,212,255,.08);color:rgba(0,212,255,.5)" class="rounded px-2 py-0.5 text-xs font-bold ml-1">${ex.itemCount} Wörter</span>` : '';
+      card.innerHTML = `<div class="flex items-start justify-between gap-3"><div class="flex-1 min-w-0"><div class="flex items-center flex-wrap gap-1 mb-1.5">${badge}${cnt}</div><div class="text-white font-black text-lg leading-tight">${ex.title}</div><div class="text-blue-300/40 text-sm mt-1 font-semibold">${ex.description}</div></div><div class="text-blue-300/25 text-xl flex-shrink-0">▶</div></div>`;
+      card.onclick = () => loadEx(ex);
+      list.appendChild(card);
+    });
+  } catch(e) { toast('❌','Fehler',e.message,'#ff3355'); }
+}
+
+// ── LOAD & START EXERCISE ──────────────
+async function loadEx(summary) {
+  exFilename = summary.filename;
+  try {
+    const {exercise: ex} = await req('GET',`/api/exercises/${subj.id}/${summary.filename}`);
+    exercise = ex;
+    ex.type === 'vocabulary' ? startVocab() : startTrans();
+  } catch(e) { toast('❌','Fehler',e.message,'#ff3355'); }
+}
+
+function cancelEx() {
+  stopClock();
+  if (vKeyHandler) { document.getElementById('vt-input').removeEventListener('keydown', vKeyHandler); vKeyHandler=null; }
+  goExList();
+}
+
+// ── VOCABULARY ─────────────────────────
+function norm(s) { return s.trim().toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss'); }
+function checkAns(ans, accepted) { const n=norm(ans); return accepted.some(a=>norm(a)===n); }
+
+function startVocab() {
+  vItems = [...exercise.items].sort(()=>Math.random()-.5);
+  vIdx=0; vOk=0; vBad=0; vWaiting=false;
+  document.getElementById('vt-title').textContent = exercise.title;
+  document.getElementById('vt-tot').textContent = vItems.length;
+  document.getElementById('vt-instr').textContent = (subj?.label || '') + ' → Deutsch';
+  show('vocab');
+  startClock('vt-timer');
+  renderVocabItem();
+  vKeyHandler = e => { if (e.key==='Enter') { e.preventDefault(); vWaiting ? nextVocab() : checkVocab(); } };
+  document.getElementById('vt-input').addEventListener('keydown', vKeyHandler);
+  document.getElementById('vt-input').focus();
+}
+
+function renderVocabItem() {
+  const item = vItems[vIdx];
+  document.getElementById('vt-cur').textContent = vIdx+1;
+  document.getElementById('vt-q').textContent = `"${item.question}"`;
+  document.getElementById('vt-fb').textContent = '';
+  document.getElementById('vt-reveal').classList.add('hidden');
+  const inp = document.getElementById('vt-input');
+  inp.value=''; inp.disabled=false; inp.className='ans-input'; inp.focus();
+  document.getElementById('vt-bar').style.width = (vIdx/vItems.length*100)+'%';
+  vWaiting=false;
+}
+
+function checkVocab() {
+  if (vWaiting) { nextVocab(); return; }
+  const inp = document.getElementById('vt-input');
+  const val = inp.value.trim();
+  if (!val) return;
+  const ok = checkAns(val, vItems[vIdx].answers);
+  const fb = document.getElementById('vt-fb');
+  const rev = document.getElementById('vt-reveal');
+  if (ok) {
+    vOk++;
+    inp.className='ans-input ok';
+    fb.textContent = ['Richtig! ✓','Super! ✓','Perfekt! ✓','Genau! ✓'][Math.floor(Math.random()*4)];
+    fb.style.color='#00ff88'; fb.style.textShadow='0 0 12px rgba(0,255,136,.5)';
+    rev.classList.add('hidden');
+  } else {
+    vBad++;
+    inp.className='ans-input err';
+    fb.textContent='Leider falsch ✗';
+    fb.style.color='#ff3355'; fb.style.textShadow='0 0 12px rgba(255,51,85,.4)';
+    rev.textContent='Richtig: '+vItems[vIdx].answers[0];
+    rev.classList.remove('hidden');
+  }
+  document.getElementById('vt-ok').textContent=vOk;
+  document.getElementById('vt-bad').textContent=vBad;
+  inp.disabled=true; vWaiting=true;
+  setTimeout(()=>{ if(vWaiting) nextVocab(); }, 1600);
+}
+
+function nextVocab() {
+  vWaiting=false; vIdx++;
+  if (vIdx >= vItems.length) { finishVocab(); } else { renderVocabItem(); }
+}
+
+async function finishVocab() {
+  stopClock();
+  document.getElementById('vt-input').removeEventListener('keydown', vKeyHandler); vKeyHandler=null;
+  await finishEx(elapsedMin(1), vOk, vItems.length);
+}
+
+// ── TRANSLATION ────────────────────────
+function wordScore(a, b) {
+  const wa = norm(a).split(/\s+/).filter(Boolean);
+  const wb = new Set(norm(b).split(/\s+/).filter(Boolean));
+  return wa.filter(w=>wb.has(w)).length / Math.max(wa.length, wb.size, 1);
+}
+
+function startTrans() {
+  const ex = exercise;
+  document.getElementById('tt-title').textContent = ex.title;
+  document.getElementById('tt-src').textContent = ex.source;
+  document.getElementById('tt-ref').textContent = ex.reference;
+  document.getElementById('tt-input').value = '';
+  show('trans');
+  startClock('tt-timer');
+}
+
+async function submitTrans() {
+  const val = document.getElementById('tt-input').value.trim();
+  if (val.length < 10) { toast('⚠️','Zu kurz','Bitte schreibe eine vollständige Übersetzung.','#ff9800'); return; }
+  stopClock();
+  const score = wordScore(val, exercise.reference);
+  const isOk = score >= (exercise.minimumScore ?? 0.6);
+  await finishEx(elapsedMin(2), isOk ? 1 : 0, 1);
+}
+
+// ── FINISH & RESULTS ───────────────────
+async function finishEx(minutes, okCount, totalCount) {
+  const old = scoreState;
+  try {
+    const s = await req('POST','/api/score/add-minutes',{minutes});
+    const newlyOn = s.ingredients.filter(i => {
+      const prev = old?.ingredients?.find(o=>o.id===i.id);
+      return i.unlocked && prev && !prev.unlocked;
+    });
+    newlyOn.forEach(i => { const c=document.getElementById('chip-'+i.id); if(c){c.classList.add('on','pop')} });
+    const rankUp = old && s.rank.name !== old.rank.name;
+    applyScore(s);
+    showResults(minutes, okCount, totalCount, newlyOn, rankUp, s);
+    if (s.donerComplete) setTimeout(() => { document.getElementById('dc-count').textContent=s.donersEarned; show('doner'); }, 3500);
+  } catch(e) { toast('❌','Speichern fehlgeschlagen',e.message,'#ff3355'); goExList(); }
+}
+
+function showResults(minutes, okCount, total, unlocked, rankUp, s) {
+  const pct = total > 1 ? Math.round(okCount/total*100) : (okCount > 0 ? 100 : 50);
+  document.getElementById('res-emoji').textContent = pct>=80?'🏆':pct>=60?'👍':'💪';
+  document.getElementById('res-sub').textContent = total > 1
+    ? `${okCount} von ${total} Wörtern richtig (${pct}%)`
+    : (okCount > 0 ? 'Übersetzung akzeptiert ✓' : 'Weiter üben – du schaffst das! 💪');
+  document.getElementById('res-min').textContent = minutes;
+  document.getElementById('res-ok').textContent = total > 1 ? `${okCount}/${total}` : (okCount > 0 ? '✓' : '~');
+  document.getElementById('res-dpct').textContent = s.donerProgressPercent+'%';
+
+  const ul = document.getElementById('res-unlock');
+  if (unlocked.length) {
+    ul.classList.remove('hidden');
+    document.getElementById('res-unlock-list').innerHTML = unlocked.map(i =>
+      `<div class="chip on rounded-lg px-3 py-2 text-center"><div class="text-3xl">${i.emoji}</div><div class="text-sm font-bold text-yellow-300 mt-1">${i.name}</div></div>`
+    ).join('');
+    toast('🔓','Zutat freigeschaltet!', unlocked.map(i=>i.emoji+' '+i.name).join(', '),'#ffd700');
+  } else { ul.classList.add('hidden'); }
+
+  const ru = document.getElementById('res-rankup');
+  if (rankUp) {
+    ru.classList.remove('hidden');
+    document.getElementById('res-newrank').textContent = s.rank.badge+' '+s.rank.name;
+    toast('⬆️','Rang aufgestiegen!', s.rank.name, '#ffd700');
+  } else { ru.classList.add('hidden'); }
+
+  document.getElementById('res-rname').textContent = s.rank.badge+' '+s.rank.name;
+  document.getElementById('res-rnext').textContent = s.rank.nextRank ? '→ '+s.rank.nextRank : '🏆 Maximum';
+  document.getElementById('res-rbar').style.width = s.rank.progressPercent+'%';
+  document.getElementById('res-rhint').textContent = s.rank.minutesToNext
+    ? `Noch ${s.rank.minutesToNext} Minuten bis ${s.rank.nextRank}`
+    : 'Maximaler Rang erreicht! 👑';
+
+  show('results');
+}
+
+// ── RESET DÖNER ────────────────────────
+async function doResetDoner() {
+  try {
+    const s = await req('POST','/api/score/reset-doner',{});
+    applyScore(s);
+    toast('🥙','Neuer Döner!','Auf in die nächste Runde!','#00ff88');
+    goSubjects();
+  } catch(e) { toast('❌','Fehler',e.message,'#ff3355'); }
+}
+
+// ── BOOT ───────────────────────────────
+goSubjects();
+</script>
+</body>
+</html>

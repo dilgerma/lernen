@@ -1,0 +1,23 @@
+{
+  "id": "eng-voc-3",
+  "title": "Kapitel 3 – Adjektive & Gefühle",
+  "description": "Wichtige Adjektive und Wörter für Gefühle",
+  "type": "vocabulary",
+  "items": [
+    { "question": "happy", "answers": ["glücklich", "fröhlich", "froh"] },
+    { "question": "sad", "answers": ["traurig"] },
+    { "question": "big", "answers": ["groß"] },
+    { "question": "small", "answers": ["klein"] },
+    { "question": "beautiful", "answers": ["schön", "wunderschön"] },
+    { "question": "ugly", "answers": ["hässlich"] },
+    { "question": "fast", "answers": ["schnell"] },
+    { "question": "slow", "answers": ["langsam"] },
+    { "question": "hot", "answers": ["heiß"] },
+    { "question": "cold", "answers": ["kalt"] },
+    { "question": "hungry", "answers": ["hungrig"] },
+    { "question": "tired", "answers": ["müde"] },
+    { "question": "strong", "answers": ["stark"] },
+    { "question": "funny", "answers": ["lustig", "witzig"] },
+    { "question": "nice", "answers": ["nett", "schön"] }
+  ]
+}

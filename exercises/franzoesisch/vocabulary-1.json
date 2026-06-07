@@ -1,0 +1,23 @@
+{
+  "id": "fra-voc-1",
+  "title": "Leçon 1 – Familie & Schule",
+  "description": "Grundvokabular zu Familie und Schule auf Französisch",
+  "type": "vocabulary",
+  "items": [
+    { "question": "la maison", "answers": ["das Haus", "Haus"] },
+    { "question": "la famille", "answers": ["die Familie", "Familie"] },
+    { "question": "le père", "answers": ["der Vater", "Vater"] },
+    { "question": "la mère", "answers": ["die Mutter", "Mutter"] },
+    { "question": "le frère", "answers": ["der Bruder", "Bruder"] },
+    { "question": "la sœur", "answers": ["die Schwester", "Schwester"] },
+    { "question": "l'école", "answers": ["die Schule", "Schule"] },
+    { "question": "le livre", "answers": ["das Buch", "Buch"] },
+    { "question": "le stylo", "answers": ["der Stift", "Stift", "der Kugelschreiber"] },
+    { "question": "l'ami", "answers": ["der Freund", "Freund"] },
+    { "question": "bonjour", "answers": ["Guten Tag", "Hallo", "Guten Morgen"] },
+    { "question": "merci", "answers": ["Danke", "Danke schön"] },
+    { "question": "au revoir", "answers": ["Auf Wiedersehen", "Tschüss"] },
+    { "question": "oui", "answers": ["ja"] },
+    { "question": "non", "answers": ["nein"] }
+  ]
+}

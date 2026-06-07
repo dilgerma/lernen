@@ -1,0 +1,5 @@
+.build-kit/
+
+.agent-modeling-kit/.eventmodelers/
+.env
+node_modules

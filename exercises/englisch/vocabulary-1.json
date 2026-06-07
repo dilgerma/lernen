@@ -1,0 +1,23 @@
+{
+  "id": "eng-voc-1",
+  "title": "Kapitel 1 – Schule & Alltag",
+  "description": "Grundvokabular rund um Schule, Zuhause und Alltag",
+  "type": "vocabulary",
+  "items": [
+    { "question": "the school", "answers": ["die Schule", "Schule"] },
+    { "question": "the teacher", "answers": ["der Lehrer", "die Lehrerin", "Lehrer", "Lehrerin"] },
+    { "question": "the book", "answers": ["das Buch", "Buch"] },
+    { "question": "the pencil", "answers": ["der Bleistift", "Bleistift"] },
+    { "question": "the bag", "answers": ["die Tasche", "Tasche"] },
+    { "question": "the friend", "answers": ["der Freund", "die Freundin", "Freund", "Freundin"] },
+    { "question": "the house", "answers": ["das Haus", "Haus"] },
+    { "question": "the room", "answers": ["das Zimmer", "Zimmer"] },
+    { "question": "the table", "answers": ["der Tisch", "Tisch"] },
+    { "question": "the chair", "answers": ["der Stuhl", "Stuhl"] },
+    { "question": "the window", "answers": ["das Fenster", "Fenster"] },
+    { "question": "the door", "answers": ["die Tür", "Tür"] },
+    { "question": "the garden", "answers": ["der Garten", "Garten"] },
+    { "question": "the street", "answers": ["die Straße", "Straße"] },
+    { "question": "the city", "answers": ["die Stadt", "Stadt"] }
+  ]
+}

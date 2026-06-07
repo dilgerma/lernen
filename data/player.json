@@ -1,0 +1,26 @@
+{
+  "name": "Vincent",
+  "currentCredits": 0,
+  "totalCreditsEarned": 0,
+  "todayCredits": 0,
+  "lastActivityDate": "2026-06-07",
+  "donersEarned": 0,
+  "donerComplete": false,
+  "doner": {
+    "brot": true,
+    "salat": false,
+    "tomate": false,
+    "zwiebel": false,
+    "gurke": false,
+    "kaese": false,
+    "sosse": false,
+    "fleisch": false
+  },
+  "statistics": {
+    "correctAnswers": 0,
+    "wrongAnswers": 0,
+    "streak": 0
+  },
+  "attemptHistory": [],
+  "recentExercises": []
+}
