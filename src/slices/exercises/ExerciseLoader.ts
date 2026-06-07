@@ -30,6 +30,10 @@ export async function listExercises(subject: string): Promise<ExerciseSummary[]>
           itemCount: ex.type === 'vocabulary' ? (ex as VocabularyExercise).items.length : undefined,
           filename,
           subject,
+          bestScore: null,
+          isDone: false,
+          needsRepeat: false,
+          attempts: 0,
         });
       } catch (err) {
         console.error(`Failed to parse ${filename}:`, err);

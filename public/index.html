@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Vincents Lernquest</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .card{background:linear-gradient(135deg,rgba(10,20,40,.95),rgba(8,15,30,.95));border:1px solid rgba(0,180,255,.2);transition:all .2s ease}
 .card-hover:hover{border-color:#00d4ff;box-shadow:0 0 20px rgba(0,212,255,.15);transform:translateY(-2px)}
 .card-hover:active{transform:translateY(0)}
-.btn{font-weight:800;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:all .15s ease;border:none;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)}
+.btn{font-weight:800;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:all .15s ease;border:none;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);min-height:44px;display:inline-flex;align-items:center;justify-content:center}
 .btn-blue{background:linear-gradient(135deg,#0070cc,#00a0ff);color:#fff}.btn-blue:hover{box-shadow:0 0 20px rgba(0,160,255,.5);transform:translateY(-1px)}
 .btn-green{background:linear-gradient(135deg,#00a030,#00cc50);color:#fff}.btn-green:hover{box-shadow:0 0 20px rgba(0,200,80,.5)}
 .btn-gold{background:linear-gradient(135deg,#cc8800,#ffb300);color:#fff}.btn-gold:hover{box-shadow:0 0 20px rgba(255,180,0,.5)}
@@ -27,16 +27,22 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .chip.on{border-color:rgba(255,215,0,.6);background:rgba(255,215,0,.08);box-shadow:0 0 12px rgba(255,215,0,.2)}
 .chip.pop{animation:chipPop .8s ease}
 @keyframes chipPop{0%{transform:scale(1)}35%{transform:scale(1.18);box-shadow:0 0 28px rgba(255,215,0,.7)}100%{transform:scale(1)}}
-.ans-input{background:rgba(0,180,255,.05);border:2px solid rgba(0,180,255,.25);color:#e0eaf8;font-family:'Exo 2',sans-serif;font-size:1.2rem;transition:all .15s ease;width:100%;border-radius:8px;padding:12px 16px}
+.ans-input{background:rgba(0,180,255,.05);border:2px solid rgba(0,180,255,.25);color:#e0eaf8;font-family:'Exo 2',sans-serif;font-size:1.2rem;transition:all .15s ease;width:100%;border-radius:8px;padding:14px 16px;min-height:52px}
 .ans-input:focus{outline:none;border-color:#00d4ff;background:rgba(0,180,255,.08);box-shadow:0 0 15px rgba(0,212,255,.15)}
 .ans-input.ok{border-color:#00ff88;background:rgba(0,255,136,.08)}
 .ans-input.err{border-color:#ff3355;background:rgba(255,51,85,.08)}
-.toast-box{position:fixed;top:20px;right:20px;z-index:9999;animation:tIn .35s ease}
+.toast-box{position:fixed;top:20px;right:20px;z-index:9999;animation:tIn .35s ease;max-width:calc(100vw - 40px)}
 @keyframes tIn{from{transform:translateX(80px);opacity:0}to{transform:translateX(0);opacity:1}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .fade-up{animation:fadeUp .35s ease}
-.q-word{font-size:clamp(2rem,6vw,3.8rem);font-weight:900;letter-spacing:-.02em;color:#fff;text-shadow:0 0 30px rgba(0,212,255,.25)}
+.q-word{font-size:clamp(1.8rem,6vw,3.8rem);font-weight:900;letter-spacing:-.02em;color:#fff;text-shadow:0 0 30px rgba(0,212,255,.25)}
 .sep{height:1px;background:linear-gradient(90deg,transparent,rgba(0,180,255,.25),transparent)}
+.reveal-box{background:rgba(255,51,85,.12);border:1px solid rgba(255,51,85,.3);border-radius:8px;padding:10px 14px;margin-top:10px;color:#ff8899;font-weight:700;font-size:1rem}
+.badge-done{background:rgba(0,255,136,.12);color:#00ff88;border:1px solid rgba(0,255,136,.3)}
+.badge-repeat{background:rgba(255,152,0,.12);color:#ff9800;border:1px solid rgba(255,152,0,.3)}
+.badge-new{background:rgba(0,180,255,.1);color:#00d4ff;border:1px solid rgba(0,180,255,.25)}
+.timer-paused{color:#ff9800 !important;animation:blink 1s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
 </style>
 </head>
 <body>
@@ -44,13 +50,13 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 
 <!-- HEADER -->
 <header class="sticky top-0 z-50 border-b border-blue-900/30" style="background:rgba(8,11,20,.96);backdrop-filter:blur(10px)">
-  <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
-    <div class="font-black text-xl tracking-tight" style="letter-spacing:-.01em">
+  <div class="max-w-4xl mx-auto px-3 py-2 flex items-center justify-between gap-2">
+    <div class="font-black text-base sm:text-xl tracking-tight" style="letter-spacing:-.01em">
       <span class="neon">VINCENTS</span> <span class="text-white">LERNQUEST</span>
     </div>
-    <div class="flex items-center gap-2 text-sm flex-shrink-0">
-      <div id="h-rank" class="flex items-center gap-1.5 rounded px-2.5 py-1 font-bold" style="background:rgba(0,180,255,.1);border:1px solid rgba(0,180,255,.3)">
-        <span id="h-badge"></span><span id="h-rname" class="text-blue-200 uppercase text-xs"></span>
+    <div class="flex items-center gap-2 text-xs sm:text-sm flex-shrink-0">
+      <div id="h-rank" class="flex items-center gap-1 sm:gap-1.5 rounded px-2 py-1 font-bold" style="background:rgba(0,180,255,.1);border:1px solid rgba(0,180,255,.3)">
+        <span id="h-badge"></span><span id="h-rname" class="text-blue-200 uppercase text-xs hidden sm:inline"></span>
       </div>
       <div class="font-bold text-blue-300/60">⏱ <span id="h-min">0</span> MIN</div>
     </div>
@@ -60,9 +66,9 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 
 <!-- DÖNER STRIP -->
 <div class="border-b border-blue-900/20" style="background:rgba(5,8,18,.85)">
-  <div class="max-w-4xl mx-auto px-4 py-2 flex items-center gap-2 flex-wrap">
+  <div class="max-w-4xl mx-auto px-3 py-2 flex items-center gap-2 flex-wrap">
     <span class="text-xs font-bold uppercase text-blue-400/50 mr-1">🥙 Döner</span>
-    <div id="doner-row" class="flex gap-1.5 flex-wrap"></div>
+    <div id="doner-row" class="flex gap-1 flex-wrap"></div>
     <span id="doner-pct" class="ml-auto text-xs font-bold text-blue-300/30"></span>
   </div>
 </div>
@@ -74,17 +80,17 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
      SCREEN 1 – SUBJECTS
      ════════════════════════════════════ -->
 <div id="s-subjects" class="screen active">
-  <div class="max-w-4xl mx-auto px-4 py-8">
-    <div class="mb-8">
-      <h1 class="text-4xl font-black uppercase tracking-wider mb-1">Wähle dein <span class="neon">Fach</span></h1>
+  <div class="max-w-4xl mx-auto px-4 py-6 sm:py-8">
+    <div class="mb-6">
+      <h1 class="text-3xl sm:text-4xl font-black uppercase tracking-wider mb-1">Wähle dein <span class="neon">Fach</span></h1>
       <p class="text-blue-300/40 font-semibold text-sm">Was lernst du heute?</p>
     </div>
-    <div id="subj-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
-    <div class="sep mt-10 mb-6"></div>
-    <div class="card rounded-xl p-5 grid grid-cols-3 gap-4 text-center">
-      <div><div id="st-total" class="text-2xl font-black gold">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Min. gesamt</div></div>
-      <div><div id="st-today" class="text-2xl font-black" style="color:#00ff88">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Min. heute</div></div>
-      <div><div id="st-doners" class="text-2xl font-black" style="color:#ff9800">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Döner</div></div>
+    <div id="subj-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4"></div>
+    <div class="sep mt-8 mb-5"></div>
+    <div class="card rounded-xl p-4 sm:p-5 grid grid-cols-3 gap-3 text-center">
+      <div><div id="st-total" class="text-xl sm:text-2xl font-black gold">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Min. gesamt</div></div>
+      <div><div id="st-today" class="text-xl sm:text-2xl font-black" style="color:#00ff88">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Min. heute</div></div>
+      <div><div id="st-doners" class="text-xl sm:text-2xl font-black" style="color:#ff9800">0</div><div class="text-xs text-blue-300/40 font-bold uppercase mt-1">Döner</div></div>
     </div>
   </div>
 </div>
@@ -93,11 +99,11 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
      SCREEN 2 – EXERCISE LIST
      ════════════════════════════════════ -->
 <div id="s-exlist" class="screen">
-  <div class="max-w-4xl mx-auto px-4 py-6 fade-up">
-    <div class="flex items-center gap-3 mb-6">
+  <div class="max-w-4xl mx-auto px-4 py-5 fade-up">
+    <div class="flex items-center gap-3 mb-5">
       <button class="btn btn-ghost rounded px-3 py-2 text-xs" onclick="goSubjects()">← Zurück</button>
       <span id="el-flag" class="text-2xl"></span>
-      <span id="el-name" class="text-xl font-black uppercase text-white"></span>
+      <span id="el-name" class="text-lg sm:text-xl font-black uppercase text-white"></span>
     </div>
     <div id="ex-cards" class="flex flex-col gap-3"></div>
   </div>
@@ -107,37 +113,37 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
      SCREEN 3A – VOCABULARY WIZARD
      ════════════════════════════════════ -->
 <div id="s-vocab" class="screen">
-  <div class="max-w-xl mx-auto px-4 py-6 fade-up">
+  <div class="max-w-xl mx-auto px-4 py-5 fade-up">
     <div class="flex items-center justify-between mb-4">
-      <button class="btn btn-ghost rounded px-3 py-1.5 text-xs" onclick="cancelEx()">✕ Stopp</button>
-      <div class="text-center">
-        <div id="vt-title" class="font-bold text-white text-xs uppercase tracking-wide"></div>
+      <button class="btn btn-ghost rounded px-3 py-2 text-xs" onclick="cancelEx()">✕ Stopp</button>
+      <div class="text-center flex-1 px-2">
+        <div id="vt-title" class="font-bold text-white text-xs uppercase tracking-wide leading-tight"></div>
         <div class="text-blue-300/40 text-xs font-bold mt-0.5">
           Wort <span id="vt-cur">1</span> / <span id="vt-tot">?</span>
         </div>
       </div>
-      <div id="vt-timer" class="font-bold text-blue-300/50 text-sm" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
+      <div id="vt-timer" class="font-bold text-blue-300/50 text-sm flex-shrink-0" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
     </div>
 
-    <div class="h-2 bg-gray-800/80 rounded-full mb-6 overflow-hidden">
+    <div class="h-2 bg-gray-800/80 rounded-full mb-5 overflow-hidden">
       <div id="vt-bar" class="xp-fill h-full rounded-full" style="width:0%;transition:width .3s ease"></div>
     </div>
 
-    <div class="flex justify-center gap-8 mb-5">
-      <div class="text-center"><div id="vt-ok" class="text-3xl font-black" style="color:#00ff88">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Richtig</div></div>
-      <div class="text-center"><div id="vt-bad" class="text-3xl font-black" style="color:#ff3355">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Falsch</div></div>
+    <div class="flex justify-center gap-8 mb-4">
+      <div class="text-center"><div id="vt-ok" class="text-2xl sm:text-3xl font-black" style="color:#00ff88">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Richtig</div></div>
+      <div class="text-center"><div id="vt-bad" class="text-2xl sm:text-3xl font-black" style="color:#ff3355">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Falsch</div></div>
     </div>
 
-    <div class="card rounded-xl p-8 mb-4 text-center flex flex-col items-center justify-center" style="min-height:170px">
+    <div class="card rounded-xl p-6 sm:p-8 mb-4 text-center flex flex-col items-center justify-center" style="min-height:160px">
       <div id="vt-instr" class="text-xs text-blue-300/30 uppercase font-bold mb-3 tracking-wider"></div>
       <div id="vt-q" class="q-word"></div>
       <div id="vt-fb" class="mt-3 text-lg font-black" style="min-height:1.6rem"></div>
-      <div id="vt-reveal" class="text-red-400/70 text-sm mt-1 hidden"></div>
+      <div id="vt-reveal" class="reveal-box hidden w-full text-center"></div>
     </div>
 
-    <div class="flex gap-3">
-      <input id="vt-input" class="ans-input" type="text" placeholder="Deutsche Übersetzung…" autocomplete="off" autocorrect="off" spellcheck="false">
-      <button class="btn btn-blue rounded-lg px-5 py-3 text-sm flex-shrink-0" onclick="checkVocab()">PRÜFEN</button>
+    <div class="flex gap-2 sm:gap-3">
+      <input id="vt-input" class="ans-input" type="text" placeholder="Deutsche Übersetzung…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <button class="btn btn-blue rounded-lg px-4 sm:px-5 text-sm flex-shrink-0" onclick="checkVocab()">PRÜFEN</button>
     </div>
     <p class="text-xs text-center text-blue-300/20 mt-2 font-semibold">Enter zum Bestätigen</p>
   </div>
@@ -147,13 +153,13 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
      SCREEN 3B – TRANSLATION
      ════════════════════════════════════ -->
 <div id="s-trans" class="screen">
-  <div class="max-w-xl mx-auto px-4 py-6 fade-up">
-    <div class="flex items-center justify-between mb-5">
-      <button class="btn btn-ghost rounded px-3 py-1.5 text-xs" onclick="cancelEx()">✕ Stopp</button>
-      <div id="tt-title" class="font-bold text-white text-xs uppercase tracking-wide text-center"></div>
-      <div id="tt-timer" class="font-bold text-blue-300/50 text-sm" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
+  <div class="max-w-xl mx-auto px-4 py-5 fade-up">
+    <div class="flex items-center justify-between mb-4">
+      <button class="btn btn-ghost rounded px-3 py-2 text-xs" onclick="cancelEx()">✕ Stopp</button>
+      <div id="tt-title" class="font-bold text-white text-xs uppercase tracking-wide text-center flex-1 px-2"></div>
+      <div id="tt-timer" class="font-bold text-blue-300/50 text-sm flex-shrink-0" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
     </div>
-    <div class="card rounded-xl p-5 mb-4">
+    <div class="card rounded-xl p-4 sm:p-5 mb-4">
       <div class="text-xs text-blue-300/30 uppercase font-bold mb-2 tracking-wider">📖 Originaltext</div>
       <div id="tt-src" class="text-white leading-relaxed" style="font-size:1.05rem"></div>
     </div>
@@ -162,7 +168,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
       <textarea id="tt-input" class="w-full bg-transparent text-white leading-relaxed resize-none focus:outline-none" style="min-height:120px;font-size:1.05rem;font-family:'Exo 2',sans-serif" placeholder="Schreibe hier deine Übersetzung…" spellcheck="false"></textarea>
     </div>
     <details class="mb-4">
-      <summary class="text-xs text-blue-300/20 cursor-pointer font-semibold uppercase hover:text-blue-300/50">💡 Hilfe anzeigen</summary>
+      <summary class="text-xs text-blue-300/20 cursor-pointer font-semibold uppercase hover:text-blue-300/50 py-1">💡 Hilfe anzeigen</summary>
       <div id="tt-ref" class="mt-2 text-blue-300/35 text-sm italic leading-relaxed card rounded p-3"></div>
     </details>
     <button class="btn btn-blue w-full rounded-lg py-4 text-base" onclick="submitTrans()">ÜBERSETZUNG ABGEBEN</button>
@@ -175,13 +181,16 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 <div id="s-results" class="screen">
   <div class="max-w-xl mx-auto px-4 py-8 text-center fade-up">
     <div id="res-emoji" class="text-5xl mb-3">🏆</div>
-    <h2 class="text-3xl font-black uppercase mb-1">Übung abgeschlossen!</h2>
-    <div id="res-sub" class="text-blue-300/50 font-semibold mb-7"></div>
+    <h2 class="text-2xl sm:text-3xl font-black uppercase mb-1">Übung abgeschlossen!</h2>
+    <div id="res-sub" class="text-blue-300/50 font-semibold mb-3 text-sm sm:text-base"></div>
 
-    <div class="grid grid-cols-3 gap-3 mb-5">
-      <div class="card rounded-xl p-4"><div id="res-min" class="text-2xl font-black neon">0</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Minuten</div></div>
-      <div class="card rounded-xl p-4"><div id="res-ok" class="text-2xl font-black" style="color:#00ff88">–</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Richtig</div></div>
-      <div class="card rounded-xl p-4"><div id="res-dpct" class="text-2xl font-black gold">0%</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Döner</div></div>
+    <!-- exercise result badge -->
+    <div id="res-exbadge" class="hidden mb-5 rounded-xl p-3 font-bold text-sm"></div>
+
+    <div class="grid grid-cols-3 gap-2 sm:gap-3 mb-5">
+      <div class="card rounded-xl p-3 sm:p-4"><div id="res-min" class="text-xl sm:text-2xl font-black neon">0</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Minuten</div></div>
+      <div class="card rounded-xl p-3 sm:p-4"><div id="res-ok" class="text-xl sm:text-2xl font-black" style="color:#00ff88">–</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Richtig</div></div>
+      <div class="card rounded-xl p-3 sm:p-4"><div id="res-dpct" class="text-xl sm:text-2xl font-black gold">0%</div><div class="text-xs text-blue-300/40 uppercase font-bold mt-1">Döner</div></div>
     </div>
 
     <div id="res-unlock" class="hidden mb-5">
@@ -204,7 +213,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
       <div id="res-rhint" class="text-xs text-blue-300/30 mt-2 font-semibold"></div>
     </div>
 
-    <div class="flex gap-3 justify-center">
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
       <button class="btn btn-ghost rounded-lg px-5 py-3 text-sm" onclick="goExList()">WEITERE ÜBUNGEN</button>
       <button class="btn btn-blue rounded-lg px-5 py-3 text-sm" onclick="goSubjects()">FACH WECHSELN</button>
     </div>
@@ -217,7 +226,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 <div id="s-doner" class="screen" style="background:radial-gradient(ellipse at center,rgba(255,215,0,.08) 0%,transparent 65%),#080b14">
   <div class="max-w-xl mx-auto px-4 py-14 text-center fade-up">
     <div class="text-8xl mb-5 animate-bounce">🥙</div>
-    <h1 class="text-5xl font-black uppercase gold mb-2" style="text-shadow:0 0 40px rgba(255,215,0,.35)">DÖNER VERDIENT!</h1>
+    <h1 class="text-4xl sm:text-5xl font-black uppercase gold mb-2" style="text-shadow:0 0 40px rgba(255,215,0,.35)">DÖNER VERDIENT!</h1>
     <div class="text-xl font-bold text-white mb-2">Glückwunsch, Vincent!</div>
     <div class="text-blue-300/50 font-semibold mb-8">
       Du hast 5 Stunden fleißig gelernt!<br>
@@ -244,12 +253,57 @@ let scoreState = null;
 let subj = null;
 let exercise = null;
 let exFilename = null;
-let t0 = null;
-let timerTick = null;
+let vKeyHandler = null;
 
 // vocab session
 let vItems = [], vIdx = 0, vOk = 0, vBad = 0, vWaiting = false;
-let vKeyHandler = null;
+
+// ── TIMER (activity-based) ─────────────
+let activeSeconds = 0;
+let lastActivity = 0;
+let timerPaused = false;
+let timerTick = null;
+let timerElId = null;
+const IDLE_MS = 10000;
+
+function recordActivity() {
+  lastActivity = Date.now();
+  if (timerPaused && timerTick) {
+    timerPaused = false;
+    const el = document.getElementById(timerElId);
+    if (el) el.classList.remove('timer-paused');
+  }
+}
+
+function startClock(elId) {
+  activeSeconds = 0;
+  lastActivity = Date.now();
+  timerPaused = false;
+  timerElId = elId;
+  clearInterval(timerTick);
+  timerTick = setInterval(() => {
+    const idle = Date.now() - lastActivity;
+    const el = document.getElementById(timerElId);
+    if (idle >= IDLE_MS) {
+      if (!timerPaused) {
+        timerPaused = true;
+        if (el) el.classList.add('timer-paused');
+      }
+    } else {
+      activeSeconds++;
+      if (timerPaused) {
+        timerPaused = false;
+        if (el) el.classList.remove('timer-paused');
+      }
+    }
+    const mm = String(Math.floor(activeSeconds / 60)).padStart(2, '0');
+    const ss = String(activeSeconds % 60).padStart(2, '0');
+    if (el) el.textContent = `${timerPaused ? '⏸' : '⏱'} ${mm}:${ss}`;
+  }, 1000);
+}
+
+function stopClock() { clearInterval(timerTick); timerTick = null; }
+function elapsedMin(minFloor = 1) { return Math.max(minFloor, Math.floor(activeSeconds / 60)); }
 
 // ── API ────────────────────────────────
 async function req(method, path, body) {
@@ -263,22 +317,10 @@ async function req(method, path, body) {
   return data;
 }
 
-// ── TIMER ──────────────────────────────
-function startClock(elId) {
-  t0 = Date.now();
-  timerTick = setInterval(() => {
-    const s = Math.floor((Date.now()-t0)/1000);
-    const el = document.getElementById(elId);
-    if (el) el.textContent = `⏱ ${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
-  }, 1000);
-}
-function stopClock() { clearInterval(timerTick); timerTick = null; }
-function elapsedMin(minFloor = 1) { return Math.max(minFloor, Math.floor((Date.now()-t0)/60000)); }
-
 // ── TOAST ──────────────────────────────
 function toast(emoji, title, msg, color='#00d4ff') {
   const el = document.createElement('div');
-  el.className = 'toast-box card rounded-lg p-4 min-w-60';
+  el.className = 'toast-box card rounded-lg p-4 min-w-56';
   el.style.cssText = `border-color:${color};box-shadow:0 0 18px ${color}33`;
   el.innerHTML = `<div class="flex gap-3 items-start"><span class="text-2xl">${emoji}</span><div><div class="font-black uppercase text-xs" style="color:${color}">${title}</div><div class="text-blue-200/60 text-sm mt-0.5">${msg}</div></div></div>`;
   document.getElementById('toasts').appendChild(el);
@@ -312,8 +354,8 @@ function applyScore(s) {
     c.id = 'chip-'+ing.id;
     c.className = 'chip rounded px-2 py-1 text-xs font-bold flex items-center gap-1' + (ing.unlocked ? ' on' : '');
     c.innerHTML = ing.unlocked
-      ? `<span>${ing.emoji}</span><span class="text-yellow-200">${ing.name}</span>`
-      : `<span>🔒</span><span class="text-blue-300/35">${ing.name}</span><span class="text-blue-400/25"> -${ing.minutesRemaining}m</span>`;
+      ? `<span>${ing.emoji}</span><span class="text-yellow-200 hidden sm:inline">${ing.name}</span>`
+      : `<span>🔒</span><span class="text-blue-300/35 hidden sm:inline">${ing.name}</span><span class="text-blue-400/25 hidden sm:inline"> -${ing.minutesRemaining}m</span>`;
     row.appendChild(c);
   });
   const cnt = s.ingredients.filter(i => i.minutesRequired > 0 && i.unlocked).length;
@@ -334,13 +376,17 @@ async function goSubjects() {
     grid.innerHTML = '';
     for (const s of subs.subjects) {
       const card = document.createElement('div');
-      card.className = 'card card-hover rounded-xl p-6 cursor-pointer';
-      card.innerHTML = `<div class="text-5xl mb-3">${s.flag}</div><div class="text-xl font-black uppercase text-white">${s.label}</div><div class="text-blue-300/35 text-sm font-semibold mt-1 uppercase" id="cnt-${s.id}">…</div>`;
+      card.className = 'card card-hover rounded-xl p-4 sm:p-6 cursor-pointer';
+      card.innerHTML = `<div class="text-4xl sm:text-5xl mb-2 sm:mb-3">${s.flag}</div><div class="text-lg sm:text-xl font-black uppercase text-white">${s.label}</div><div class="text-blue-300/35 text-sm font-semibold mt-1 uppercase" id="cnt-${s.id}">…</div>`;
       card.onclick = () => selectSubj(s);
       grid.appendChild(card);
       req('GET',`/api/subjects/${s.id}/exercises`).then(d => {
         const el = document.getElementById('cnt-'+s.id);
-        if (el) el.textContent = d.exercises.length+' Übungen';
+        if (!el) return;
+        const done = d.exercises.filter(e => e.isDone).length;
+        el.textContent = done > 0
+          ? `${done}/${d.exercises.length} fertig`
+          : `${d.exercises.length} Übungen`;
       }).catch(()=>{});
     }
   } catch(e) { toast('❌','Fehler',e.message,'#ff3355'); }
@@ -359,16 +405,39 @@ async function goExList() {
   try {
     const {exercises} = await req('GET',`/api/subjects/${subj.id}/exercises`);
     list.innerHTML = '';
-    if (!exercises.length) { list.innerHTML='<div class="text-blue-300/30 text-center py-10 font-semibold">Keine Übungen gefunden.<br>Lege JSON-Dateien in exercises/'+subj.id+'/ an.</div>'; return; }
+    if (!exercises.length) {
+      list.innerHTML = '<div class="text-blue-300/30 text-center py-10 font-semibold">Keine Übungen gefunden.<br>Lege JSON-Dateien in exercises/'+subj.id+'/ an.</div>';
+      return;
+    }
     exercises.forEach(ex => {
       const card = document.createElement('div');
-      card.className = 'card card-hover rounded-xl p-5 cursor-pointer';
-      const isVoc = ex.type === 'vocabulary';
-      const badge = isVoc
+      card.className = 'card card-hover rounded-xl p-4 sm:p-5 cursor-pointer';
+
+      const typeBadge = ex.type === 'vocabulary'
         ? '<span style="background:rgba(0,212,255,.12);color:#00d4ff;border:1px solid rgba(0,212,255,.3)" class="rounded px-2 py-0.5 text-xs font-black uppercase">VOKABELN</span>'
         : '<span style="background:rgba(255,150,0,.12);color:#ff9800;border:1px solid rgba(255,150,0,.3)" class="rounded px-2 py-0.5 text-xs font-black uppercase">ÜBERSETZUNG</span>';
-      const cnt = ex.itemCount ? `<span style="background:rgba(0,212,255,.08);color:rgba(0,212,255,.5)" class="rounded px-2 py-0.5 text-xs font-bold ml-1">${ex.itemCount} Wörter</span>` : '';
-      card.innerHTML = `<div class="flex items-start justify-between gap-3"><div class="flex-1 min-w-0"><div class="flex items-center flex-wrap gap-1 mb-1.5">${badge}${cnt}</div><div class="text-white font-black text-lg leading-tight">${ex.title}</div><div class="text-blue-300/40 text-sm mt-1 font-semibold">${ex.description}</div></div><div class="text-blue-300/25 text-xl flex-shrink-0">▶</div></div>`;
+      const cntBadge = ex.itemCount
+        ? `<span style="background:rgba(0,212,255,.08);color:rgba(0,212,255,.5)" class="rounded px-2 py-0.5 text-xs font-bold ml-1">${ex.itemCount} Wörter</span>`
+        : '';
+
+      let statusBadge = '';
+      if (ex.isDone) {
+        statusBadge = `<span class="badge-done rounded px-2 py-0.5 text-xs font-black uppercase ml-1">✅ Fertig ${ex.bestScore}%</span>`;
+      } else if (ex.needsRepeat) {
+        statusBadge = `<span class="badge-repeat rounded px-2 py-0.5 text-xs font-black uppercase ml-1">🔄 Wiederholen ${ex.bestScore}%</span>`;
+      } else {
+        statusBadge = `<span class="badge-new rounded px-2 py-0.5 text-xs font-black uppercase ml-1">Neu</span>`;
+      }
+
+      card.innerHTML = `
+        <div class="flex items-start justify-between gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center flex-wrap gap-1 mb-1.5">${typeBadge}${cntBadge}${statusBadge}</div>
+            <div class="text-white font-black text-base sm:text-lg leading-tight">${ex.title}</div>
+            <div class="text-blue-300/40 text-sm mt-1 font-semibold">${ex.description}</div>
+          </div>
+          <div class="text-blue-300/25 text-xl flex-shrink-0">▶</div>
+        </div>`;
       card.onclick = () => loadEx(ex);
       list.appendChild(card);
     });
@@ -387,7 +456,10 @@ async function loadEx(summary) {
 
 function cancelEx() {
   stopClock();
-  if (vKeyHandler) { document.getElementById('vt-input').removeEventListener('keydown', vKeyHandler); vKeyHandler=null; }
+  if (vKeyHandler) {
+    document.getElementById('vt-input').removeEventListener('keydown', vKeyHandler);
+    vKeyHandler = null;
+  }
   goExList();
 }
 
@@ -405,8 +477,10 @@ function startVocab() {
   startClock('vt-timer');
   renderVocabItem();
   vKeyHandler = e => { if (e.key==='Enter') { e.preventDefault(); vWaiting ? nextVocab() : checkVocab(); } };
-  document.getElementById('vt-input').addEventListener('keydown', vKeyHandler);
-  document.getElementById('vt-input').focus();
+  const inp = document.getElementById('vt-input');
+  inp.addEventListener('keydown', vKeyHandler);
+  inp.addEventListener('input', recordActivity);
+  inp.focus();
 }
 
 function renderVocabItem() {
@@ -414,7 +488,9 @@ function renderVocabItem() {
   document.getElementById('vt-cur').textContent = vIdx+1;
   document.getElementById('vt-q').textContent = `"${item.question}"`;
   document.getElementById('vt-fb').textContent = '';
-  document.getElementById('vt-reveal').classList.add('hidden');
+  const rev = document.getElementById('vt-reveal');
+  rev.classList.add('hidden');
+  rev.textContent = '';
   const inp = document.getElementById('vt-input');
   inp.value=''; inp.disabled=false; inp.className='ans-input'; inp.focus();
   document.getElementById('vt-bar').style.width = (vIdx/vItems.length*100)+'%';
@@ -423,6 +499,7 @@ function renderVocabItem() {
 
 function checkVocab() {
   if (vWaiting) { nextVocab(); return; }
+  recordActivity();
   const inp = document.getElementById('vt-input');
   const val = inp.value.trim();
   if (!val) return;
@@ -440,24 +517,28 @@ function checkVocab() {
     inp.className='ans-input err';
     fb.textContent='Leider falsch ✗';
     fb.style.color='#ff3355'; fb.style.textShadow='0 0 12px rgba(255,51,85,.4)';
-    rev.textContent='Richtig: '+vItems[vIdx].answers[0];
+    rev.textContent = `Richtige Antwort: ${vItems[vIdx].answers[0]}`;
     rev.classList.remove('hidden');
   }
   document.getElementById('vt-ok').textContent=vOk;
   document.getElementById('vt-bad').textContent=vBad;
   inp.disabled=true; vWaiting=true;
-  setTimeout(()=>{ if(vWaiting) nextVocab(); }, 1600);
+  setTimeout(()=>{ if(vWaiting) nextVocab(); }, 2000);
 }
 
 function nextVocab() {
+  recordActivity();
   vWaiting=false; vIdx++;
   if (vIdx >= vItems.length) { finishVocab(); } else { renderVocabItem(); }
 }
 
 async function finishVocab() {
   stopClock();
-  document.getElementById('vt-input').removeEventListener('keydown', vKeyHandler); vKeyHandler=null;
-  await finishEx(elapsedMin(1), vOk, vItems.length);
+  document.getElementById('vt-input').removeEventListener('keydown', vKeyHandler);
+  document.getElementById('vt-input').removeEventListener('input', recordActivity);
+  vKeyHandler=null;
+  const scorePercent = Math.round(vOk / vItems.length * 100);
+  await finishEx(elapsedMin(1), vOk, vItems.length, scorePercent);
 }
 
 // ── TRANSLATION ────────────────────────
@@ -472,7 +553,9 @@ function startTrans() {
   document.getElementById('tt-title').textContent = ex.title;
   document.getElementById('tt-src').textContent = ex.source;
   document.getElementById('tt-ref').textContent = ex.reference;
-  document.getElementById('tt-input').value = '';
+  const inp = document.getElementById('tt-input');
+  inp.value = '';
+  inp.addEventListener('input', recordActivity);
   show('trans');
   startClock('tt-timer');
 }
@@ -480,38 +563,67 @@ function startTrans() {
 async function submitTrans() {
   const val = document.getElementById('tt-input').value.trim();
   if (val.length < 10) { toast('⚠️','Zu kurz','Bitte schreibe eine vollständige Übersetzung.','#ff9800'); return; }
+  recordActivity();
   stopClock();
+  document.getElementById('tt-input').removeEventListener('input', recordActivity);
   const score = wordScore(val, exercise.reference);
   const isOk = score >= (exercise.minimumScore ?? 0.6);
-  await finishEx(elapsedMin(2), isOk ? 1 : 0, 1);
+  const scorePercent = Math.round(score * 100);
+  await finishEx(elapsedMin(2), isOk ? 1 : 0, 1, scorePercent);
 }
 
 // ── FINISH & RESULTS ───────────────────
-async function finishEx(minutes, okCount, totalCount) {
+async function finishEx(minutes, okCount, totalCount, scorePercent) {
   const old = scoreState;
   try {
-    const s = await req('POST','/api/score/add-minutes',{minutes});
+    const data = await req('POST', `/api/exercises/${subj.id}/${exFilename}/result`, {
+      exerciseId: exercise.id,
+      scorePercent,
+      minutesSpent: minutes,
+    });
+
+    const s = data.scoreState;
+    applyScore(s);
+
     const newlyOn = s.ingredients.filter(i => {
       const prev = old?.ingredients?.find(o=>o.id===i.id);
       return i.unlocked && prev && !prev.unlocked;
     });
     newlyOn.forEach(i => { const c=document.getElementById('chip-'+i.id); if(c){c.classList.add('on','pop')} });
     const rankUp = old && s.rank.name !== old.rank.name;
-    applyScore(s);
-    showResults(minutes, okCount, totalCount, newlyOn, rankUp, s);
+
+    showResults(minutes, okCount, totalCount, newlyOn, rankUp, s, data.result, data.firstTimeDone);
     if (s.donerComplete) setTimeout(() => { document.getElementById('dc-count').textContent=s.donersEarned; show('doner'); }, 3500);
   } catch(e) { toast('❌','Speichern fehlgeschlagen',e.message,'#ff3355'); goExList(); }
 }
 
-function showResults(minutes, okCount, total, unlocked, rankUp, s) {
+function showResults(minutes, okCount, total, unlocked, rankUp, s, exResult, firstTimeDone) {
   const pct = total > 1 ? Math.round(okCount/total*100) : (okCount > 0 ? 100 : 50);
-  document.getElementById('res-emoji').textContent = pct>=80?'🏆':pct>=60?'👍':'💪';
+  document.getElementById('res-emoji').textContent = pct>=90?'🏆':pct>=70?'👍':'💪';
   document.getElementById('res-sub').textContent = total > 1
     ? `${okCount} von ${total} Wörtern richtig (${pct}%)`
     : (okCount > 0 ? 'Übersetzung akzeptiert ✓' : 'Weiter üben – du schaffst das! 💪');
   document.getElementById('res-min').textContent = minutes;
   document.getElementById('res-ok').textContent = total > 1 ? `${okCount}/${total}` : (okCount > 0 ? '✓' : '~');
   document.getElementById('res-dpct').textContent = s.donerProgressPercent+'%';
+
+  // exercise result badge
+  const exBadge = document.getElementById('res-exbadge');
+  if (exResult) {
+    exBadge.classList.remove('hidden');
+    if (exResult.isDone && firstTimeDone) {
+      exBadge.className = 'mb-5 rounded-xl p-3 font-bold text-sm badge-done';
+      exBadge.textContent = `✅ Übung abgeschlossen! (${exResult.bestScore}%) — Döner-Punkte erhalten!`;
+    } else if (exResult.isDone) {
+      exBadge.className = 'mb-5 rounded-xl p-3 font-bold text-sm badge-done';
+      exBadge.textContent = `✅ Schon abgeschlossen (${exResult.bestScore}%) — weiter so!`;
+    } else {
+      exBadge.className = 'mb-5 rounded-xl p-3 font-bold text-sm badge-repeat';
+      exBadge.textContent = `🔄 Noch nicht fertig (${exResult.bestScore}%) — 90% nötig für Döner-Punkte!`;
+    }
+  } else {
+    exBadge.classList.add('hidden');
+  }
 
   const ul = document.getElementById('res-unlock');
   if (unlocked.length) {

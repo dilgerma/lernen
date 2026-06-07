@@ -31,4 +31,21 @@ export interface ExerciseSummary {
   itemCount?: number;
   filename: string;
   subject: string;
+  bestScore: number | null;
+  isDone: boolean;
+  attempts: number;
+  needsRepeat: boolean;
 }
+
+export interface ExerciseResult {
+  exerciseId: string;
+  subject: string;
+  filename: string;
+  bestScore: number;
+  isDone: boolean;
+  needsRepeat: boolean;
+  attempts: number;
+  lastAttemptAt: string;
+}
+
+export const DONE_THRESHOLD = 90;
