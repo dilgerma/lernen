@@ -54,7 +54,7 @@ export const api = (): WebApiSetup => (router: Router): void => {
 
   // POST /api/exercises/:subject/:filename/result
   // Body: { exerciseId: string, scorePercent: number, minutesSpent?: number }
-  // Awards minutes only the first time an exercise reaches >= 90%.
+  // Awards minutes on every attempt; marks exercise done only when score >= 90%.
   router.post('/api/exercises/:subject/:filename/result', async (req: Request, res: Response) => {
     const { subject, filename } = req.params;
     const { exerciseId, scorePercent, minutesSpent } = req.body as {
@@ -70,11 +70,8 @@ export const api = (): WebApiSetup => (router: Router): void => {
 
     const { result, firstTimeDone } = await recordResult(subject, filename, exerciseId, scorePercent);
 
-    let raw = await getScore();
-    if (firstTimeDone) {
-      const mins = minutesSpent && minutesSpent > 0 && minutesSpent <= 300 ? minutesSpent : 5;
-      raw = await addMinutes(mins);
-    }
+    const mins = minutesSpent && minutesSpent > 0 && minutesSpent <= 300 ? minutesSpent : 5;
+    const raw = await addMinutes(mins);
 
     res.json({ result, firstTimeDone, scoreState: computeScoreState(raw) });
   });

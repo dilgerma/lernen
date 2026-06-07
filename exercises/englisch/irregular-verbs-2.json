@@ -1,0 +1,30 @@
+{
+  "id": "eng-irreg-2",
+  "title": "Irregular Verbs – Teil 1 (A–F)",
+  "description": "Unregelmäßige Verben aus dem Schulbuch: be bis fall",
+  "type": "irregular-verbs",
+  "items": [
+    { "infinitive": "be",      "simplePast": "was/were",     "pastParticiple": "been",         "german": "sein" },
+    { "infinitive": "become",  "simplePast": "became",       "pastParticiple": "become",       "german": "werden" },
+    { "infinitive": "begin",   "simplePast": "began",        "pastParticiple": "begun",        "german": "beginnen, anfangen" },
+    { "infinitive": "bet",     "simplePast": "bet/betted",   "pastParticiple": "bet/betted",   "german": "wetten" },
+    { "infinitive": "bite",    "simplePast": "bit",          "pastParticiple": "bitten",       "german": "beißen" },
+    { "infinitive": "blow",    "simplePast": "blew",         "pastParticiple": "blown",        "german": "blasen, pusten" },
+    { "infinitive": "break",   "simplePast": "broke",        "pastParticiple": "broken",       "german": "(zer)brechen, kaputt machen" },
+    { "infinitive": "bring",   "simplePast": "brought",      "pastParticiple": "brought",      "german": "(mit)bringen" },
+    { "infinitive": "build",   "simplePast": "built",        "pastParticiple": "built",        "german": "bauen" },
+    { "infinitive": "burn",    "simplePast": "burnt/burned", "pastParticiple": "burnt/burned", "german": "brennen" },
+    { "infinitive": "buy",     "simplePast": "bought",       "pastParticiple": "bought",       "german": "kaufen" },
+    { "infinitive": "catch",   "simplePast": "caught",       "pastParticiple": "caught",       "german": "fangen" },
+    { "infinitive": "choose",  "simplePast": "chose",        "pastParticiple": "chosen",       "german": "(aus)wählen" },
+    { "infinitive": "come",    "simplePast": "came",         "pastParticiple": "come",         "german": "kommen" },
+    { "infinitive": "cost",    "simplePast": "cost",         "pastParticiple": "cost",         "german": "kosten" },
+    { "infinitive": "cut",     "simplePast": "cut",          "pastParticiple": "cut",          "german": "schneiden" },
+    { "infinitive": "dig",     "simplePast": "dug",          "pastParticiple": "dug",          "german": "graben" },
+    { "infinitive": "do",      "simplePast": "did",          "pastParticiple": "done",         "german": "machen, tun" },
+    { "infinitive": "draw",    "simplePast": "drew",         "pastParticiple": "drawn",        "german": "zeichnen, ziehen" },
+    { "infinitive": "drink",   "simplePast": "drank",        "pastParticiple": "drunk",        "german": "trinken" },
+    { "infinitive": "eat",     "simplePast": "ate",          "pastParticiple": "eaten",        "german": "essen" },
+    { "infinitive": "fall",    "simplePast": "fell",         "pastParticiple": "fallen",       "german": "fallen" }
+  ]
+}

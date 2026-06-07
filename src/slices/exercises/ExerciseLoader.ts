@@ -1,6 +1,6 @@
 import { readdir, readFile } from 'fs/promises';
 import { join } from 'path';
-import type { Exercise, ExerciseSummary, VocabularyExercise } from './Exercise';
+import type { Exercise, ExerciseSummary, VocabularyExercise, IrregularVerbsExercise } from './Exercise';
 
 const EXERCISES_DIR = join(process.cwd(), 'exercises');
 
@@ -27,7 +27,8 @@ export async function listExercises(subject: string): Promise<ExerciseSummary[]>
           title: ex.title,
           description: ex.description,
           type: ex.type,
-          itemCount: ex.type === 'vocabulary' ? (ex as VocabularyExercise).items.length : undefined,
+          itemCount: ex.type === 'vocabulary' ? (ex as VocabularyExercise).items.length :
+                     ex.type === 'irregular-verbs' ? (ex as IrregularVerbsExercise).items.length : undefined,
           filename,
           subject,
           bestScore: null,

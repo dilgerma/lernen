@@ -1,0 +1,30 @@
+{
+  "id": "eng-irreg-3",
+  "title": "Irregular Verbs – Teil 2 (F–K)",
+  "description": "Unregelmäßige Verben aus dem Schulbuch: feed bis know",
+  "type": "irregular-verbs",
+  "items": [
+    { "infinitive": "feed",    "simplePast": "fed",     "pastParticiple": "fed",       "german": "füttern, ernähren" },
+    { "infinitive": "feel",    "simplePast": "felt",    "pastParticiple": "felt",      "german": "fühlen" },
+    { "infinitive": "fight",   "simplePast": "fought",  "pastParticiple": "fought",    "german": "kämpfen, (sich) streiten" },
+    { "infinitive": "find",    "simplePast": "found",   "pastParticiple": "found",     "german": "finden" },
+    { "infinitive": "fit",     "simplePast": "fit/fitted", "pastParticiple": "fit/fitted", "german": "passen" },
+    { "infinitive": "fly",     "simplePast": "flew",    "pastParticiple": "flown",     "german": "fliegen" },
+    { "infinitive": "forget",  "simplePast": "forgot",  "pastParticiple": "forgotten", "german": "vergessen" },
+    { "infinitive": "forgive", "simplePast": "forgave", "pastParticiple": "forgiven",  "german": "vergeben, verzeihen" },
+    { "infinitive": "freeze",  "simplePast": "froze",   "pastParticiple": "frozen",    "german": "gefrieren, erstarren" },
+    { "infinitive": "get",     "simplePast": "got",     "pastParticiple": "got",       "german": "bekommen, erhalten" },
+    { "infinitive": "give",    "simplePast": "gave",    "pastParticiple": "given",     "german": "geben" },
+    { "infinitive": "go",      "simplePast": "went",    "pastParticiple": "gone",      "german": "gehen, fahren" },
+    { "infinitive": "grow",    "simplePast": "grew",    "pastParticiple": "grown",     "german": "wachsen, anbauen, züchten" },
+    { "infinitive": "hang",    "simplePast": "hung",    "pastParticiple": "hung",      "german": "hängen" },
+    { "infinitive": "have",    "simplePast": "had",     "pastParticiple": "had",       "german": "haben" },
+    { "infinitive": "hear",    "simplePast": "heard",   "pastParticiple": "heard",     "german": "hören" },
+    { "infinitive": "hide",    "simplePast": "hid",     "pastParticiple": "hidden",    "german": "(sich) verstecken" },
+    { "infinitive": "hit",     "simplePast": "hit",     "pastParticiple": "hit",       "german": "schlagen, treffen" },
+    { "infinitive": "hold",    "simplePast": "held",    "pastParticiple": "held",      "german": "halten" },
+    { "infinitive": "hurt",    "simplePast": "hurt",    "pastParticiple": "hurt",      "german": "verletzen, sich weh tun" },
+    { "infinitive": "keep",    "simplePast": "kept",    "pastParticiple": "kept",      "german": "(auf)bewahren, behalten" },
+    { "infinitive": "know",    "simplePast": "knew",    "pastParticiple": "known",     "german": "kennen, wissen" }
+  ]
+}

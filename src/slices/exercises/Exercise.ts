@@ -21,13 +21,28 @@ export interface TranslationExercise {
   minimumScore: number;
 }
 
-export type Exercise = VocabularyExercise | TranslationExercise;
+export interface IrregularVerbItem {
+  infinitive: string;
+  simplePast: string;
+  pastParticiple: string;
+  german: string;
+}
+
+export interface IrregularVerbsExercise {
+  id: string;
+  title: string;
+  description: string;
+  type: 'irregular-verbs';
+  items: IrregularVerbItem[];
+}
+
+export type Exercise = VocabularyExercise | TranslationExercise | IrregularVerbsExercise;
 
 export interface ExerciseSummary {
   id: string;
   title: string;
   description: string;
-  type: 'vocabulary' | 'translation';
+  type: 'vocabulary' | 'translation' | 'irregular-verbs';
   itemCount?: number;
   filename: string;
   subject: string;

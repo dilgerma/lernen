@@ -1,0 +1,29 @@
+{
+  "id": "eng-irreg-5",
+  "title": "Irregular Verbs – Teil 4 (S–W)",
+  "description": "Unregelmäßige Verben aus dem Schulbuch: show bis write",
+  "type": "irregular-verbs",
+  "items": [
+    { "infinitive": "show",       "simplePast": "showed",        "pastParticiple": "shown",        "german": "zeigen" },
+    { "infinitive": "sing",       "simplePast": "sang",          "pastParticiple": "sung",         "german": "singen" },
+    { "infinitive": "sit",        "simplePast": "sat",           "pastParticiple": "sat",          "german": "sitzen" },
+    { "infinitive": "sleep",      "simplePast": "slept",         "pastParticiple": "slept",        "german": "schlafen" },
+    { "infinitive": "smell",      "simplePast": "smelt/smelled", "pastParticiple": "smelt/smelled","german": "riechen, duften" },
+    { "infinitive": "speak",      "simplePast": "spoke",         "pastParticiple": "spoken",       "german": "sprechen" },
+    { "infinitive": "spell",      "simplePast": "spelt/spelled", "pastParticiple": "spelt/spelled","german": "buchstabieren" },
+    { "infinitive": "spend",      "simplePast": "spent",         "pastParticiple": "spent",        "german": "ausgeben, verbringen" },
+    { "infinitive": "stand",      "simplePast": "stood",         "pastParticiple": "stood",        "german": "stehen" },
+    { "infinitive": "steal",      "simplePast": "stole",         "pastParticiple": "stolen",       "german": "stehlen" },
+    { "infinitive": "swim",       "simplePast": "swam",          "pastParticiple": "swum",         "german": "schwimmen" },
+    { "infinitive": "take",       "simplePast": "took",          "pastParticiple": "taken",        "german": "nehmen" },
+    { "infinitive": "teach",      "simplePast": "taught",        "pastParticiple": "taught",       "german": "unterrichten, lehren, beibringen" },
+    { "infinitive": "tell",       "simplePast": "told",          "pastParticiple": "told",         "german": "erzählen" },
+    { "infinitive": "think",      "simplePast": "thought",       "pastParticiple": "thought",      "german": "(nach)denken, glauben" },
+    { "infinitive": "throw",      "simplePast": "threw",         "pastParticiple": "thrown",       "german": "werfen" },
+    { "infinitive": "understand", "simplePast": "understood",    "pastParticiple": "understood",   "german": "verstehen" },
+    { "infinitive": "wake",       "simplePast": "woke",          "pastParticiple": "woken",        "german": "wecken, aufwachen" },
+    { "infinitive": "wear",       "simplePast": "wore",          "pastParticiple": "worn",         "german": "anhaben, tragen" },
+    { "infinitive": "win",        "simplePast": "won",           "pastParticiple": "won",          "german": "gewinnen, siegen" },
+    { "infinitive": "write",      "simplePast": "wrote",         "pastParticiple": "written",      "german": "schreiben" }
+  ]
+}

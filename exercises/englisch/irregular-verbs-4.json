@@ -1,0 +1,29 @@
+{
+  "id": "eng-irreg-4",
+  "title": "Irregular Verbs – Teil 3 (L–S)",
+  "description": "Unregelmäßige Verben aus dem Schulbuch: learn bis shine",
+  "type": "irregular-verbs",
+  "items": [
+    { "infinitive": "learn",  "simplePast": "learnt/learned", "pastParticiple": "learnt/learned", "german": "lernen" },
+    { "infinitive": "leave",  "simplePast": "left",           "pastParticiple": "left",           "german": "(ver)lassen" },
+    { "infinitive": "let",    "simplePast": "let",            "pastParticiple": "let",            "german": "lassen" },
+    { "infinitive": "lie",    "simplePast": "lay",            "pastParticiple": "lain",           "german": "liegen" },
+    { "infinitive": "lose",   "simplePast": "lost",           "pastParticiple": "lost",           "german": "verlieren" },
+    { "infinitive": "make",   "simplePast": "made",           "pastParticiple": "made",           "german": "machen, tun" },
+    { "infinitive": "mean",   "simplePast": "meant",          "pastParticiple": "meant",          "german": "bedeuten, meinen" },
+    { "infinitive": "meet",   "simplePast": "met",            "pastParticiple": "met",            "german": "treffen" },
+    { "infinitive": "pay",    "simplePast": "paid",           "pastParticiple": "paid",           "german": "(be)zahlen" },
+    { "infinitive": "put",    "simplePast": "put",            "pastParticiple": "put",            "german": "legen, setzen, stellen" },
+    { "infinitive": "read",   "simplePast": "read",           "pastParticiple": "read",           "german": "lesen" },
+    { "infinitive": "ride",   "simplePast": "rode",           "pastParticiple": "ridden",         "german": "fahren, reiten" },
+    { "infinitive": "ring",   "simplePast": "rang",           "pastParticiple": "rung",           "german": "klingeln, läuten" },
+    { "infinitive": "run",    "simplePast": "ran",            "pastParticiple": "run",            "german": "laufen, rennen" },
+    { "infinitive": "say",    "simplePast": "said",           "pastParticiple": "said",           "german": "sagen" },
+    { "infinitive": "see",    "simplePast": "saw",            "pastParticiple": "seen",           "german": "sehen" },
+    { "infinitive": "sell",   "simplePast": "sold",           "pastParticiple": "sold",           "german": "verkaufen" },
+    { "infinitive": "send",   "simplePast": "sent",           "pastParticiple": "sent",           "german": "senden, verschicken" },
+    { "infinitive": "set",    "simplePast": "set",            "pastParticiple": "set",            "german": "setzen, einrichten" },
+    { "infinitive": "sew",    "simplePast": "sewed",          "pastParticiple": "sewn/sewed",     "german": "nähen" },
+    { "infinitive": "shine",  "simplePast": "shone",          "pastParticiple": "shone",          "german": "scheinen" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "eng-irreg-1",
+  "title": "Irregular Verbs – Set 1",
+  "description": "Häufige unregelmäßige Verben: Infinitiv, Simple Past und Past Participle",
+  "type": "irregular-verbs",
+  "items": [
+    { "infinitive": "go", "simplePast": "went", "pastParticiple": "gone", "german": "gehen" },
+    { "infinitive": "come", "simplePast": "came", "pastParticiple": "come", "german": "kommen" },
+    { "infinitive": "see", "simplePast": "saw", "pastParticiple": "seen", "german": "sehen" },
+    { "infinitive": "do", "simplePast": "did", "pastParticiple": "done", "german": "tun/machen" },
+    { "infinitive": "get", "simplePast": "got", "pastParticiple": "got", "german": "bekommen" },
+    { "infinitive": "make", "simplePast": "made", "pastParticiple": "made", "german": "machen" },
+    { "infinitive": "know", "simplePast": "knew", "pastParticiple": "known", "german": "wissen/kennen" },
+    { "infinitive": "take", "simplePast": "took", "pastParticiple": "taken", "german": "nehmen" },
+    { "infinitive": "give", "simplePast": "gave", "pastParticiple": "given", "german": "geben" },
+    { "infinitive": "find", "simplePast": "found", "pastParticiple": "found", "german": "finden" },
+    { "infinitive": "think", "simplePast": "thought", "pastParticiple": "thought", "german": "denken" },
+    { "infinitive": "say", "simplePast": "said", "pastParticiple": "said", "german": "sagen" },
+    { "infinitive": "write", "simplePast": "wrote", "pastParticiple": "written", "german": "schreiben" },
+    { "infinitive": "eat", "simplePast": "ate", "pastParticiple": "eaten", "german": "essen" },
+    { "infinitive": "drink", "simplePast": "drank", "pastParticiple": "drunk", "german": "trinken" },
+    { "infinitive": "run", "simplePast": "ran", "pastParticiple": "run", "german": "laufen" },
+    { "infinitive": "swim", "simplePast": "swam", "pastParticiple": "swum", "german": "schwimmen" },
+    { "infinitive": "sing", "simplePast": "sang", "pastParticiple": "sung", "german": "singen" },
+    { "infinitive": "buy", "simplePast": "bought", "pastParticiple": "bought", "german": "kaufen" },
+    { "infinitive": "bring", "simplePast": "brought", "pastParticiple": "brought", "german": "bringen" }
+  ]
+}
