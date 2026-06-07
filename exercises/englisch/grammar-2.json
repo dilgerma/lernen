@@ -1,0 +1,30 @@
+{
+  "id": "eng-grammar-question-tags",
+  "title": "Unit 1 – G2: Question tags (Bestätigungsfragen)",
+  "description": "Ergänze die passende Bestätigungsfrage am Ende des Satzes",
+  "type": "vocabulary",
+  "items": [
+    { "question": "You're feeling nervous, ___ you?", "answers": ["aren't"] },
+    { "question": "Emily isn't going to watch a movie, ___ she?", "answers": ["is"] },
+    { "question": "Emily and Madison can be friends, ___ they?", "answers": ["can't"] },
+    { "question": "Madison is a nice girl, ___ she?", "answers": ["isn't"] },
+    { "question": "They are watching the race, ___ they?", "answers": ["aren't"] },
+    { "question": "She can swim very well, ___ she?", "answers": ["can't"] },
+    { "question": "He isn't at home, ___ he?", "answers": ["is"] },
+    { "question": "I'm in your team, ___ I?", "answers": ["aren't"] },
+    { "question": "Aunt Amy knows a lot about horses, ___ she?", "answers": ["doesn't"] },
+    { "question": "We talked about this last week, ___ we?", "answers": ["didn't"] },
+    { "question": "We often have a little party after the race, ___ we?", "answers": ["don't"] },
+    { "question": "Ryan and Mike had a lot of fun, ___ they?", "answers": ["didn't"] },
+    { "question": "We've got a good horse, ___ we?", "answers": ["haven't"] },
+    { "question": "Mr. Gibson played an interesting song in class, ___ he?", "answers": ["didn't"] },
+    { "question": "Its title was 'I want it all', ___ it?", "answers": ["wasn't"] },
+    { "question": "We're going to work on our project, ___ we?", "answers": ["aren't"] },
+    { "question": "You already have some ideas, ___ you?", "answers": ["don't"] },
+    { "question": "Positiver Hauptsatz → Bestätigungsfrage ist ...", "answers": ["negativ", "verneinend"] },
+    { "question": "Negativer Hauptsatz → Bestätigungsfrage ist ...", "answers": ["positiv", "bejahend"] },
+    { "question": "Hauptsatz mit 'can' → Bestätigungsfrage mit ...", "answers": ["can't", "cannot"] },
+    { "question": "Hauptsatz im simple present → Bestätigungsfrage mit ...", "answers": ["do/does", "don't/doesn't"] },
+    { "question": "Hauptsatz im simple past → Bestätigungsfrage mit ...", "answers": ["did", "didn't"] }
+  ]
+}

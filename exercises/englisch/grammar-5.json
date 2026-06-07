@@ -1,0 +1,28 @@
+{
+  "id": "eng-grammar-preposition-questions",
+  "title": "Unit 1 – G3: Fragen mit Präpositionen (Questions with prepositions)",
+  "description": "Bilde Fragen mit Präpositionen – die Präposition steht am Ende der Frage",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Fragen mit Präpositionen: Die Präposition steht am ___ der Frage.", "answers": ["Ende"] },
+    { "question": "I'm worried about the race. → What are you worried ___?", "answers": ["about"] },
+    { "question": "She's talking about her friend. → What is she talking ___?", "answers": ["about"] },
+    { "question": "He's thinking about school. → What is he thinking ___?", "answers": ["about"] },
+    { "question": "I'm waiting for the bus. → What are you waiting ___?", "answers": ["for"] },
+    { "question": "She's looking for her keys. → What is she looking ___?", "answers": ["for"] },
+    { "question": "They're listening to music. → What are they listening ___?", "answers": ["to"] },
+    { "question": "He's talking to his teacher. → Who is he talking ___?", "answers": ["to"] },
+    { "question": "She's looking at the picture. → What is she looking ___?", "answers": ["at"] },
+    { "question": "I'm scared of spiders. → What are you scared ___?", "answers": ["of"] },
+    { "question": "She's proud of her sister. → Who is she proud ___?", "answers": ["of"] },
+    { "question": "He's interested in sports. → What is he interested ___?", "answers": ["in"] },
+    { "question": "They're good at Maths. → What are they good ___?", "answers": ["at"] },
+    { "question": "I care about my friends. → Who do you care ___?", "answers": ["about"] },
+    { "question": "to worry about → Frage: What are you worried ___?", "answers": ["about"] },
+    { "question": "to be scared of → Frage: What are you scared ___?", "answers": ["of"] },
+    { "question": "to be good at → Frage: What are you good ___?", "answers": ["at"] },
+    { "question": "to be interested in → Frage: What are you interested ___?", "answers": ["in"] },
+    { "question": "to look for → Frage: What are you looking ___?", "answers": ["for"] },
+    { "question": "to listen to → Frage: What are you listening ___?", "answers": ["to"] }
+  ]
+}

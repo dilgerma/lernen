@@ -1,0 +1,28 @@
+{
+  "id": "eng-grammar-comparisons-2",
+  "title": "Unit 2 – G5: Vergleiche mit Adjektiven (as...as / not as...as / than)",
+  "description": "Gleich oder verschieden: Vergleiche mit 'as...as', 'not as...as' und Komparativ + 'than'",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Wales ___ as big as England. (nicht)", "answers": ["isn't", "is not"] },
+    { "question": "Wales is bigger ___ Northern Ireland.", "answers": ["than"] },
+    { "question": "Mount Snowdon ___ as high as Ben Nevis.", "answers": ["isn't", "is not"] },
+    { "question": "The River Trent is about ___ long ___ the River Isar.", "answers": ["as...as", "as long as"] },
+    { "question": "The River Severn is ___ long ___ the River Neckar.", "answers": ["as...as", "as long as"] },
+    { "question": "Gleich → Struktur auf Englisch", "answers": ["as + Grundform + as"] },
+    { "question": "Ungleich → Struktur auf Englisch", "answers": ["Komparativ + than"] },
+    { "question": "genauso groß wie → ___", "answers": ["as big as"] },
+    { "question": "nicht so groß wie → ___", "answers": ["not as big as"] },
+    { "question": "größer als → ___", "answers": ["bigger than"] },
+    { "question": "kleiner als → ___", "answers": ["smaller than"] },
+    { "question": "genauso schnell wie → ___", "answers": ["as fast as"] },
+    { "question": "langsamer als → ___", "answers": ["slower than"] },
+    { "question": "as big as → Deutsch", "answers": ["genauso groß wie", "so groß wie"] },
+    { "question": "not as high as → Deutsch", "answers": ["nicht so hoch wie"] },
+    { "question": "longer than → Deutsch", "answers": ["länger als"] },
+    { "question": "Hook Lane is ___ busy ___ London Road. (nicht so ... wie)", "answers": ["not as...as", "not as busy as"] },
+    { "question": "London Road is the ___ road of the three. (busiest)", "answers": ["busiest", "the busiest"] },
+    { "question": "Luke is tall. Holly is ___ . But Olivia is the ___ of the three.", "answers": ["taller...tallest"] },
+    { "question": "It was ___ than I thought. (easier)", "answers": ["easier"] }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "eng-grammar-going-to",
+  "title": "Unit 1 – G1: going-to future",
+  "description": "Bilde das going-to future: Ergänze am/is/are oder isn't/aren't in den Lücken",
+  "type": "vocabulary",
+  "items": [
+    { "question": "I ___ going to visit my friend.", "answers": ["am"] },
+    { "question": "She ___ going to watch a movie.", "answers": ["is"] },
+    { "question": "They ___ going to play football.", "answers": ["are"] },
+    { "question": "He ___ going to practice for the race.", "answers": ["is"] },
+    { "question": "We ___ going to go to the mall.", "answers": ["are"] },
+    { "question": "You ___ going to meet their daughter.", "answers": ["are"] },
+    { "question": "Mom's friends ___ going to visit with their daughter.", "answers": ["are"] },
+    { "question": "Emily ___ going to practice for the barrel race. (Verneinung)", "answers": ["isn't", "is not"] },
+    { "question": "They ___ going to visit this week. (Verneinung)", "answers": ["aren't", "are not"] },
+    { "question": "He ___ going to be at school today. (Verneinung)", "answers": ["isn't", "is not"] },
+    { "question": "___ you going to the movie theater? (Frage)", "answers": ["Are"] },
+    { "question": "___ she going to come to the party? (Frage)", "answers": ["Is"] },
+    { "question": "___ I going to need a ticket? (Frage)", "answers": ["Am"] },
+    { "question": "___ they going to practice today? (Frage)", "answers": ["Are"] },
+    { "question": "We're going to ___ Minneapolis next week. (besuchen)", "answers": ["visit"] },
+    { "question": "I'm going to ___ my brother at the station. (treffen)", "answers": ["meet"] },
+    { "question": "going-to future: Hilfsverb für 'I'", "answers": ["am"] },
+    { "question": "going-to future: Hilfsverb für 'she/he/it'", "answers": ["is"] },
+    { "question": "going-to future: Hilfsverb für 'we/you/they'", "answers": ["are"] },
+    { "question": "going-to future Verneinung: she → ___", "answers": ["isn't", "is not"] },
+    { "question": "going-to future Verneinung: they → ___", "answers": ["aren't", "are not"] }
+  ]
+}

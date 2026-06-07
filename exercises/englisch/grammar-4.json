@@ -1,0 +1,27 @@
+{
+  "id": "eng-grammar-comparisons",
+  "title": "Unit 2 – G5: Vergleiche mit Adjektiven (as...as / than)",
+  "description": "Vergleiche mit 'as...as' und Komparativ + 'than'",
+  "type": "vocabulary",
+  "items": [
+    { "question": "genauso lang wie → ___", "answers": ["as long as"] },
+    { "question": "nicht so groß wie → ___", "answers": ["not as big as", "isn't as big as"] },
+    { "question": "größer als → ___", "answers": ["bigger than"] },
+    { "question": "The River Severn is ___ long ___ the River Neckar. (genauso lang)", "answers": ["as...as", "as long as"] },
+    { "question": "Wales ___ as big as England. (nicht)", "answers": ["isn't", "is not"] },
+    { "question": "Ben Nevis is ___ than Mount Snowdon. (höher)", "answers": ["higher"] },
+    { "question": "Northern Ireland is ___ than Wales. (kleiner)", "answers": ["smaller"] },
+    { "question": "Hook Lane is not ___ busy ___ London Road.", "answers": ["as...as", "as busy as"] },
+    { "question": "Gleich → Struktur: ___ + Grundform + ___", "answers": ["as...as"] },
+    { "question": "Verschieden (größer) → Struktur: Komparativ + ___", "answers": ["than"] },
+    { "question": "as long as → Deutsch", "answers": ["genauso lang wie", "so lang wie"] },
+    { "question": "bigger than → Deutsch", "answers": ["größer als"] },
+    { "question": "not as big as → Deutsch", "answers": ["nicht so groß wie"] },
+    { "question": "higher than → Deutsch", "answers": ["höher als"] },
+    { "question": "as fast as → Deutsch", "answers": ["genauso schnell wie", "so schnell wie"] },
+    { "question": "cheaper than → Deutsch", "answers": ["billiger als", "günstiger als"] },
+    { "question": "not as expensive as → Deutsch", "answers": ["nicht so teuer wie"] },
+    { "question": "London Road is the ___ of the three. (busiest)", "answers": ["busiest", "the busiest"] },
+    { "question": "Olivia is the ___ of the three. (tallest)", "answers": ["tallest", "the tallest"] }
+  ]
+}

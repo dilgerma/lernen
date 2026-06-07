@@ -1,0 +1,28 @@
+{
+  "id": "eng-grammar-prepositions-2",
+  "title": "Unit 2 – G3: Fragen mit Präpositionen (Verben + Präpositionen)",
+  "description": "Spezifische Verb+Präposition-Kombinationen: come from, wait for, think of, look at ...",
+  "type": "vocabulary",
+  "items": [
+    { "question": "to come from → Frage: Where do you come ___?", "answers": ["from"] },
+    { "question": "to wait for → Frage: What are you waiting ___?", "answers": ["for"] },
+    { "question": "to think of/about → Frage: What are you thinking ___?", "answers": ["of", "about"] },
+    { "question": "to look at → Frage: What is she looking ___?", "answers": ["at"] },
+    { "question": "to talk to → Frage: Who is he talking ___?", "answers": ["to"] },
+    { "question": "to write to → Frage: Who is she writing ___?", "answers": ["to"] },
+    { "question": "to listen to → Frage: What are they listening ___?", "answers": ["to"] },
+    { "question": "to be from → Frage: Where ___ he from?", "answers": ["is"] },
+    { "question": "She's waiting for the bus. → What is she waiting ___?", "answers": ["for"] },
+    { "question": "He comes from Iowa. → Where does he come ___?", "answers": ["from"] },
+    { "question": "He's from Decorah. → Where ___ he from?", "answers": ["is"] },
+    { "question": "you / think / Christmas → What ___ you thinking of?", "answers": ["are"] },
+    { "question": "Madison / look / magazine → What ___ Madison looking at?", "answers": ["is"] },
+    { "question": "you / wait / cousin → Who ___ you waiting for?", "answers": ["are"] },
+    { "question": "Ryan / talk / Emily's hat → What is Ryan talking ___?", "answers": ["about"] },
+    { "question": "Emily / talk / aunt → Who is Emily talking ___?", "answers": ["to"] },
+    { "question": "Emily / write / Dave → Who is Emily writing ___?", "answers": ["to"] },
+    { "question": "Präpositionen stehen in Fragen immer ___ dem Verb.", "answers": ["hinter", "nach"] },
+    { "question": "Im Englischen: 'What are you worried ___?' (über)", "answers": ["about"] },
+    { "question": "Im Englischen: 'Who does this belong ___?' (zu)", "answers": ["to"] }
+  ]
+}
