@@ -1,0 +1,32 @@
+{
+  "id": "eng-vocab-media-collocations",
+  "title": "Unit 5 – Practice Pool 1: Media Collocations",
+  "description": "Welche Verben passen zu welchen Nomen? Media collocations aus dem Tony-Text",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Tony ___ his text messages all the time. (überprüfen)", "answers": ["checks"] },
+    { "question": "He loves ___ his friends during lessons. (Nachrichten schreiben)", "answers": ["texting"] },
+    { "question": "He sends and ___ text messages. (empfangen)", "answers": ["receives"] },
+    { "question": "Tony has ___ a popular social network. (beigetreten)", "answers": ["joined"] },
+    { "question": "He often ___ photos on Mousebook. (veröffentlichen)", "answers": ["posts"] },
+    { "question": "He ___ his profile on Mousebook. (verändern)", "answers": ["changes"] },
+    { "question": "He ___ his profile to see updates. (überprüfen)", "answers": ["checks"] },
+    { "question": "It's important for Tony to stay in ___ with his friends.", "answers": ["touch"] },
+    { "question": "He often talks to them on video ___.", "answers": ["chat"] },
+    { "question": "At weekends, he often plays ___ games.", "answers": ["video"] },
+    { "question": "He takes ___ in discussions online.", "answers": ["part"] },
+    { "question": "stay in touch → Deutsch", "answers": ["in Kontakt bleiben"] },
+    { "question": "take part in → Deutsch", "answers": ["teilnehmen an", "mitmachen bei"] },
+    { "question": "to post photos → Deutsch", "answers": ["Fotos hochladen", "Fotos posten"] },
+    { "question": "to join a social network → Deutsch", "answers": ["einem sozialen Netzwerk beitreten", "einem Netzwerk beitreten"] },
+    { "question": "Welche 2 Verben passen zu 'profile'?", "answers": ["change and check", "check and change", "change, check", "check, change"] },
+    { "question": "___ text messages (schicken)", "answers": ["send"] },
+    { "question": "___ text messages (empfangen)", "answers": ["receive"] },
+    { "question": "___ a social network (beitreten)", "answers": ["join"] },
+    { "question": "___ photos (hochladen/posten)", "answers": ["post"] },
+    { "question": "take part ___ discussions (Präposition)", "answers": ["in"] },
+    { "question": "stay in touch ___ somebody (Präposition)", "answers": ["with"] },
+    { "question": "talk ___ video chat (Präposition)", "answers": ["on"] },
+    { "question": "chat ___ someone (Präposition)", "answers": ["with"] }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-information-desk-directions",
+  "title": "Focus 2: At the Information Desk (Wegbeschreibung / Prepositions)",
+  "description": "Prepositions, directions, and travel vocabulary at St Pancras Station, London",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Bastian arrived ___ St Pancras Station. (Präposition)", "answers": ["at"] },
+    { "question": "They came from Cologne ___ train. (Transportmittel – Präposition)", "answers": ["by"] },
+    { "question": "They went to find out how to ___ their hotel. (ankommen)", "answers": ["get to"] },
+    { "question": "The hotel is ___ Curzon Street. (Straße – Präposition)", "answers": ["in"] },
+    { "question": "It's ___ Green Park. (in der Nähe – Präposition)", "answers": ["near", "at"] },
+    { "question": "You can ___ the Tube to Green Park Station. (nehmen)", "answers": ["take"] },
+    { "question": "There's a lift which ___ down to the platforms.", "answers": ["goes"] },
+    { "question": "All trains to the south leave ___ Platform 4. (Präposition)", "answers": ["from"] },
+    { "question": "And when does the train ___? (Simple Present Frage)", "answers": ["leave"] },
+    { "question": "The trains leave every 2–3 ___.", "answers": ["minutes"] },
+    { "question": "Don't leave your ___ unattended. (Gepäck)", "answers": ["luggage"] },
+    { "question": "Can you tell me ___ to get to our hotel? (wie)", "answers": ["how"] },
+    { "question": "travel ___ bus/train/car (Transportmittel – Präposition)", "answers": ["by"] },
+    { "question": "arrive ___ the station (Präposition)", "answers": ["at"] },
+    { "question": "the hotel is ___ Baker Street (Straße – Präposition)", "answers": ["in"] },
+    { "question": "Gepäck → Englisch", "answers": ["luggage"] },
+    { "question": "Bahnsteig → Englisch", "answers": ["platform"] },
+    { "question": "Auskunftsschalter → Englisch", "answers": ["information desk"] },
+    { "question": "Aufzug → Englisch (im Bahnhof)", "answers": ["lift"] },
+    { "question": "Linie (U-Bahn) → on the Victoria ___ (Präposition + Nomen)", "answers": ["Line"] }
+  ]
+}

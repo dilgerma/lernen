@@ -121,6 +121,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
         <div class="text-blue-300/40 text-xs font-bold mt-0.5">
           Wort <span id="vt-cur">1</span> / <span id="vt-tot">?</span>
         </div>
+        <div id="vt-desc" class="text-blue-300/35 text-xs mt-1 font-semibold italic leading-tight max-w-xs"></div>
       </div>
       <div id="vt-timer" class="font-bold text-blue-300/50 text-sm flex-shrink-0" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
     </div>
@@ -172,6 +173,56 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
       <div id="tt-ref" class="mt-2 text-blue-300/35 text-sm italic leading-relaxed card rounded p-3"></div>
     </details>
     <button class="btn btn-blue w-full rounded-lg py-4 text-base" onclick="submitTrans()">ÜBERSETZUNG ABGEBEN</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     SCREEN 3C – IRREGULAR VERBS
+     ════════════════════════════════════ -->
+<div id="s-iverb" class="screen">
+  <div class="max-w-xl mx-auto px-4 py-5 fade-up">
+    <div class="flex items-center justify-between mb-4">
+      <button class="btn btn-ghost rounded px-3 py-2 text-xs" onclick="cancelEx()">✕ Stopp</button>
+      <div class="text-center flex-1 px-2">
+        <div id="iv-title" class="font-bold text-white text-xs uppercase tracking-wide leading-tight"></div>
+        <div class="text-blue-300/40 text-xs font-bold mt-0.5">
+          Verb <span id="iv-cur">1</span> / <span id="iv-tot">?</span>
+        </div>
+      </div>
+      <div id="iv-timer" class="font-bold text-blue-300/50 text-sm flex-shrink-0" style="font-variant-numeric:tabular-nums">⏱ 00:00</div>
+    </div>
+
+    <div class="h-2 bg-gray-800/80 rounded-full mb-5 overflow-hidden">
+      <div id="iv-bar" class="xp-fill h-full rounded-full" style="width:0%;transition:width .3s ease"></div>
+    </div>
+
+    <div class="flex justify-center gap-8 mb-4">
+      <div class="text-center"><div id="iv-ok" class="text-2xl sm:text-3xl font-black" style="color:#00ff88">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Richtig</div></div>
+      <div class="text-center"><div id="iv-bad" class="text-2xl sm:text-3xl font-black" style="color:#ff3355">0</div><div class="text-xs text-blue-300/40 uppercase font-bold">Falsch</div></div>
+    </div>
+
+    <div class="card rounded-xl p-6 sm:p-8 mb-4 text-center">
+      <div class="text-xs text-blue-300/30 uppercase font-bold mb-1 tracking-wider">Deutsch</div>
+      <div id="iv-german" class="q-word mb-3"></div>
+      <div class="text-xs text-blue-300/30 uppercase font-bold mb-1 tracking-wider">Infinitiv</div>
+      <div id="iv-infinitive" class="text-2xl sm:text-3xl font-black text-blue-200"></div>
+    </div>
+
+    <div class="card rounded-xl p-4 mb-4 flex flex-col gap-3">
+      <div>
+        <div class="text-xs text-blue-300/30 uppercase font-bold mb-1 tracking-wider">Simple Past</div>
+        <input id="iv-past" class="ans-input" type="text" placeholder="Simple Past…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <div id="iv-past-fb" class="mt-1 text-sm font-black" style="min-height:1.2rem"></div>
+      </div>
+      <div>
+        <div class="text-xs text-blue-300/30 uppercase font-bold mb-1 tracking-wider">Past Participle</div>
+        <input id="iv-pp" class="ans-input" type="text" placeholder="Past Participle…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <div id="iv-pp-fb" class="mt-1 text-sm font-black" style="min-height:1.2rem"></div>
+      </div>
+    </div>
+
+    <button class="btn btn-blue w-full rounded-lg py-4 text-base" onclick="checkIrregularVerb()">PRÜFEN</button>
+    <p class="text-xs text-center text-blue-300/20 mt-2 font-semibold">Enter zum Bestätigen</p>
   </div>
 </div>
 
@@ -415,6 +466,8 @@ async function goExList() {
 
       const typeBadge = ex.type === 'vocabulary'
         ? '<span style="background:rgba(0,212,255,.12);color:#00d4ff;border:1px solid rgba(0,212,255,.3)" class="rounded px-2 py-0.5 text-xs font-black uppercase">VOKABELN</span>'
+        : ex.type === 'irregular-verbs'
+        ? '<span style="background:rgba(160,80,255,.12);color:#c084fc;border:1px solid rgba(160,80,255,.3)" class="rounded px-2 py-0.5 text-xs font-black uppercase">UNREGELMÄSSIGE VERBEN</span>'
         : '<span style="background:rgba(255,150,0,.12);color:#ff9800;border:1px solid rgba(255,150,0,.3)" class="rounded px-2 py-0.5 text-xs font-black uppercase">ÜBERSETZUNG</span>';
       const cntBadge = ex.itemCount
         ? `<span style="background:rgba(0,212,255,.08);color:rgba(0,212,255,.5)" class="rounded px-2 py-0.5 text-xs font-bold ml-1">${ex.itemCount} Wörter</span>`
@@ -450,7 +503,9 @@ async function loadEx(summary) {
   try {
     const {exercise: ex} = await req('GET',`/api/exercises/${subj.id}/${summary.filename}`);
     exercise = ex;
-    ex.type === 'vocabulary' ? startVocab() : startTrans();
+    if (ex.type === 'vocabulary') startVocab();
+    else if (ex.type === 'irregular-verbs') startIrregularVerbs();
+    else startTrans();
   } catch(e) { toast('❌','Fehler',e.message,'#ff3355'); }
 }
 
@@ -472,6 +527,7 @@ function startVocab() {
   vIdx=0; vOk=0; vBad=0; vWaiting=false;
   document.getElementById('vt-title').textContent = exercise.title;
   document.getElementById('vt-tot').textContent = vItems.length;
+  document.getElementById('vt-desc').textContent = exercise.description || '';
   document.getElementById('vt-instr').textContent = (subj?.label || '') + ' → Deutsch';
   show('vocab');
   startClock('vt-timer');
@@ -570,6 +626,86 @@ async function submitTrans() {
   const isOk = score >= (exercise.minimumScore ?? 0.6);
   const scorePercent = Math.round(score * 100);
   await finishEx(elapsedMin(2), isOk ? 1 : 0, 1, scorePercent);
+}
+
+// ── IRREGULAR VERBS ────────────────────
+let ivItems = [], ivIdx = 0, ivOk = 0, ivBad = 0, ivOkForms = 0, ivTotalForms = 0, ivWaiting = false, ivKeyHandler = null;
+
+function startIrregularVerbs() {
+  ivItems = [...exercise.items].sort(() => Math.random() - .5);
+  ivIdx = 0; ivOk = 0; ivBad = 0; ivOkForms = 0; ivTotalForms = 0; ivWaiting = false;
+  document.getElementById('iv-title').textContent = exercise.title;
+  document.getElementById('iv-tot').textContent = ivItems.length;
+  show('iverb');
+  startClock('iv-timer');
+  renderIrregularVerbItem();
+  ivKeyHandler = e => { if (e.key === 'Enter') { e.preventDefault(); ivWaiting ? nextIrregularVerb() : checkIrregularVerb(); } };
+  document.getElementById('iv-past').addEventListener('keydown', ivKeyHandler);
+  document.getElementById('iv-pp').addEventListener('keydown', ivKeyHandler);
+  document.getElementById('iv-past').addEventListener('input', recordActivity);
+  document.getElementById('iv-pp').addEventListener('input', recordActivity);
+  document.getElementById('iv-past').focus();
+}
+
+function renderIrregularVerbItem() {
+  const item = ivItems[ivIdx];
+  document.getElementById('iv-cur').textContent = ivIdx + 1;
+  document.getElementById('iv-german').textContent = item.german;
+  document.getElementById('iv-infinitive').textContent = item.infinitive;
+  ['iv-past','iv-pp'].forEach(id => {
+    const el = document.getElementById(id);
+    el.value = ''; el.disabled = false; el.className = 'ans-input';
+  });
+  document.getElementById('iv-past-fb').textContent = '';
+  document.getElementById('iv-pp-fb').textContent = '';
+  document.getElementById('iv-bar').style.width = (ivIdx / ivItems.length * 100) + '%';
+  ivWaiting = false;
+  document.getElementById('iv-past').focus();
+}
+
+function checkIrregularVerb() {
+  if (ivWaiting) { nextIrregularVerb(); return; }
+  recordActivity();
+  const pastVal = document.getElementById('iv-past').value.trim();
+  const ppVal = document.getElementById('iv-pp').value.trim();
+  if (!pastVal && !ppVal) return;
+  const item = ivItems[ivIdx];
+  const pastOk = norm(pastVal) === norm(item.simplePast);
+  const ppOk = norm(ppVal) === norm(item.pastParticiple);
+  if (pastOk && ppOk) { ivOk++; } else { ivBad++; }
+  ivOkForms += (pastOk ? 1 : 0) + (ppOk ? 1 : 0);
+  ivTotalForms += 2;
+  const setFb = (inputId, fbId, ok, correct) => {
+    document.getElementById(inputId).className = 'ans-input ' + (ok ? 'ok' : 'err');
+    const fb = document.getElementById(fbId);
+    fb.textContent = ok ? '✓' : `✗ ${correct}`;
+    fb.style.color = ok ? '#00ff88' : '#ff3355';
+  };
+  setFb('iv-past', 'iv-past-fb', pastOk, item.simplePast);
+  setFb('iv-pp', 'iv-pp-fb', ppOk, item.pastParticiple);
+  document.getElementById('iv-ok').textContent = ivOk;
+  document.getElementById('iv-bad').textContent = ivBad;
+  document.getElementById('iv-past').disabled = true;
+  document.getElementById('iv-pp').disabled = true;
+  ivWaiting = true;
+  setTimeout(() => { if (ivWaiting) nextIrregularVerb(); }, 2500);
+}
+
+function nextIrregularVerb() {
+  recordActivity();
+  ivWaiting = false; ivIdx++;
+  if (ivIdx >= ivItems.length) { finishIrregularVerbs(); } else { renderIrregularVerbItem(); }
+}
+
+async function finishIrregularVerbs() {
+  stopClock();
+  ['iv-past','iv-pp'].forEach(id => {
+    document.getElementById(id).removeEventListener('keydown', ivKeyHandler);
+    document.getElementById(id).removeEventListener('input', recordActivity);
+  });
+  ivKeyHandler = null;
+  const scorePercent = Math.round(ivOkForms / Math.max(ivTotalForms, 1) * 100);
+  await finishEx(elapsedMin(1), ivOk, ivItems.length, scorePercent);
 }
 
 // ── FINISH & RESULTS ───────────────────

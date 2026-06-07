@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-now-im-12-modal",
+  "title": "Station 2 – Ex 8: Now I'm 12 (Modal Verbs: Past und Present Perfect)",
+  "description": "Modalverb-Ersatzformen im Simple Past und Present Perfect. Mehrere Formate werden akzeptiert – trenne Varianten mit Komma (z.B. 'wasn't able to, wasn't allowed to').",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Now Dave can have a phone. When he was six, he ___ have a phone. (konnte/durfte nicht)", "answers": ["wasn't able to", "wasn't allowed to"] },
+    { "question": "Now Dave can make films on his computer. When he was six, he ___ make films. (konnte nicht)", "answers": ["wasn't able to", "wasn't allowed to"] },
+    { "question": "Now Dave can find information online. When he was six, he ___ find information online. (konnte nicht)", "answers": ["wasn't able to", "wasn't allowed to"] },
+    { "question": "Now Dave can use his dad's tablet. When he was six, he ___ use his dad's tablet. (durfte nicht)", "answers": ["wasn't allowed to", "wasn't able to"] },
+    { "question": "Now Dave writes texts on the computer. When he was six, he ___ write with a pen. (musste)", "answers": ["had to"] },
+    { "question": "Dave ___ had to do a lot of homework today. (Present Perfect Hilfsverb)", "answers": ["has"] },
+    { "question": "Dave has ___ to do a lot of homework. (Present Perfect von 'have to' – Partizip)", "answers": ["had"] },
+    { "question": "That's why he hasn't called Jay ___. (noch nicht)", "answers": ["yet"] },
+    { "question": "Mr Preston ___ been able to fix his tablet. (Present Perfect negativ)", "answers": ["hasn't"] },
+    { "question": "Mr Preston hasn't been ___ to fix his tablet. (können – Partizip)", "answers": ["able"] },
+    { "question": "It's still ___. (kaputt)", "answers": ["broken"] },
+    { "question": "Dave ___ been allowed to go online all day. (Present Perfect negativ)", "answers": ["hasn't"] },
+    { "question": "Dave hasn't been ___ to go online all day. (dürfen – Partizip)", "answers": ["allowed"] },
+    { "question": "He's angry ___ his parents. (Präposition)", "answers": ["with"] },
+    { "question": "Present Perfect von 'have to' (he) → he ___ had to...", "answers": ["has"] },
+    { "question": "Present Perfect negativ von 'be able to' (he) → he ___ been able to...", "answers": ["hasn't"] },
+    { "question": "Present Perfect negativ von 'be allowed to' (he) → he ___ been allowed to...", "answers": ["hasn't"] },
+    { "question": "Technology has ___. (sich verändert – Present Perfect)", "answers": ["changed"] },
+    { "question": "Dave ___ films on his computer when he was six. (make – Simple Past negativ)", "answers": ["couldn't", "wasn't able to"] },
+    { "question": "Remember that technology has ___ too. (sich verändert)", "answers": ["changed"] }
+  ]
+}

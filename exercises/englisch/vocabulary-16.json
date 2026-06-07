@@ -1,0 +1,28 @@
+{
+  "id": "eng-grammar-simple-past-vs-present-perfect",
+  "title": "Revision B: Simple Past vs Present Perfect",
+  "description": "Simple Past und Present Perfect anwenden: Zeitmarker und die richtigen Verbformen einsetzen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "'a week ___' → Zeitmarker für Simple Past", "answers": ["ago"] },
+    { "question": "'___ week' → Zeitmarker für Simple Past", "answers": ["last"] },
+    { "question": "'___' → Zeitmarker für Simple Past (gestern)", "answers": ["yesterday"] },
+    { "question": "'never ... ___' → Zeitmarker für Present Perfect", "answers": ["before"] },
+    { "question": "'___' → Zeitmarker für Present Perfect (schon)", "answers": ["already"] },
+    { "question": "'___' → Zeitmarker für Present Perfect (je)", "answers": ["ever"] },
+    { "question": "'___' → Zeitmarker für Present Perfect (noch nicht)", "answers": ["yet"] },
+    { "question": "Craig ___ back to school after the accident. (come – Present Perfect)", "answers": ["has come"] },
+    { "question": "I've already ___ you three times how it happened. (tell – PP Partizip)", "answers": ["told"] },
+    { "question": "She ___ her homework with her left hand yesterday. (do – Simple Past)", "answers": ["did"] },
+    { "question": "He ___ never experienced a broken arm before this. (have – PP, I/he form)", "answers": ["has"] },
+    { "question": "'already' steht ___ dem Hilfsverb im Present Perfect.", "answers": ["nach", "hinter"] },
+    { "question": "'before' steht am ___ des Satzes im Present Perfect.", "answers": ["Ende"] },
+    { "question": "I ___ my arm a week ago. (Simple Past von 'break')", "answers": ["broke"] },
+    { "question": "I ___ already told you. (Present Perfect Hilfsverb)", "answers": ["have", "'ve"] },
+    { "question": "I ___ never had a broken arm before.", "answers": ["have", "'ve"] },
+    { "question": "I ___ to write with my broken arm yesterday.", "answers": ["tried"] },
+    { "question": "Present Perfect Struktur: ___ + Partizip II", "answers": ["have/has"] },
+    { "question": "'ago' → Deutsch", "answers": ["vor", "... vor"] },
+    { "question": "'already' → Deutsch", "answers": ["schon", "bereits"] }
+  ]
+}

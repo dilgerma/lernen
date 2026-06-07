@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-travel-agent-phrases",
+  "title": "Focus 2: At the Travel Agent's (Reisebüro – Phrasen)",
+  "description": "Nützliche Phrasen im Reisebüro: Assistent und Kundenrollen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Assistent: Hello, what can I do ___ you?", "answers": ["for"] },
+    { "question": "Assistent: How long would you like to ___?", "answers": ["stay"] },
+    { "question": "Assistent: Do you want to go by car, by ___ or by coach?", "answers": ["train"] },
+    { "question": "Assistent: Do you need a ___?", "answers": ["ticket"] },
+    { "question": "Assistent: Would you like to ___ a room/a flat?", "answers": ["book"] },
+    { "question": "Assistent: Enjoy your ___ in Brighton!", "answers": ["stay"] },
+    { "question": "Assistent: If you're ___ sports, it's a good idea to...", "answers": ["into"] },
+    { "question": "Kunde: I'd like to travel to Brighton ___ my friend. (mit)", "answers": ["with"] },
+    { "question": "Kunde: How long ___ it take? (dauern)", "answers": ["does"] },
+    { "question": "Kunde: We ___ two tickets. (brauchen)", "answers": ["need"] },
+    { "question": "Kunde: How much ___ it cost?", "answers": ["does"] },
+    { "question": "Kunde: I think that's too ___. (zu teuer)", "answers": ["expensive"] },
+    { "question": "Kunde: Yes, that's ___. Thank you. (gut/einverstanden)", "answers": ["fine"] },
+    { "question": "We're ___ tennis. (mögen etwas sehr)", "answers": ["into"] },
+    { "question": "buchen → to ___ a room/ticket", "answers": ["book"] },
+    { "question": "Reisebüro → Englisch", "answers": ["travel agent's", "travel agent"] },
+    { "question": "Reisebus → Englisch (nicht car, nicht train)", "answers": ["coach"] },
+    { "question": "Fahrkarte/Ticket → Englisch", "answers": ["ticket"] },
+    { "question": "Over the ___/For two weeks: Zeitangabe bei Buchung", "answers": ["weekend"] },
+    { "question": "einfache Fahrkarte (nicht Hin und zurück) → ___ ticket", "answers": ["single"] }
+  ]
+}

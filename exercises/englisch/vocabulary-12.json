@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-older-modal-activities",
+  "title": "Unit 5 – Practice Pool 5: The older you are... (Doppelter Komparativ)",
+  "description": "Doppelter Komparativ und Modalverben: Aktivitäten früher und heute vergleichen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "The ___ you are, the more you can do. (älter)", "answers": ["older"] },
+    { "question": "The older you are, the ___ you can do. (mehr)", "answers": ["more"] },
+    { "question": "je... desto → auf Englisch: the ___, the ___", "answers": ["the...the"] },
+    { "question": "Als Kind: I ___ able to join a social network. (konnte nicht)", "answers": ["wasn't"] },
+    { "question": "Als Kind: I ___ allowed to watch TV in the evening. (durfte nicht)", "answers": ["wasn't"] },
+    { "question": "Als Kind: I ___ to go to school every day. (musste)", "answers": ["had"] },
+    { "question": "Als Kind: I ___ to do homework every day. (musste)", "answers": ["had"] },
+    { "question": "Als Kind: I ___ able to have a sleepover. (konnte nicht)", "answers": ["wasn't"] },
+    { "question": "Als Kind: I ___ allowed to make models alone. (durfte nicht)", "answers": ["wasn't"] },
+    { "question": "Jetzt: I ___ allowed to join a social network. (darf)", "answers": ["am"] },
+    { "question": "Jetzt: I ___ have to go to school at weekends. (muss nicht)", "answers": ["don't"] },
+    { "question": "Jetzt: I ___ able to have a sleepover. (kann)", "answers": ["am"] },
+    { "question": "Jetzt: I ___ to help my parents in the kitchen. (muss)", "answers": ["have"] },
+    { "question": "go ___: Rad fahren", "answers": ["cycling"] },
+    { "question": "go ___: einkaufen gehen", "answers": ["shopping"] },
+    { "question": "have a ___: Übernachtungsparty", "answers": ["sleepover"] },
+    { "question": "make ___: Modelle bauen", "answers": ["models"] },
+    { "question": "join a social ___: einem sozialen Netzwerk beitreten", "answers": ["network"] },
+    { "question": "As a child I ___ to do my homework. (musste)", "answers": ["had to"] },
+    { "question": "As a child I ___ go cycling alone. (durfte nicht)", "answers": ["wasn't allowed to"] }
+  ]
+}

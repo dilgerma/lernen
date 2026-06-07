@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-fixed-my-modal-past",
+  "title": "Unit 5 – Practice Pool 4+5: The day I fixed my... / Modal Verbs",
+  "description": "Simple Past Fragen bilden und Modalverben: weren't able to, not allowed to, had to",
+  "type": "vocabulary",
+  "items": [
+    { "question": "What ___ you fix? (Simple Past Frage)", "answers": ["did"] },
+    { "question": "___ it belong to you or to someone else? (Simple Past Frage)", "answers": ["Did"] },
+    { "question": "Why ___ you fix it and not buy a new one? (Simple Past Frage)", "answers": ["did"] },
+    { "question": "Where ___ you look for help? (Simple Past Frage)", "answers": ["did"] },
+    { "question": "___ you ask anybody for help? (Simple Past Frage)", "answers": ["Did"] },
+    { "question": "___ it easy to fix? (Simple Past Frage mit 'sein')", "answers": ["Was"] },
+    { "question": "How long ___ it take you? (Simple Past Frage)", "answers": ["did"] },
+    { "question": "___ it still work? (Simple Past Frage mit 'do')", "answers": ["Does"] },
+    { "question": "Simple Past Frage bilden: Hilfsverb für alle Personen (außer 'be')", "answers": ["did"] },
+    { "question": "Simple Past Frage mit 'be': I/he/she/it → ___?", "answers": ["was"] },
+    { "question": "Simple Past Frage mit 'be': we/you/they → ___?", "answers": ["were"] },
+    { "question": "The older you are, the ___ you can do. (mehr)", "answers": ["more"] },
+    { "question": "The ___ you are, the more you can do. (älter)", "answers": ["older"] },
+    { "question": "als Kind: I ___ able to ride a bike. (nicht konnte)", "answers": ["wasn't"] },
+    { "question": "als Kind: I ___ allowed to watch TV after 9pm. (nicht durfte)", "answers": ["wasn't"] },
+    { "question": "als Kind: I ___ to go to bed early. (musste)", "answers": ["had"] },
+    { "question": "heute: I ___ able to drive a car. (kann)", "answers": ["am"] },
+    { "question": "heute: I ___ allowed to stay up late. (darf)", "answers": ["am"] },
+    { "question": "früher vs. heute: weren't able to → heute: ___ able to", "answers": ["are"] },
+    { "question": "früher vs. heute: had to go to bed early → heute: ___ have to", "answers": ["don't"] }
+  ]
+}

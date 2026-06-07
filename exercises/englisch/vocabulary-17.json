@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-pia-strange-boy",
+  "title": "Revision B: Pia's Message – Mixed Verb Forms (Strange Boy)",
+  "description": "Fill in missing words in Pia's TTS message about a strange boy at the tennis court",
+  "type": "vocabulary",
+  "items": [
+    { "question": "What ___ to me last Friday. (Simple Past von 'happen')", "answers": ["happened"] },
+    { "question": "I'm looking ___ someone who can play tennis. (Präposition)", "answers": ["for"] },
+    { "question": "Can you play a ___ of tennis with me? (Spiel)", "answers": ["game"] },
+    { "question": "We went over to the tennis ___. (Platz)", "answers": ["court"] },
+    { "question": "I ___ never ___ a game! (Present Perfect von 'lose')", "answers": ["have...lost", "have never lost"] },
+    { "question": "I'm pretty good ___ tennis. (Präposition)", "answers": ["at"] },
+    { "question": "Soon the ___ was 30:15. (Spielstand)", "answers": ["score"] },
+    { "question": "He ___ on with the game. (weitermachen – Simple Past von 'carry')", "answers": ["carried"] },
+    { "question": "We played ___ it was match ball. (bis)", "answers": ["until"] },
+    { "question": "He ___ at his racquet. (Simple Past von 'look')", "answers": ["looked"] },
+    { "question": "There's something wrong ___ it. (Präposition)", "answers": ["with"] },
+    { "question": "I can't ___ the game. (beenden)", "answers": ["finish", "continue"] },
+    { "question": "The racquet looked perfectly ___. (völlig normal)", "answers": ["normal"] },
+    { "question": "I decided not to say what I ___ at that moment. (dachte)", "answers": ["thought", "was thinking"] },
+    { "question": "Tennisschläger → Englisch", "answers": ["racquet"] },
+    { "question": "Spielstand → Englisch (the ___ was 30:15)", "answers": ["score"] },
+    { "question": "match ball for ___ (für mich)", "answers": ["me"] },
+    { "question": "I'm ___ sports. (begeistert von)", "answers": ["into"] },
+    { "question": "don't take it too ___: nicht zu leicht nehmen", "answers": ["easy"] },
+    { "question": "But then I decided ___ to say what I thought. (Verneinung + Infinitiv)", "answers": ["not"] }
+  ]
+}

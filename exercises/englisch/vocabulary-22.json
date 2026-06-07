@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-letter-agony-aunt-ruby",
+  "title": "Station 2 – Ex 9: Letter to Ruby (Agony Aunt – Modal Substitutes)",
+  "description": "Modalverb-Ersatzformen im Simple Present und Simple Past. Mehrere Formate werden akzeptiert – trenne Varianten mit Komma (z.B. 'can't, am not allowed to').",
+  "type": "vocabulary",
+  "items": [
+    { "question": "On weekdays I ___ spend much time with my friends. (darf nicht / kann nicht)", "answers": ["can't", "am not allowed to"] },
+    { "question": "I ___ be home at 6 o'clock every evening. (muss)", "answers": ["have to"] },
+    { "question": "Another rule is that I ___ stay up after 8 o'clock. (darf nicht)", "answers": ["am not allowed to", "can't"] },
+    { "question": "My big brother ___ stay up as long as he liked. (durfte – Vergangenheit)", "answers": ["was allowed to", "could"] },
+    { "question": "He ___ be at home at any special time. (musste nicht)", "answers": ["didn't have to"] },
+    { "question": "I ___ go to the sleepover because I was too young. (durfte nicht – Vergangenheit)", "answers": ["wasn't allowed to", "couldn't"] },
+    { "question": "We always fight and we ___ find a compromise. (können nicht)", "answers": ["can't", "aren't able to"] },
+    { "question": "I'm a teenager now and I ___ look after myself. (kann)", "answers": ["am able to", "can"] },
+    { "question": "Kompromiss → Englisch", "answers": ["compromise"] },
+    { "question": "auf sich selbst aufpassen → look after ___", "answers": ["myself"] },
+    { "question": "Kummerkastentante → agony ___", "answers": ["aunt"] },
+    { "question": "obwohl → ___", "answers": ["although"] },
+    { "question": "Although I'm thirteen, I feel my parents think I'm a ___. (Baby)", "answers": ["baby"] },
+    { "question": "Sleepover-Party → have a ___", "answers": ["sleepover"] },
+    { "question": "Das ist nicht fair! → It's not ___!", "answers": ["fair"] },
+    { "question": "Please give me some advice ___ I go crazy! (bevor)", "answers": ["before"] },
+    { "question": "I ___ lots of discussions with my parents. (Present Perfect von 'have')", "answers": ["have had", "'ve had"] },
+    { "question": "They make all the ___ and I have to follow them. (Regeln)", "answers": ["rules"] },
+    { "question": "I know my parents worry ___ me. (Präposition)", "answers": ["about"] },
+    { "question": "Diskussionen führen → to ___ discussions", "answers": ["have"] }
+  ]
+}

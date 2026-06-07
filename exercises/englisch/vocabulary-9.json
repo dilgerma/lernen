@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-advice-language",
+  "title": "Unit 5 – Practice Pool 2: Ruby's Advice (Ratschläge geben)",
+  "description": "Vokabular für Ratschläge: Phrasen und Ausdrücke für Tipps und Meinungen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "You ___ talk to your parents about it. (Ratschlag)", "answers": ["should"] },
+    { "question": "You ___ use your phone during lessons. (Verneinung - Ratschlag)", "answers": ["shouldn't", "should not"] },
+    { "question": "Why ___ you ask a teacher for help?", "answers": ["don't"] },
+    { "question": "If I ___ you, I would ask Ruby for advice.", "answers": ["were"] },
+    { "question": "I think it ___ be a good idea to switch off your phone.", "answers": ["might"] },
+    { "question": "Have you ___ talking to your friend about it?", "answers": ["tried"] },
+    { "question": "You could ___ posting less often.", "answers": ["try"] },
+    { "question": "Ruby gives ___ to teenagers with problems.", "answers": ["advice"] },
+    { "question": "An agony ___ answers letters about personal problems.", "answers": ["aunt"] },
+    { "question": "Ratschlag (Substantiv) → Englisch", "answers": ["advice"] },
+    { "question": "Rat geben → Englisch", "answers": ["give advice", "to give advice"] },
+    { "question": "jemandem Rat geben → to give ___ to someone", "answers": ["advice"] },
+    { "question": "I think it's a good idea ___ share your problems with someone.", "answers": ["to"] },
+    { "question": "It's important ___ stay in touch with your friends.", "answers": ["to"] },
+    { "question": "Is that good ___? (Ratschlag - Substantiv)", "answers": ["advice"] },
+    { "question": "Do you ___ with Ruby's advice? (zustimmen)", "answers": ["agree"] },
+    { "question": "Do you ___ with that? (nicht zustimmen)", "answers": ["disagree"] },
+    { "question": "I ___ that's good advice. (Meinung)", "answers": ["think"] },
+    { "question": "In my ___, you should talk to your parents.", "answers": ["opinion"] },
+    { "question": "meiner Meinung nach → in my ___", "answers": ["opinion"] }
+  ]
+}

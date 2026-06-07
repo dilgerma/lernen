@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-linking-words-phone",
+  "title": "Unit 5 – Practice Pool 3: Linking Words – Tony and his Phone",
+  "description": "Verbinde je zwei Sätze mit dem richtigen Bindewort: after, before, as soon as, whenever, because, when",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Welches Bindewort passt? (weil/da)", "answers": ["because"] },
+    { "question": "Welches Bindewort passt? (bevor)", "answers": ["before"] },
+    { "question": "Welches Bindewort passt? (nachdem)", "answers": ["after"] },
+    { "question": "Welches Bindewort passt? (sobald)", "answers": ["as soon as"] },
+    { "question": "Welches Bindewort passt? (wenn/als)", "answers": ["when"] },
+    { "question": "Welches Bindewort passt? (jedes Mal wenn)", "answers": ["whenever"] },
+    { "question": "We often saw each other ___ he got his new smartphone. (bevor)", "answers": ["before"] },
+    { "question": "Tony can't leave his phone alone ___ he's really into texting.", "answers": ["because"] },
+    { "question": "___ I asked him to go to the cinema, he said yes. (als)", "answers": ["When", "As soon as"] },
+    { "question": "He said yes ___ I asked him. (sobald)", "answers": ["as soon as"] },
+    { "question": "You must switch off your phone ___ the film starts. (bevor)", "answers": ["before"] },
+    { "question": "___ Tony heard that, he was shocked. (als)", "answers": ["When", "As soon as"] },
+    { "question": "___ a phone rings at the cinema, it makes people angry. (jedes Mal wenn)", "answers": ["Whenever", "When"] },
+    { "question": "___ Tony plays video games, he doesn't call me. (jedes Mal wenn - Beispiel)", "answers": ["Whenever"] },
+    { "question": "He got a new smartphone for his birthday. We often saw each other ___. → Bindewort am Satzanfang", "answers": ["Before"] },
+    { "question": "The film is starting. You must switch off your phone ___. → Bindewort", "answers": ["before"] },
+    { "question": "Tony can't leave his phone alone. He's really into texting. → Bindewort", "answers": ["because"] },
+    { "question": "Sometimes a phone rings at the cinema. It makes people angry. → Bindewort", "answers": ["whenever", "when"] },
+    { "question": "Tony heard that. He was shocked. → Bindewort", "answers": ["when", "as soon as"] },
+    { "question": "Kausalsatz mit 'weil' → Bindewort", "answers": ["because"] }
+  ]
+}

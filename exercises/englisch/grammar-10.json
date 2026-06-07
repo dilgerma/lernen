@@ -1,0 +1,28 @@
+{
+  "id": "eng-grammar-media-day-linking",
+  "title": "Unit 5 – G12: Media Day (Linking Words – Mediensicherheit)",
+  "description": "Bindewörter in Sätzen über Mediensicherheit und Cybermobbing: because, as soon as, so that, before, whenever, although",
+  "type": "vocabulary",
+  "items": [
+    { "question": "You need to be careful on social networks ___ people on them might be strangers.", "answers": ["because"] },
+    { "question": "You should block someone ___ they send you something that makes you feel bad.", "answers": ["as soon as"] },
+    { "question": "Change your password ___ it's more difficult for people to get into your account.", "answers": ["so that"] },
+    { "question": "___ you add somebody to your friends list, think about whether you really know them.", "answers": ["Before"] },
+    { "question": "Some cyber bullies can be very cruel online ___ they are as bad as nasty people in real life.", "answers": ["because"] },
+    { "question": "___ somebody posts nasty things, they are bullying people.", "answers": ["Whenever"] },
+    { "question": "___ you have anti-virus software, you should still be careful online.", "answers": ["Although"] },
+    { "question": "Luke: Why be careful on social networks? → Answer uses:", "answers": ["because"] },
+    { "question": "Jay: When to block someone? → Answer uses:", "answers": ["as soon as"] },
+    { "question": "Holly: Why change my password? → Answer uses:", "answers": ["so that"] },
+    { "question": "Gwen: What to do before adding a friend? → Answer uses:", "answers": ["before"] },
+    { "question": "Olivia: Somebody posts nasty things – Bindewort:", "answers": ["whenever"] },
+    { "question": "Dave: Anti-virus programme, still be careful? → Answer uses:", "answers": ["although"] },
+    { "question": "Cybermobbing → Englisch", "answers": ["cyberbullying"] },
+    { "question": "jemanden blocken → to ___ somebody", "answers": ["block"] },
+    { "question": "Passwort ändern → to ___ your password", "answers": ["change"] },
+    { "question": "jemanden zu seinen Freunden hinzufügen → to ___ somebody", "answers": ["add"] },
+    { "question": "gemeine Kommentare → ___ comments", "answers": ["nasty"] },
+    { "question": "vorsichtig sein → to be ___", "answers": ["careful"] },
+    { "question": "Antivirenprogramm → Englisch", "answers": ["anti-virus programme"] }
+  ]
+}

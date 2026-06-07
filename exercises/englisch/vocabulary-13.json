@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-scotland-modal-dialogue",
+  "title": "Unit 5 – Practice Pool 6: 'Fun' in Scotland (Modalverben im Dialog)",
+  "description": "Modal substitute forms in context: was/were able to, wasn't/weren't able to, had to",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Holly wanted to visit the castle but she ___. (konnte nicht – zu teuer)", "answers": ["wasn't able to"] },
+    { "question": "But you ___ take some photos of the castle, weren't you? (konntest)", "answers": ["were able to"] },
+    { "question": "Amber and I ___ go shopping on the Royal Mile. (konnten)", "answers": ["were able to"] },
+    { "question": "We ___ go inside the palace. (konnten nicht – zu teuer)", "answers": ["weren't able to"] },
+    { "question": "I ___ go inside old castles. (musste – Eltern)", "answers": ["had to"] },
+    { "question": "You and I ___ go swimming. (konnten nicht)", "answers": ["weren't able to"] },
+    { "question": "We ___ visit all the different sights. (konnten nicht)", "answers": ["weren't able to"] },
+    { "question": "Mum said it was too expensive, so Holly ___ visit the castle.", "answers": ["wasn't able to"] },
+    { "question": "Taking photos is free, so Holly ___ take photos.", "answers": ["was able to"] },
+    { "question": "Dave's parents took him to museums, so he ___ go there.", "answers": ["had to"] },
+    { "question": "The water in Scotland is too cold, so Holly ___ swim.", "answers": ["wasn't able to"] },
+    { "question": "können (Simple Past, I/he/she/it) → positiv", "answers": ["was able to"] },
+    { "question": "können (Simple Past, I/he/she/it) → negativ", "answers": ["wasn't able to"] },
+    { "question": "können (Simple Past, we/you/they) → positiv", "answers": ["were able to"] },
+    { "question": "können (Simple Past, we/you/they) → negativ", "answers": ["weren't able to"] },
+    { "question": "müssen (Simple Past, alle Personen) → ___ to", "answers": ["had"] },
+    { "question": "nicht müssen (Simple Past) → didn't ___ to", "answers": ["have"] },
+    { "question": "That doesn't cost ___. (Es kostet nichts.)", "answers": ["anything"] },
+    { "question": "Holly's mum always said: 'Forget it! No ___!'", "answers": ["swimming"] },
+    { "question": "Holyrood Palace is in ___ (Stadt).", "answers": ["Edinburgh"] }
+  ]
+}

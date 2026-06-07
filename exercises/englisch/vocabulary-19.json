@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-how-can-you-help-advice",
+  "title": "Station 1 – Ex 5: How Can You Help? (Ratschläge geben)",
+  "description": "Ratschläge geben mit should, could, why don't you. Mehrere Antworten werden akzeptiert – trenne Varianten mit Komma (z.B. 'should, could').",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Mr Elliot doesn't understand the instructions. He ___ look for help online. (Ratschlag)", "answers": ["should", "could"] },
+    { "question": "Granny Rose can't find her friends' numbers. She ___ join a social network. (Ratschlag)", "answers": ["should", "could"] },
+    { "question": "Claire doesn't understand her camera. Why ___ she read the instructions? (Vorschlag)", "answers": ["doesn't"] },
+    { "question": "Ratschlag geben (positiv): You ___... (Modalverb)", "answers": ["should", "could"] },
+    { "question": "Vorschlag: Why ___ you...?", "answers": ["don't"] },
+    { "question": "Rat verneint: You ___ do that. (solltest nicht)", "answers": ["shouldn't"] },
+    { "question": "instructions → Deutsch", "answers": ["Anleitung", "Bedienungsanleitung", "Anweisungen"] },
+    { "question": "awful → Deutsch", "answers": ["schrecklich", "furchtbar"] },
+    { "question": "I don't understand ___ word! (keinen einzigen)", "answers": ["a"] },
+    { "question": "I can't find them any ___. (nicht mehr)", "answers": ["more"] },
+    { "question": "Mr Elliot has a problem ___ the instructions. (Präposition)", "answers": ["with"] },
+    { "question": "You ___ find a tutorial on YouTube. (könntest)", "answers": ["could"] },
+    { "question": "She ___ ask someone for help. (sollte)", "answers": ["should"] },
+    { "question": "Why don't you ___ someone for help? (fragen)", "answers": ["ask"] },
+    { "question": "Kamera → camera. Claire doesn't know how to ___ it. (benutzen)", "answers": ["use"] },
+    { "question": "Rat geben → to give ___", "answers": ["advice"] },
+    { "question": "You could ___ for the information online. (suchen)", "answers": ["search", "look"] },
+    { "question": "He ___ watch a video tutorial. (könnte)", "answers": ["could"] },
+    { "question": "If you ___ understand, ask someone. (nicht kannst)", "answers": ["can't"] },
+    { "question": "Where are my ___ numbers? (Telefonnummern)", "answers": ["phone"] }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "eng-grammar-modal-substitutes-past",
+  "title": "Unit 5 – G13: Modalverben Ersatzformen (Simple Past)",
+  "description": "Ersetze die deutschen Modalverben durch englische Ersatzformen im Simple Past",
+  "type": "vocabulary",
+  "items": [
+    { "question": "müssen → Ersatzform (Simple Past, he/she/it)", "answers": ["had to"] },
+    { "question": "dürfen → Ersatzform (Simple Past, I/he/she/it)", "answers": ["was allowed to"] },
+    { "question": "können → Ersatzform (Simple Past, I/he/she/it)", "answers": ["was able to"] },
+    { "question": "dürfen/können → Ersatzform (Simple Past, we/you/they)", "answers": ["were allowed to", "were able to"] },
+    { "question": "müssen/sollen → Ersatzform (Simple Past, we/you/they)", "answers": ["had to"] },
+    { "question": "nicht müssen → Ersatzform (I/he/she/it)", "answers": ["didn't have to"] },
+    { "question": "nicht dürfen (I/he/she/it) → Ersatzform", "answers": ["wasn't allowed to"] },
+    { "question": "nicht können (I/he/she/it) → Ersatzform", "answers": ["wasn't able to"] },
+    { "question": "nicht dürfen (we/you/they) → Ersatzform", "answers": ["weren't allowed to"] },
+    { "question": "nicht können (we/you/they) → Ersatzform", "answers": ["weren't able to"] },
+    { "question": "Dad ___ fix it before Mum came home. (musste)", "answers": ["had to"] },
+    { "question": "But I ___ use his tablet. (durfte)", "answers": ["was allowed to"] },
+    { "question": "I ___ find a helpful website quickly. (konnte)", "answers": ["was able to"] },
+    { "question": "All we ___ do was turn the knob off. (mussten)", "answers": ["had to"] },
+    { "question": "So we ___ solve the problem in 20 minutes. (konnten)", "answers": ["were able to"] },
+    { "question": "Mum ___ use the washing machine when she came home. (konnte)", "answers": ["was able to"] },
+    { "question": "Olivia is ___ to use her parents' computer when she likes. (darf)", "answers": ["allowed"] },
+    { "question": "You aren't ___ to chat with your friends all day. (dürft nicht)", "answers": ["allowed"] },
+    { "question": "He ___ able to find help on the internet. (konnte)", "answers": ["was"] },
+    { "question": "When the boys were four, they ___ able to swim. (konnten nicht)", "answers": ["weren't"] },
+    { "question": "I ___ to show Dad this advice. (musste)", "answers": ["had"] },
+    { "question": "Mr Elliot ___ have to work in the evenings. (musste nicht)", "answers": ["didn't"] }
+  ]
+}

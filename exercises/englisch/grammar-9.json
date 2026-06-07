@@ -1,0 +1,33 @@
+{
+  "id": "eng-grammar-linking-words",
+  "title": "Unit 5 – G12: Adverbialsätze (Linking Words)",
+  "description": "Verbinde Sätze mit den richtigen Bindewörtern: because, so that, although, when, while, before, after, as soon as, whenever, until",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Kausalatz (Grund/weil): Bindewort auf Englisch", "answers": ["because"] },
+    { "question": "Finalsatz (Zweck/damit): Bindewort auf Englisch", "answers": ["so that"] },
+    { "question": "Konzessivsatz (obwohl): Bindewort auf Englisch", "answers": ["although"] },
+    { "question": "Temporalsatz (nachdem): Bindewort", "answers": ["after"] },
+    { "question": "Temporalsatz (sobald): Bindewort", "answers": ["as soon as"] },
+    { "question": "Temporalsatz (bevor): Bindewort", "answers": ["before"] },
+    { "question": "Temporalsatz (bis): Bindewort", "answers": ["until"] },
+    { "question": "Temporalsatz (wenn/als): Bindewort", "answers": ["when"] },
+    { "question": "Temporalsatz (jedes Mal wenn): Bindewort", "answers": ["whenever"] },
+    { "question": "Temporalsatz (während): Bindewort", "answers": ["while"] },
+    { "question": "Carol wrote to an agony aunt ___ she had a problem.", "answers": ["because"] },
+    { "question": "Write to Ruby ___ she can give you advice.", "answers": ["so that"] },
+    { "question": "They had a big fight ___ they were best friends.", "answers": ["although"] },
+    { "question": "___ I spoke to my friend, I felt much better.", "answers": ["After"] },
+    { "question": "Things often get better ___ you talk to somebody.", "answers": ["as soon as"] },
+    { "question": "___ they had an argument, Carol spent a lot of her free time with her friend.", "answers": ["Before"] },
+    { "question": "Never give out your address ___ you've really met someone face-to-face.", "answers": ["until"] },
+    { "question": "Ask your parents ___ you need advice.", "answers": ["when"] },
+    { "question": "___ you want to put photos of other people online, ask them first.", "answers": ["Whenever", "whenever"] },
+    { "question": "Your friend asked for you ___ you were sleeping.", "answers": ["while"] },
+    { "question": "Joe: I like your magazine ___ it's always got interesting news about my favourite stars.", "answers": ["because"] },
+    { "question": "Ginny: I buy TeenLife ___ I get my pocket money from my parents.", "answers": ["as soon as", "when"] },
+    { "question": "___ I read Ruby's advice, I think she really understands our problems. (Lisa)", "answers": ["When", "Whenever"] },
+    { "question": "Michael: Ruby has learned a lot about teenage problems ___ she can help people with her advice.", "answers": ["so that"] },
+    { "question": "Sheila: ___ I didn't like the make-up, I'm going to buy TeenLife again.", "answers": ["Although"] }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-allowed-to-use-media",
+  "title": "Station 1 – Ex 7: Are you allowed to use...? (Medienerlaubnis)",
+  "description": "Darf man...? Fragen und Antworten mit 'be allowed to'. Mehrere Formate werden akzeptiert – trenne Varianten mit Komma.",
+  "type": "vocabulary",
+  "items": [
+    { "question": "___ you allowed to use the TV? (Frage)", "answers": ["Are"] },
+    { "question": "Yes, I ___ allowed to use the TV. (positiv)", "answers": ["am"] },
+    { "question": "No, I ___ allowed to use the TV. (negativ)", "answers": ["am not", "'m not"] },
+    { "question": "Sometimes I ___ allowed to use it. (manchmal)", "answers": ["am"] },
+    { "question": "How long ___ you allowed to use the internet? (Frage)", "answers": ["are"] },
+    { "question": "I'm allowed to use it ___ one hour a day. (für)", "answers": ["for"] },
+    { "question": "___ I allowed to use a smartphone? (Frage 1. Person)", "answers": ["Am"] },
+    { "question": "He ___ allowed to use social networks. (darf nicht)", "answers": ["isn't", "is not"] },
+    { "question": "We ___ allowed to play video games after 9pm. (dürfen nicht)", "answers": ["aren't", "are not"] },
+    { "question": "Anna ___ allowed to use the TV. (darf)", "answers": ["is"] },
+    { "question": "Are you allowed to use a mobile phone ___ school? (in der Schule)", "answers": ["at"] },
+    { "question": "social networks and ___: Foren", "answers": ["forums"] },
+    { "question": "manchmal → ___", "answers": ["sometimes"] },
+    { "question": "How long? → Wie ___?", "answers": ["lange", "long"] },
+    { "question": "Smartphone → a ___", "answers": ["smartphone"] },
+    { "question": "Handy → a mobile ___", "answers": ["phone"] },
+    { "question": "Videospiel → ___ game", "answers": ["video"] },
+    { "question": "DVD → films on ___", "answers": ["DVDs"] },
+    { "question": "Musik-CDs → music ___", "answers": ["CDs"] },
+    { "question": "das Internet → the ___", "answers": ["internet"] }
+  ]
+}

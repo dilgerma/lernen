@@ -1,0 +1,28 @@
+{
+  "id": "eng-vocab-media-categories",
+  "title": "Unit 5: What are they talking about? (Media Categories)",
+  "description": "Ordne die Aussagen den richtigen Medien-Kategorien zu: social network, video game, special interest forum, text message",
+  "type": "vocabulary",
+  "items": [
+    { "question": "'I read about these black holes. Cool!' → Welches Medium?", "answers": ["special interest forum"] },
+    { "question": "'I posted all my holiday photos yesterday.' → Welches Medium?", "answers": ["social network"] },
+    { "question": "'I can collect amazing animal facts in this folder.' → Welches Medium?", "answers": ["special interest forum"] },
+    { "question": "'We're waiting for you at the cinema. Hurry up!' → Welches Medium?", "answers": ["text message"] },
+    { "question": "'Look at my score! I won.' → Welches Medium?", "answers": ["video game"] },
+    { "question": "'It's my turn!' → Welches Medium?", "answers": ["video game"] },
+    { "question": "'I'm at the park. Where are you?' → Welches Medium?", "answers": ["text message"] },
+    { "question": "'I'm not using it any more. A cyber bully posted nasty comments.' → Welches Medium?", "answers": ["social network"] },
+    { "question": "social network → Deutsch", "answers": ["soziales Netzwerk"] },
+    { "question": "special interest forum → Deutsch", "answers": ["Interessenforum", "Themenforum"] },
+    { "question": "text message → Deutsch", "answers": ["Textnachricht", "SMS"] },
+    { "question": "video game → Deutsch", "answers": ["Videospiel", "Computerspiel"] },
+    { "question": "cyber ___ (jemand der andere online mobbt)", "answers": ["bully"] },
+    { "question": "to post ___ (Fotos hochladen)", "answers": ["photos"] },
+    { "question": "folder → Deutsch", "answers": ["Ordner"] },
+    { "question": "nasty ___ (gemeine Kommentare)", "answers": ["comments"] },
+    { "question": "Auf welchem Medium postet man Ferienfotos? (aus dem Text)", "answers": ["social network"] },
+    { "question": "Auf welchem Medium liest man über schwarze Löcher? (aus dem Text)", "answers": ["special interest forum"] },
+    { "question": "'Where are you?' → das ist eine ___ (medium)", "answers": ["text message"] },
+    { "question": "'It's my turn!' → das ist aus einem ___ (medium)", "answers": ["video game"] }
+  ]
+}
