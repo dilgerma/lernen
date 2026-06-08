@@ -18,7 +18,8 @@ INSERT INTO public.player_score DEFAULT VALUES;
 
 CREATE TABLE public.exercise_results (
     id            UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
-    exercise_id   TEXT   and      NOT NULL,
+    exercise_id   TEXT   and
+        NOT NULL,
     subject       TEXT        NOT NULL,
     filename      TEXT        NOT NULL,
     score_percent INTEGER     NOT NULL CHECK (score_percent >= 0 AND score_percent <= 100),
