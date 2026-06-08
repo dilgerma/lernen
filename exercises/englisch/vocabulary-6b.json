@@ -1,0 +1,26 @@
+{
+  "id": "eng-voc-unit1a-p2",
+  "title": "Unit 1 – My friends and I (Teil 1b/2)",
+  "description": "Vokabeln aus Unit 1: Stolz, Berichte und Stadtleben",
+  "type": "vocabulary",
+  "items": [
+    { "question": "proud (of)", "answers": ["stolz (auf)", "stolz"] },
+    { "question": "report", "answers": ["Bericht", "Meldung"] },
+    { "question": "during", "answers": ["während"] },
+    { "question": "actually", "answers": ["tatsächlich", "wirklich", "eigentlich"] },
+    { "question": "barrel", "answers": ["Fass", "Tonne"] },
+    { "question": "race", "answers": ["Wettlauf", "Rennen"] },
+    { "question": "daughter", "answers": ["Tochter"] },
+    { "question": "wheelchair", "answers": ["Rollstuhl"] },
+    { "question": "to teach", "answers": ["unterrichten", "lehren", "beibringen"] },
+    { "question": "to tease sb", "answers": ["jmdn. aufziehen", "jmdn. hänseln", "jmdn. ärgern"] },
+    { "question": "latest", "answers": ["neueste/-r/-s", "neueste", "neuester"] },
+    { "question": "movie", "answers": ["Film"] },
+    { "question": "movie theater", "answers": ["Kino"] },
+    { "question": "bird", "answers": ["Vogel"] },
+    { "question": "air", "answers": ["Luft"] },
+    { "question": "a bit", "answers": ["ein bisschen", "ein wenig"] },
+    { "question": "worried", "answers": ["beunruhigt", "besorgt"] },
+    { "question": "to move (house)", "answers": ["umziehen"] }
+  ]
+}

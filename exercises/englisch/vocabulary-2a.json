@@ -1,0 +1,28 @@
+{
+  "id": "eng-voc-unit2-p1",
+  "title": "Unit 2 – Schatzsuche (Teil 1/5)",
+  "description": "Vokabeln aus Unit 2: Schatzsuche und Entdeckungen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "talk", "answers": ["Vortrag", "Rede"] },
+    { "question": "juggling", "answers": ["Jonglieren"] },
+    { "question": "foreign language", "answers": ["Fremdsprache"] },
+    { "question": "treasure", "answers": ["Schatz"] },
+    { "question": "hunting", "answers": ["Jagen", "Jagd"] },
+    { "question": "Europe", "answers": ["Europa"] },
+    { "question": "to uncover", "answers": ["aufdecken", "frei legen"] },
+    { "question": "to belong (to)", "answers": ["gehören (zu)", "gehören"] },
+    { "question": "object", "answers": ["Gegenstand"] },
+    { "question": "heavy", "answers": ["schwer"] },
+    { "question": "to sail", "answers": ["segeln", "umsegeln"] },
+    { "question": "metal", "answers": ["Metall"] },
+    { "question": "slowly", "answers": ["langsam"] },
+    { "question": "to dig", "answers": ["graben"] },
+    { "question": "sky", "answers": ["Himmel"] },
+    { "question": "cloud", "answers": ["Wolke"] },
+    { "question": "usual", "answers": ["üblich"] },
+    { "question": "season", "answers": ["Saison", "Jahreszeit"] },
+    { "question": "shovel", "answers": ["Schaufel"] },
+    { "question": "carefully", "answers": ["vorsichtig", "sorgfältig"] }
+  ]
+}

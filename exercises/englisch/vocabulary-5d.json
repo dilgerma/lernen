@@ -1,0 +1,25 @@
+{
+  "id": "eng-voc-unit5-p4",
+  "title": "Unit 5 – Stromausfall & Chaos (Teil 4/4)",
+  "description": "Vokabeln aus Unit 5: Geräte, Chaos und Reaktionen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "thunder", "answers": ["Donner"] },
+    { "question": "lightning", "answers": ["Blitz"] },
+    { "question": "to get out of", "answers": ["aussteigen", "herauskommen aus"] },
+    { "question": "front door", "answers": ["Haustür"] },
+    { "question": "upstairs", "answers": ["nach oben", "im Obergeschoss", "oben"] },
+    { "question": "downstairs", "answers": ["nach unten", "im Untergeschoss", "unten"] },
+    { "question": "to take off", "answers": ["abnehmen", "ausziehen"] },
+    { "question": "to tap", "answers": ["antippen"] },
+    { "question": "to joke", "answers": ["scherzen"] },
+    { "question": "to press", "answers": ["drücken", "pressen"] },
+    { "question": "to go black", "answers": ["schwarz werden"] },
+    { "question": "to crash", "answers": ["abstürzen"] },
+    { "question": "power cut", "answers": ["Stromausfall"] },
+    { "question": "candlelight", "answers": ["Kerzenlicht"] },
+    { "question": "torch", "answers": ["Fackel", "Taschenlampe"] },
+    { "question": "right now", "answers": ["jetzt gleich", "sofort", "gerade"] },
+    { "question": "impressed", "answers": ["beeindruckt"] }
+  ]
+}

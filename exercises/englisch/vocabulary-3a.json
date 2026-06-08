@@ -1,0 +1,26 @@
+{
+  "id": "eng-voc-unit4-p1",
+  "title": "Unit 4 – Sport & Behinderungen (Teil 1/5)",
+  "description": "Vokabeln aus Unit 4: Sportarten, Behinderungen und Ausrüstung",
+  "type": "vocabulary",
+  "items": [
+    { "question": "organisation", "answers": ["Organisation"] },
+    { "question": "need", "answers": ["Bedürfnis"] },
+    { "question": "partially sighted", "answers": ["sehbehindert", "teilsichtig"] },
+    { "question": "deaf", "answers": ["gehörlos", "taub", "schwerhörig"] },
+    { "question": "to concentrate", "answers": ["(sich) konzentrieren", "konzentrieren"] },
+    { "question": "hearing aid", "answers": ["Hörgerät"] },
+    { "question": "glasses", "answers": ["Brille"] },
+    { "question": "camel racing", "answers": ["Kamelrennen"] },
+    { "question": "marathon", "answers": ["Marathon"] },
+    { "question": "health", "answers": ["Gesundheit"] },
+    { "question": "accident", "answers": ["Unfall"] },
+    { "question": "programme", "answers": ["Programm", "Sendung"] },
+    { "question": "runner", "answers": ["Läufer/-in", "Läufer", "Läuferin"] },
+    { "question": "net", "answers": ["Netz"] },
+    { "question": "racquet", "answers": ["Schläger"] },
+    { "question": "score", "answers": ["Punktestand", "Spielstand"] },
+    { "question": "to lose", "answers": ["verlieren"] },
+    { "question": "court", "answers": ["Spielfeld"] }
+  ]
+}

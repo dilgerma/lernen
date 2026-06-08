@@ -1,0 +1,26 @@
+{
+  "id": "eng-voc-unit5-p1",
+  "title": "Unit 5 – Stay in touch (Teil 1/4)",
+  "description": "Vokabeln aus Unit 5: Soziale Medien, Kommunikation und digitales Leben",
+  "type": "vocabulary",
+  "items": [
+    { "question": "to stay in touch (with)", "answers": ["in Kontakt bleiben (mit)", "in Kontakt bleiben"] },
+    { "question": "social network", "answers": ["soziales Netzwerk"] },
+    { "question": "nasty", "answers": ["garstig", "gemein"] },
+    { "question": "comment", "answers": ["Kommentar"] },
+    { "question": "protection", "answers": ["Schutz"] },
+    { "question": "profile", "answers": ["Profil", "Porträt"] },
+    { "question": "media", "answers": ["Medien"] },
+    { "question": "letter", "answers": ["Brief"] },
+    { "question": "print", "answers": ["gedruckt", "Druck-"] },
+    { "question": "interest", "answers": ["Interesse"] },
+    { "question": "paradise", "answers": ["Paradies"] },
+    { "question": "to post", "answers": ["online stellen", "posten"] },
+    { "question": "to take part (in)", "answers": ["teilnehmen (an)", "teilnehmen"] },
+    { "question": "to text", "answers": ["eine SMS schicken"] },
+    { "question": "discussion", "answers": ["Diskussion"] },
+    { "question": "practical", "answers": ["praktisch"] },
+    { "question": "mobile", "answers": ["Handy", "Mobiltelefon"] },
+    { "question": "agony aunt", "answers": ["Kummerkastentante"] }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "eng-voc-unit4-p5",
+  "title": "Unit 4 – Gefühle & Konflikte (Teil 5/5)",
+  "description": "Vokabeln aus Unit 4: Gefühle, Konflikte und Beziehungen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "to take sth seriously", "answers": ["ernst nehmen"] },
+    { "question": "to get in the way", "answers": ["stören", "im Weg stehen"] },
+    { "question": "stomach", "answers": ["Magen", "Bauch"] },
+    { "question": "finish line", "answers": ["Ziellinie"] },
+    { "question": "stupid", "answers": ["dumm", "blöd"] },
+    { "question": "to ruin", "answers": ["ruinieren", "zerstören"] },
+    { "question": "official", "answers": ["Schiedsrichter/-in", "Schiedsrichter"] },
+    { "question": "to surprise", "answers": ["überraschen"] },
+    { "question": "in secret", "answers": ["heimlich"] },
+    { "question": "hard", "answers": ["hart", "schwer", "schwierig"] },
+    { "question": "to forgive", "answers": ["vergeben", "verzeihen"] },
+    { "question": "reason", "answers": ["Grund"] },
+    { "question": "to cause", "answers": ["verursachen"] },
+    { "question": "hope", "answers": ["Hoffnung"] },
+    { "question": "fear", "answers": ["Angst", "Furcht", "Befürchtung"] },
+    { "question": "relationship", "answers": ["Beziehung"] },
+    { "question": "point of view", "answers": ["Standpunkt", "Ansicht", "Perspektive"] }
+  ]
+}

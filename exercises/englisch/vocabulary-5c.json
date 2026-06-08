@@ -1,0 +1,26 @@
+{
+  "id": "eng-voc-unit5-p3",
+  "title": "Unit 5 – Technik & Alltag (Teil 3/4)",
+  "description": "Vokabeln aus Unit 5: Technologie, Alltagsbegriffe und digitales Leben",
+  "type": "vocabulary",
+  "items": [
+    { "question": "to be able to", "answers": ["fähig sein zu", "können"] },
+    { "question": "still", "answers": ["dennoch"] },
+    { "question": "knob", "answers": ["Griff"] },
+    { "question": "to reach", "answers": ["erreichen", "dran kommen"] },
+    { "question": "to turn off", "answers": ["abschalten", "ausschalten"] },
+    { "question": "genius", "answers": ["Genie"] },
+    { "question": "library", "answers": ["Bibliothek", "Bücherei"] },
+    { "question": "police", "answers": ["Polizei"] },
+    { "question": "result", "answers": ["Ergebnis", "Resultat"] },
+    { "question": "to download", "answers": ["herunterladen"] },
+    { "question": "to comment (on)", "answers": ["kommentieren"] },
+    { "question": "to care (about)", "answers": ["sich kümmern (um)", "sich interessieren (für)"] },
+    { "question": "for example", "answers": ["zum Beispiel"] },
+    { "question": "to miss", "answers": ["verpassen", "versäumen"] },
+    { "question": "anywhere", "answers": ["irgendwo", "überall"] },
+    { "question": "understanding", "answers": ["Verständnis"] },
+    { "question": "weird", "answers": ["merkwürdig", "seltsam", "sonderbar"] },
+    { "question": "disaster", "answers": ["Desaster", "Katastrophe", "Unglück"] }
+  ]
+}

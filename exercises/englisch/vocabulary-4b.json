@@ -1,0 +1,27 @@
+{
+  "id": "eng-voc-focus2-p2",
+  "title": "Focus 2 – Getting around (Teil 2/2)",
+  "description": "Vokabeln aus Focus 2: Flughafen, Wegbeschreibung und Navigation",
+  "type": "vocabulary",
+  "items": [
+    { "question": "luggage", "answers": ["Gepäck"] },
+    { "question": "stay", "answers": ["Aufenthalt"] },
+    { "question": "alternative", "answers": ["Alternative"] },
+    { "question": "coach", "answers": ["Reisebus"] },
+    { "question": "announcement", "answers": ["Ankündigung", "Durchsage"] },
+    { "question": "flight", "answers": ["Flug"] },
+    { "question": "plane", "answers": ["Flugzeug"] },
+    { "question": "delayed", "answers": ["verspätet", "verzögert"] },
+    { "question": "to board", "answers": ["an Bord gehen", "besteigen"] },
+    { "question": "to depart", "answers": ["abfahren", "abfliegen"] },
+    { "question": "passenger", "answers": ["Passagier/-in", "Passagier", "Fahrgast"] },
+    { "question": "gate", "answers": ["Gate", "Flugsteig", "Ausgang"] },
+    { "question": "unattended", "answers": ["unbeaufsichtigt"] },
+    { "question": "pass", "answers": ["Ausweis", "Pass"] },
+    { "question": "to go down", "answers": ["hinuntergehen", "entlanggehen"] },
+    { "question": "past", "answers": ["vorbei (an)", "vorüber (an)"] },
+    { "question": "straight on", "answers": ["geradeaus"] },
+    { "question": "to cross", "answers": ["überqueren", "kreuzen"] },
+    { "question": "opposite", "answers": ["gegenüber", "gegenüberliegend", "entgegengesetzt"] }
+  ]
+}

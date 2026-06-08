@@ -1,0 +1,25 @@
+{
+  "id": "eng-voc-unit4-p4",
+  "title": "Unit 4 – Nachrichten & Reportage (Teil 4/5)",
+  "description": "Vokabeln aus Unit 4: Nachrichtenreportage, Zeugen und Gefühle",
+  "type": "vocabulary",
+  "items": [
+    { "question": "helicopter", "answers": ["Helikopter", "Hubschrauber"] },
+    { "question": "presenter", "answers": ["Moderator/-in", "Moderator", "Moderatorin"] },
+    { "question": "reporter", "answers": ["Reporter/-in", "Reporter", "Reporterin"] },
+    { "question": "witness", "answers": ["Zeuge", "Zeugin"] },
+    { "question": "eyewitness", "answers": ["Augenzeuge", "Augenzeugin"] },
+    { "question": "dramatic", "answers": ["dramatisch"] },
+    { "question": "to receive", "answers": ["empfangen", "erhalten", "bekommen"] },
+    { "question": "scene", "answers": ["Schauplatz"] },
+    { "question": "to record", "answers": ["aufnehmen", "aufzeichnen"] },
+    { "question": "necessary", "answers": ["nötig", "notwendig", "erforderlich"] },
+    { "question": "silly", "answers": ["Dummkopf"] },
+    { "question": "heart", "answers": ["Herz"] },
+    { "question": "anyway", "answers": ["jedenfalls", "trotzdem", "sowieso"] },
+    { "question": "to let go (of)", "answers": ["loslassen"] },
+    { "question": "fancy dress", "answers": ["Verkleidung", "Kostüm"] },
+    { "question": "to breathe", "answers": ["atmen"] },
+    { "question": "to keep up (with)", "answers": ["mithalten", "Schritt halten"] }
+  ]
+}

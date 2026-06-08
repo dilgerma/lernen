@@ -1,0 +1,24 @@
+{
+  "id": "eng-voc-unit1b-p3",
+  "title": "Unit 1 – Konflikte & Gefühle (Teil 2c/3)",
+  "description": "Vokabeln aus Unit 1: Konflikte, Gefühle und Schulalltag",
+  "type": "vocabulary",
+  "items": [
+    { "question": "to calm down", "answers": ["sich beruhigen"] },
+    { "question": "to push", "answers": ["stoßen", "schieben", "schubsen"] },
+    { "question": "to turn around", "answers": ["(sich) umdrehen", "wenden"] },
+    { "question": "fight", "answers": ["Kampf", "Streit"] },
+    { "question": "upset", "answers": ["aufgebracht", "bestürzt"] },
+    { "question": "idiot", "answers": ["Idiot/-in", "Idiot", "Idiotin"] },
+    { "question": "should", "answers": ["sollte", "solltest", "sollten"] },
+    { "question": "each other", "answers": ["einander", "sich gegenseitig"] },
+    { "question": "to take out", "answers": ["herausnehmen"] },
+    { "question": "paper", "answers": ["Papier"] },
+    { "question": "ready", "answers": ["fertig", "bereit"] },
+    { "question": "beginning", "answers": ["Anfang", "Beginn"] },
+    { "question": "related", "answers": ["verwandt", "bezogen"] },
+    { "question": "strong", "answers": ["stark"] },
+    { "question": "drama", "answers": ["Theater", "Drama"] },
+    { "question": "to hate", "answers": ["hassen", "nicht mögen"] }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "eng-voc-unit2-p4",
+  "title": "Unit 3 – Abenteuer & Freizeit (Teil 4/5)",
+  "description": "Vokabeln aus Unit 3: Helden, Abenteuer, Camping und Freizeitaktivitäten",
+  "type": "vocabulary",
+  "items": [
+    { "question": "hero", "answers": ["Held"] },
+    { "question": "heroine", "answers": ["Heldin"] },
+    { "question": "magic", "answers": ["Magie", "Zauberei"] },
+    { "question": "wild", "answers": ["wild"] },
+    { "question": "luck", "answers": ["Glück"] },
+    { "question": "adventure", "answers": ["Abenteuer"] },
+    { "question": "climbing", "answers": ["Klettern", "Bergsteigen"] },
+    { "question": "challenge", "answers": ["Herausforderung"] },
+    { "question": "teen", "answers": ["Teenager", "Jugendliche/-r"] },
+    { "question": "backpacking", "answers": ["Wandern", "Rucksackreisen"] },
+    { "question": "to follow", "answers": ["folgen", "hinterhergehen", "befolgen"] },
+    { "question": "trail", "answers": ["Weg", "Pfad", "Spur"] },
+    { "question": "nearly", "answers": ["fast", "annähernd"] },
+    { "question": "zipline", "answers": ["Seilrutsche"] },
+    { "question": "traditional", "answers": ["traditionell"] },
+    { "question": "campfire", "answers": ["Lagerfeuer"] },
+    { "question": "to look forward to", "answers": ["sich freuen auf"] },
+    { "question": "kid", "answers": ["Kind", "Jugendliche/-r"] },
+    { "question": "log cabin", "answers": ["Blockhütte"] },
+    { "question": "cell phone", "answers": ["Mobiltelefon", "Handy"] }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "eng-voc-focus2-p1",
+  "title": "Focus 2 – Getting around (Teil 1/2)",
+  "description": "Vokabeln aus Focus 2: Unterwegs, Verkehrsmittel und öffentlicher Nahverkehr",
+  "type": "vocabulary",
+  "items": [
+    { "question": "bicycle", "answers": ["Fahrrad"] },
+    { "question": "mud", "answers": ["Schlamm"] },
+    { "question": "company", "answers": ["Gesellschaft", "Firma", "Unternehmen"] },
+    { "question": "to discover", "answers": ["entdecken"] },
+    { "question": "riding", "answers": ["Reiten"] },
+    { "question": "to arrive", "answers": ["ankommen"] },
+    { "question": "desk", "answers": ["Schalter"] },
+    { "question": "central", "answers": ["zentral"] },
+    { "question": "the Tube", "answers": ["U-Bahn"] },
+    { "question": "to change", "answers": ["umsteigen", "wechseln"] },
+    { "question": "express", "answers": ["Eilzug"] },
+    { "question": "stop", "answers": ["Haltestelle", "Halt"] },
+    { "question": "ticket", "answers": ["Fahrschein"] },
+    { "question": "probably", "answers": ["wahrscheinlich"] },
+    { "question": "single", "answers": ["einfache Fahrkarte"] },
+    { "question": "return", "answers": ["Hin- und Rückfahrkarte"] },
+    { "question": "adult", "answers": ["Erwachsene/-r", "Erwachsene", "Erwachsener"] },
+    { "question": "cash", "answers": ["Bargeld"] },
+    { "question": "credit card", "answers": ["Kreditkarte"] },
+    { "question": "lift", "answers": ["Lift", "Fahrstuhl"] }
+  ]
+}

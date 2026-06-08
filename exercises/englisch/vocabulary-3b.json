@@ -1,0 +1,26 @@
+{
+  "id": "eng-voc-unit4-p2",
+  "title": "Unit 4 – Sportregeln & Arztbesuch (Teil 2/5)",
+  "description": "Vokabeln aus Unit 4: Sportbegriffe, Spielfeld und Arztbesuch",
+  "type": "vocabulary",
+  "items": [
+    { "question": "to catch", "answers": ["fangen"] },
+    { "question": "to pass", "answers": ["zupassen", "zuspielen"] },
+    { "question": "to kick", "answers": ["schießen", "treten"] },
+    { "question": "pitch", "answers": ["Spielfeld", "Platz"] },
+    { "question": "equipment", "answers": ["Ausrüstung", "Ausstattung"] },
+    { "question": "individual", "answers": ["individuell", "einzeln"] },
+    { "question": "ever", "answers": ["jemals", "überhaupt"] },
+    { "question": "running", "answers": ["Laufen", "Rennen"] },
+    { "question": "trial", "answers": ["Qualifikation"] },
+    { "question": "to be in", "answers": ["dabei sein", "mitmachen"] },
+    { "question": "to raise money", "answers": ["Geld sammeln"] },
+    { "question": "doctor", "answers": ["Arzt", "Ärztin"] },
+    { "question": "yet", "answers": ["schon", "noch"] },
+    { "question": "to twist your ankle", "answers": ["sich den Knöchel verrenken"] },
+    { "question": "pain", "answers": ["Schmerz"] },
+    { "question": "to cheer", "answers": ["anfeuern", "jubeln", "zujubeln"] },
+    { "question": "prescription", "answers": ["Rezept", "Rezept für Arzneimittel"] },
+    { "question": "ointment", "answers": ["Salbe"] }
+  ]
+}

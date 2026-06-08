@@ -310,7 +310,7 @@ let exFilename = null;
 let vKeyHandler = null;
 
 // vocab session
-let vItems = [], vIdx = 0, vOk = 0, vBad = 0, vWaiting = false;
+let vItems = [], vIdx = 0, vOk = 0, vBad = 0, vWaiting = false, vCurrentWrong = false;
 
 // ── TIMER (activity-based) ─────────────
 let activeSeconds = 0;
@@ -527,7 +527,7 @@ function checkAns(ans, accepted) { const n=norm(ans); return accepted.some(a=>no
 
 function startVocab() {
   vItems = [...exercise.items].sort(()=>Math.random()-.5);
-  vIdx=0; vOk=0; vBad=0; vWaiting=false;
+  vIdx=0; vOk=0; vBad=0; vWaiting=false; vCurrentWrong=false;
   document.getElementById('vt-title').textContent = exercise.title;
   document.getElementById('vt-tot').textContent = vItems.length;
   document.getElementById('vt-desc').textContent = exercise.description || '';
@@ -553,7 +553,7 @@ function renderVocabItem() {
   const inp = document.getElementById('vt-input');
   inp.value=''; inp.disabled=false; inp.className='ans-input'; inp.focus();
   document.getElementById('vt-bar').style.width = (vIdx/vItems.length*100)+'%';
-  vWaiting=false;
+  vWaiting=false; vCurrentWrong=false;
 }
 
 function checkVocab() {
@@ -567,13 +567,14 @@ function checkVocab() {
   const rev = document.getElementById('vt-reveal');
   if (ok) {
     vOk++;
+    if (vCurrentWrong) { vBad--; vCurrentWrong = false; }
     inp.className='ans-input ok';
     fb.textContent = ['Richtig! ✓','Super! ✓','Perfekt! ✓','Genau! ✓'][Math.floor(Math.random()*4)];
     fb.style.color='#00ff88'; fb.style.textShadow='0 0 12px rgba(0,255,136,.5)';
     rev.classList.add('hidden');
     document.getElementById('vt-retry').classList.add('hidden');
   } else {
-    vBad++;
+    if (!vCurrentWrong) { vBad++; vCurrentWrong = true; }
     inp.className='ans-input err';
     fb.textContent='Leider falsch ✗';
     fb.style.color='#ff3355'; fb.style.textShadow='0 0 12px rgba(255,51,85,.4)';
@@ -634,11 +635,11 @@ async function submitTrans() {
 }
 
 // ── IRREGULAR VERBS ────────────────────
-let ivItems = [], ivIdx = 0, ivOk = 0, ivBad = 0, ivOkForms = 0, ivTotalForms = 0, ivWaiting = false, ivKeyHandler = null;
+let ivItems = [], ivIdx = 0, ivOk = 0, ivBad = 0, ivOkForms = 0, ivTotalForms = 0, ivWaiting = false, ivKeyHandler = null, ivCurrentWrong = false, ivCurrentOkForms = 0;
 
 function startIrregularVerbs() {
   ivItems = [...exercise.items].sort(() => Math.random() - .5);
-  ivIdx = 0; ivOk = 0; ivBad = 0; ivOkForms = 0; ivTotalForms = 0; ivWaiting = false;
+  ivIdx = 0; ivOk = 0; ivBad = 0; ivOkForms = 0; ivTotalForms = 0; ivWaiting = false; ivCurrentWrong = false; ivCurrentOkForms = 0;
   document.getElementById('iv-title').textContent = exercise.title;
   document.getElementById('iv-tot').textContent = ivItems.length;
   show('iverb');
@@ -666,6 +667,7 @@ function renderIrregularVerbItem() {
   document.getElementById('iv-bar').style.width = (ivIdx / ivItems.length * 100) + '%';
   document.getElementById('iv-retry').classList.add('hidden');
   document.getElementById('iv-check').classList.remove('hidden');
+  ivCurrentWrong = false; ivCurrentOkForms = 0;
   ivWaiting = false;
   document.getElementById('iv-past').focus();
 }
@@ -679,9 +681,13 @@ function checkIrregularVerb() {
   const item = ivItems[ivIdx];
   const pastOk = norm(pastVal) === norm(item.simplePast);
   const ppOk = norm(ppVal) === norm(item.pastParticiple);
-  if (pastOk && ppOk) { ivOk++; } else { ivBad++; }
-  ivOkForms += (pastOk ? 1 : 0) + (ppOk ? 1 : 0);
-  ivTotalForms += 2;
+  ivCurrentOkForms = (pastOk ? 1 : 0) + (ppOk ? 1 : 0);
+  if (pastOk && ppOk) {
+    ivOk++;
+    if (ivCurrentWrong) { ivBad--; ivCurrentWrong = false; }
+  } else {
+    if (!ivCurrentWrong) { ivBad++; ivCurrentWrong = true; }
+  }
   const setFb = (inputId, fbId, ok, correct) => {
     document.getElementById(inputId).className = 'ans-input ' + (ok ? 'ok' : 'err');
     const fb = document.getElementById(fbId);
@@ -703,6 +709,8 @@ function checkIrregularVerb() {
 
 function nextIrregularVerb() {
   recordActivity();
+  ivOkForms += ivCurrentOkForms;
+  ivTotalForms += 2;
   ivWaiting = false; ivIdx++;
   if (ivIdx >= ivItems.length) { finishIrregularVerbs(); } else { renderIrregularVerbItem(); }
 }

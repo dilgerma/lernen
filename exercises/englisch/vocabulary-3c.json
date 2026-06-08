@@ -1,0 +1,26 @@
+{
+  "id": "eng-voc-unit4-p3",
+  "title": "Unit 4 – Krankheiten & Verletzungen (Teil 3/5)",
+  "description": "Vokabeln aus Unit 4: Krankheiten, Körperbeschwerden und Sportverletzungen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "to get well", "answers": ["gesund werden"] },
+    { "question": "shoulder", "answers": ["Schulter"] },
+    { "question": "headache", "answers": ["Kopfschmerzen", "Kopfweh"] },
+    { "question": "backache", "answers": ["Rückenschmerzen", "Rückenweh"] },
+    { "question": "stomachache", "answers": ["Bauchschmerzen", "Bauchweh"] },
+    { "question": "to feel sick", "answers": ["sich schlecht fühlen", "Übelkeit verspüren"] },
+    { "question": "cold", "answers": ["Erkältung"] },
+    { "question": "cough", "answers": ["Husten"] },
+    { "question": "fever", "answers": ["Fieber"] },
+    { "question": "cramp", "answers": ["Krampf"] },
+    { "question": "award", "answers": ["Auszeichnung", "Preis"] },
+    { "question": "camera", "answers": ["Fotoapparat", "Kamera"] },
+    { "question": "player", "answers": ["Spieler/-in", "Spieler", "Mitspieler/-in"] },
+    { "question": "crowd", "answers": ["Menschenmenge"] },
+    { "question": "rescue", "answers": ["Rettung"] },
+    { "question": "to get hurt", "answers": ["verletzt werden"] },
+    { "question": "injury", "answers": ["Verletzung"] },
+    { "question": "hospital", "answers": ["Hospital", "Krankenhaus"] }
+  ]
+}

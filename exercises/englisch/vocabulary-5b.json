@@ -1,0 +1,26 @@
+{
+  "id": "eng-voc-unit5-p2",
+  "title": "Unit 5 – Meinungen & Regeln (Teil 2/4)",
+  "description": "Vokabeln aus Unit 5: Meinungen, Kompromisse und Haushaltsgeräte",
+  "type": "vocabulary",
+  "items": [
+    { "question": "whenever", "answers": ["wann immer", "jedes Mal wenn", "so oft"] },
+    { "question": "self-critical", "answers": ["selbstkritisch"] },
+    { "question": "to overreact", "answers": ["überreagieren"] },
+    { "question": "as soon as", "answers": ["sobald"] },
+    { "question": "headphones", "answers": ["Kopfhörer"] },
+    { "question": "opinion", "answers": ["Meinung"] },
+    { "question": "compromise", "answers": ["Kompromiss"] },
+    { "question": "after", "answers": ["nachdem"] },
+    { "question": "face-to-face", "answers": ["persönlich", "von Angesicht zu Angesicht"] },
+    { "question": "to block", "answers": ["blockieren", "abblocken"] },
+    { "question": "forever", "answers": ["für immer", "ewig"] },
+    { "question": "attention", "answers": ["Aufmerksamkeit", "Beachtung"] },
+    { "question": "to be allowed to", "answers": ["dürfen"] },
+    { "question": "pipe", "answers": ["Rohr", "Rohrleitung"] },
+    { "question": "to go crazy", "answers": ["ausflippen", "durchdrehen"] },
+    { "question": "washing machine", "answers": ["Waschmaschine"] },
+    { "question": "to waste", "answers": ["verschwenden"] },
+    { "question": "step-by-step", "answers": ["Schritt-für-Schritt"] }
+  ]
+}

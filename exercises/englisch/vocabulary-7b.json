@@ -1,0 +1,24 @@
+{
+  "id": "eng-voc-unit1b-p2",
+  "title": "Unit 1 – Tiere & Reaktionen (Teil 2b/3)",
+  "description": "Vokabeln aus Unit 1: Tiere, Eigenschaften und Reaktionen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "space", "answers": ["Platz"] },
+    { "question": "pet", "answers": ["Haustier"] },
+    { "question": "outdoor activity", "answers": ["Freiluftaktivität"] },
+    { "question": "youth", "answers": ["Jugend"] },
+    { "question": "close", "answers": ["nahe"] },
+    { "question": "almost", "answers": ["fast", "beinahe"] },
+    { "question": "brilliant", "answers": ["toll", "prima", "leuchtend"] },
+    { "question": "to leave", "answers": ["lassen", "verlassen", "abfahren", "losgehen"] },
+    { "question": "quickly", "answers": ["schnell"] },
+    { "question": "eye", "answers": ["Auge"] },
+    { "question": "bee", "answers": ["Biene"] },
+    { "question": "clever", "answers": ["schlau", "klug"] },
+    { "question": "amazing", "answers": ["unglaublich", "toll", "erstaunlich"] },
+    { "question": "finished", "answers": ["fertig"] },
+    { "question": "shocked", "answers": ["schockiert", "geschockt"] },
+    { "question": "to steal", "answers": ["stehlen"] }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "eng-voc-unit2-p2",
+  "title": "Unit 2 / AC1 – Halloween & Legenden (Teil 2/5)",
+  "description": "Vokabeln aus Across Cultures 1: Halloween und die Legende von Jack-o'-Lantern",
+  "type": "vocabulary",
+  "items": [
+    { "question": "hole", "answers": ["Loch"] },
+    { "question": "meal", "answers": ["Mahlzeit", "Essen"] },
+    { "question": "plant", "answers": ["Pflanze"] },
+    { "question": "true", "answers": ["wahr"] },
+    { "question": "light", "answers": ["Licht", "Lampe"] },
+    { "question": "jack-o'-lantern", "answers": ["Kürbislaterne"] },
+    { "question": "scary", "answers": ["unheimlich", "gruselig", "beängstigend"] },
+    { "question": "devil", "answers": ["Teufel"] },
+    { "question": "to promise", "answers": ["versprechen"] },
+    { "question": "soul", "answers": ["Seele"] },
+    { "question": "hell", "answers": ["Hölle"] },
+    { "question": "heaven", "answers": ["Himmel"] },
+    { "question": "promise", "answers": ["Versprechen"] },
+    { "question": "fire", "answers": ["Feuer", "Kamin", "Ofen"] },
+    { "question": "ghost", "answers": ["Geist"] },
+    { "question": "lantern", "answers": ["Laterne"] },
+    { "question": "long ago", "answers": ["vor langer Zeit"] },
+    { "question": "dead", "answers": ["tot"] },
+    { "question": "pumpkin", "answers": ["Kürbis"] },
+    { "question": "to put on", "answers": ["anziehen", "auftragen"] }
+  ]
+}

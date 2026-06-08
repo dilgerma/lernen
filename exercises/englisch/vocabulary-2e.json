@@ -1,0 +1,24 @@
+{
+  "id": "eng-voc-unit2-p5",
+  "title": "Unit 3 – Sport, Freizeit & Inklusion (Teil 5/5)",
+  "description": "Vokabeln aus Unit 3: Freizeitaktivitäten, Behinderungen und Inklusion",
+  "type": "vocabulary",
+  "items": [
+    { "question": "age", "answers": ["Alter", "Zeitalter"] },
+    { "question": "trampoline", "answers": ["Trampolin"] },
+    { "question": "to grin", "answers": ["grinsen"] },
+    { "question": "canoe", "answers": ["Kanu"] },
+    { "question": "wet", "answers": ["nass"] },
+    { "question": "difficult", "answers": ["schwierig"] },
+    { "question": "disability", "answers": ["Behinderung", "Unfähigkeit"] },
+    { "question": "physical", "answers": ["physisch", "körperlich"] },
+    { "question": "intellectual", "answers": ["intellektuell", "geistig"] },
+    { "question": "guide dog", "answers": ["Blindenhund"] },
+    { "question": "inclusion", "answers": ["Inklusion", "Einbeziehung"] },
+    { "question": "inclusive", "answers": ["inklusiv", "einschließlich", "umfassend"] },
+    { "question": "schooling", "answers": ["Schulbildung"] },
+    { "question": "right", "answers": ["Recht"] },
+    { "question": "success", "answers": ["Erfolg"] },
+    { "question": "article", "answers": ["Artikel", "Bericht"] }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "eng-voc-unit2-p3",
+  "title": "Unit 3 – Legenden & Abenteuer (Teil 3/5)",
+  "description": "Vokabeln aus Unit 3: Legenden, Natur und Abenteuergeschichten",
+  "type": "vocabulary",
+  "items": [
+    { "question": "treat", "answers": ["besondere Freude", "Belohnung"] },
+    { "question": "legend", "answers": ["Legende", "Sage"] },
+    { "question": "to cut", "answers": ["schneiden", "fällen"] },
+    { "question": "axe", "answers": ["Axt"] },
+    { "question": "to cry", "answers": ["weinen", "schreien", "rufen"] },
+    { "question": "tear", "answers": ["Träne"] },
+    { "question": "path", "answers": ["Pfad", "Weg"] },
+    { "question": "road", "answers": ["Straße"] },
+    { "question": "straight", "answers": ["gerade", "direkt", "geradewegs"] },
+    { "question": "landscape", "answers": ["Landschaft"] },
+    { "question": "introduction", "answers": ["Einführung", "Einleitung", "Vorstellung"] },
+    { "question": "invented", "answers": ["erfunden"] },
+    { "question": "feather", "answers": ["Feder"] },
+    { "question": "hunter", "answers": ["Jäger/-in", "Jäger", "Jägerin"] },
+    { "question": "earth", "answers": ["die Erde", "Erde", "Erdboden"] },
+    { "question": "leader", "answers": ["Führer/-in", "Führer", "Anführer/-in", "Anführer"] },
+    { "question": "to fight", "answers": ["kämpfen", "streiten"] },
+    { "question": "husband", "answers": ["Ehemann"] },
+    { "question": "soldier", "answers": ["Soldat/-in", "Soldat", "Soldatin"] },
+    { "question": "exaggerated", "answers": ["übertrieben"] }
+  ]
+}
