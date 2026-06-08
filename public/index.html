@@ -140,6 +140,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
       <div id="vt-q" class="q-word"></div>
       <div id="vt-fb" class="mt-3 text-lg font-black" style="min-height:1.6rem"></div>
       <div id="vt-reveal" class="reveal-box hidden w-full text-center"></div>
+      <button id="vt-retry" class="btn btn-ghost rounded-lg px-4 py-2 text-xs hidden mt-2" onclick="retryCurrentVocab()">🔄 Nochmal versuchen</button>
     </div>
 
     <div class="flex gap-2 sm:gap-3">
@@ -221,7 +222,8 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
       </div>
     </div>
 
-    <button class="btn btn-blue w-full rounded-lg py-4 text-base" onclick="checkIrregularVerb()">PRÜFEN</button>
+    <button id="iv-retry" class="btn btn-ghost w-full rounded-lg py-3 text-sm hidden" onclick="retryCurrentIrregularVerb()">🔄 Nochmal versuchen</button>
+    <button id="iv-check" class="btn btn-blue w-full rounded-lg py-4 text-base" onclick="checkIrregularVerb()">PRÜFEN</button>
     <p class="text-xs text-center text-blue-300/20 mt-2 font-semibold">Enter zum Bestätigen</p>
   </div>
 </div>
@@ -265,6 +267,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
     </div>
 
     <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <button class="btn btn-green rounded-lg px-5 py-3 text-sm" onclick="retryEx()">🔄 NOCHMAL</button>
       <button class="btn btn-ghost rounded-lg px-5 py-3 text-sm" onclick="goExList()">WEITERE ÜBUNGEN</button>
       <button class="btn btn-blue rounded-lg px-5 py-3 text-sm" onclick="goSubjects()">FACH WECHSELN</button>
     </div>
@@ -568,6 +571,7 @@ function checkVocab() {
     fb.textContent = ['Richtig! ✓','Super! ✓','Perfekt! ✓','Genau! ✓'][Math.floor(Math.random()*4)];
     fb.style.color='#00ff88'; fb.style.textShadow='0 0 12px rgba(0,255,136,.5)';
     rev.classList.add('hidden');
+    document.getElementById('vt-retry').classList.add('hidden');
   } else {
     vBad++;
     inp.className='ans-input err';
@@ -575,6 +579,7 @@ function checkVocab() {
     fb.style.color='#ff3355'; fb.style.textShadow='0 0 12px rgba(255,51,85,.4)';
     rev.textContent = `Richtige Antwort: ${vItems[vIdx].answers[0]}`;
     rev.classList.remove('hidden');
+    document.getElementById('vt-retry').classList.remove('hidden');
   }
   document.getElementById('vt-ok').textContent=vOk;
   document.getElementById('vt-bad').textContent=vBad;
@@ -659,6 +664,8 @@ function renderIrregularVerbItem() {
   document.getElementById('iv-past-fb').textContent = '';
   document.getElementById('iv-pp-fb').textContent = '';
   document.getElementById('iv-bar').style.width = (ivIdx / ivItems.length * 100) + '%';
+  document.getElementById('iv-retry').classList.add('hidden');
+  document.getElementById('iv-check').classList.remove('hidden');
   ivWaiting = false;
   document.getElementById('iv-past').focus();
 }
@@ -688,6 +695,9 @@ function checkIrregularVerb() {
   document.getElementById('iv-past').disabled = true;
   document.getElementById('iv-pp').disabled = true;
   ivWaiting = true;
+  const hadError = !pastOk || !ppOk;
+  document.getElementById('iv-retry').classList.toggle('hidden', !hadError);
+  document.getElementById('iv-check').classList.toggle('hidden', hadError);
   setTimeout(() => { if (ivWaiting) nextIrregularVerb(); }, 2500);
 }
 
@@ -755,7 +765,7 @@ function showResults(minutes, okCount, total, unlocked, rankUp, s, exResult, fir
       exBadge.textContent = `✅ Schon abgeschlossen (${exResult.bestScore}%) — weiter so!`;
     } else {
       exBadge.className = 'mb-5 rounded-xl p-3 font-bold text-sm badge-repeat';
-      exBadge.textContent = `🔄 Noch nicht fertig (${exResult.bestScore}%) — 90% nötig für Döner-Punkte!`;
+      exBadge.textContent = `🔄 Noch nicht fertig (${exResult.bestScore}%) — weiter üben!`;
     }
   } else {
     exBadge.classList.add('hidden');
@@ -785,6 +795,37 @@ function showResults(minutes, okCount, total, unlocked, rankUp, s, exResult, fir
     : 'Maximaler Rang erreicht! 👑';
 
   show('results');
+}
+
+// ── RETRY CURRENT QUESTION ─────────────
+function retryCurrentVocab() {
+  vWaiting = false;
+  const inp = document.getElementById('vt-input');
+  inp.value = ''; inp.disabled = false; inp.className = 'ans-input'; inp.focus();
+  document.getElementById('vt-fb').textContent = '';
+  document.getElementById('vt-reveal').classList.add('hidden');
+  document.getElementById('vt-retry').classList.add('hidden');
+}
+
+function retryCurrentIrregularVerb() {
+  ivWaiting = false;
+  ['iv-past','iv-pp'].forEach(id => {
+    const el = document.getElementById(id);
+    el.value = ''; el.disabled = false; el.className = 'ans-input';
+  });
+  document.getElementById('iv-past-fb').textContent = '';
+  document.getElementById('iv-pp-fb').textContent = '';
+  document.getElementById('iv-retry').classList.add('hidden');
+  document.getElementById('iv-check').classList.remove('hidden');
+  document.getElementById('iv-past').focus();
+}
+
+// ── RETRY EXERCISE ─────────────────────
+function retryEx() {
+  if (!exercise) return;
+  if (exercise.type === 'vocabulary') startVocab();
+  else if (exercise.type === 'irregular-verbs') startIrregularVerbs();
+  else startTrans();
 }
 
 // ── RESET DÖNER ────────────────────────

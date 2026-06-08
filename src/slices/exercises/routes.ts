@@ -54,7 +54,7 @@ export const api = (): WebApiSetup => (router: Router): void => {
 
   // POST /api/exercises/:subject/:filename/result
   // Body: { exerciseId: string, scorePercent: number, minutesSpent?: number }
-  // Awards minutes on every attempt; marks exercise done only when score >= 90%.
+  // Awards minutes on every attempt; Döner points are time-based, not score-based.
   router.post('/api/exercises/:subject/:filename/result', async (req: Request, res: Response) => {
     const { subject, filename } = req.params;
     const { exerciseId, scorePercent, minutesSpent } = req.body as {
