@@ -1,0 +1,22 @@
+{
+  "id": "fra-grammar-34",
+  "title": "§34 – Pourquoi est-ce que … ? Parce que …",
+  "description": "Fragen mit pourquoi est-ce que bilden und mit parce que beantworten",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Wie fragt man auf Französisch 'Warum'?", "answers": ["pourquoi"] },
+    { "question": "Wie sagt man auf Französisch 'weil'?", "answers": ["parce que", "parce qu'"] },
+    { "question": "Pourquoi ___ que Clara fait ses devoirs avec Yasmine?", "answers": ["est-ce"] },
+    { "question": "Reihenfolge bei Fragen mit Fragewort: Fragewort + ___ + Subjekt + Verb", "answers": ["est-ce que"] },
+    { "question": "Nach parce que bleibt die Wortstellung wie im ___.", "answers": ["Aussagesatz"] },
+    { "question": "Clara aime le mercredi parce qu'elle ___ une heure d'allemand. (avoir)", "answers": ["a"] },
+    { "question": "Noah aime le lundi parce qu'il ___ deux heures de maths. (avoir)", "answers": ["a"] },
+    { "question": "Alexis ne mange pas à la cantine parce qu'il ___ les spaghettis. (détester)", "answers": ["déteste", "deteste"] },
+    { "question": "Anna ne va pas au cinéma samedi parce qu'elle ___ une interro lundi. (avoir)", "answers": ["a"] },
+    { "question": "Yasmine adore le week-end parce qu'___ va toujours au théâtre.", "answers": ["elle"] },
+    { "question": "Vor Vokal: parce que → ___", "answers": ["parce qu'"] },
+    { "question": "Pourquoi est-ce que Noah mange à la cantine le lundi? – Il mange à la cantine le lundi ___ il y a toujours des spaghettis.", "answers": ["parce que", "parce qu'"] },
+    { "question": "Pourquoi est-ce ___ tu vas à l'école le samedi?", "answers": ["que"] },
+    { "question": "Frage bilden: Clara / aimer le mercredi → Pourquoi ___ que Clara aime le mercredi?", "answers": ["est-ce"] }
+  ]
+}

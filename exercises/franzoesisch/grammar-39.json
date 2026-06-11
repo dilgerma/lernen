@@ -1,0 +1,28 @@
+{
+  "id": "fra-grammar-39",
+  "title": "§39 – Le verbe commencer",
+  "description": "Das Verb commencer konjugieren – Besonderheit: ç in der nous-Form",
+  "type": "vocabulary",
+  "items": [
+    { "question": "commencer – je → ?", "answers": ["commence"] },
+    { "question": "commencer – tu → ?", "answers": ["commences"] },
+    { "question": "commencer – il/elle/on → ?", "answers": ["commence"] },
+    { "question": "commencer – nous → ?", "answers": ["commençons", "commencons"] },
+    { "question": "commencer – vous → ?", "answers": ["commencez"] },
+    { "question": "commencer – ils/elles → ?", "answers": ["commencent"] },
+    { "question": "Nous ___ aujourd'hui.", "answers": ["commençons", "commencons"] },
+    { "question": "Je ___ mardi.", "answers": ["commence"] },
+    { "question": "Tu ___ à 8 heures?", "answers": ["commences"] },
+    { "question": "Ils ___ maintenant.", "answers": ["commencent"] },
+    { "question": "On ___ ensemble.", "answers": ["commence"] },
+    { "question": "Warum steht in commençons ein ç statt c?", "answers": ["wegen der Aussprache", "Aussprache"] },
+    { "question": "commencer → nous → ___", "answers": ["commençons", "commencons"] },
+    { "question": "Imperativ (tu) → ___!", "answers": ["Commence"] },
+    { "question": "Imperativ (nous) → ___!", "answers": ["Commençons", "Commencons"] },
+    { "question": "Imperativ (vous) → ___!", "answers": ["Commencez"] },
+    { "question": "commencer ist ein regelmäßiges Verb auf ___.", "answers": ["-er"] },
+    { "question": "Welches andere Verb haben wir gelernt, das eine ähnliche Besonderheit in der nous-Form hat?", "answers": ["manger"] },
+    { "question": "manger → nous mangeons | commencer → nous ___", "answers": ["commençons", "commencons"] },
+    { "question": "Die Besonderheit bei commencer betrifft welche Person?", "answers": ["nous", "wir"] }
+  ]
+}

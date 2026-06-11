@@ -1,0 +1,25 @@
+{
+  "id": "fra-grammar-36",
+  "title": "§36 – Le verbe manger",
+  "description": "Das Verb manger konjugieren – Besonderheit: -e- in der nous-Form",
+  "type": "vocabulary",
+  "items": [
+    { "question": "manger – je → ?", "answers": ["mange"] },
+    { "question": "manger – tu → ?", "answers": ["manges"] },
+    { "question": "manger – il/elle/on → ?", "answers": ["mange"] },
+    { "question": "manger – nous → ?", "answers": ["mangeons"] },
+    { "question": "manger – vous → ?", "answers": ["mangez"] },
+    { "question": "manger – ils/elles → ?", "answers": ["mangent"] },
+    { "question": "Nous ___ à la cantine.", "answers": ["mangeons"] },
+    { "question": "Tu ___ à la cantine?", "answers": ["manges"] },
+    { "question": "Ils ___ des spaghettis.", "answers": ["mangent"] },
+    { "question": "On ___ bien ici.", "answers": ["mange"] },
+    { "question": "Warum schreibt sich mangeons mit -e-?", "answers": ["wegen der Aussprache", "Aussprache"] },
+    { "question": "Ohne -e- würde mangeons wie ___ klingen.", "answers": ["Mango"] },
+    { "question": "Imperativ (tu) → ___!", "answers": ["Mange"] },
+    { "question": "Imperativ (nous) → ___!", "answers": ["Mangeons"] },
+    { "question": "Imperativ (vous) → ___!", "answers": ["Mangez"] },
+    { "question": "manger ist ein regelmäßiges Verb auf ___.", "answers": ["-er"] },
+    { "question": "Die Besonderheit von manger betrifft welche Person?", "answers": ["nous", "wir"] }
+  ]
+}

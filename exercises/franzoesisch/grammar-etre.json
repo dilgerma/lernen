@@ -1,0 +1,30 @@
+{
+  "id": "fra-grammar-etre",
+  "title": "Le verbe être",
+  "description": "Das unregelmäßige Verb être – richtige Form einsetzen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "être – je → ?", "answers": ["suis"] },
+    { "question": "être – tu → ?", "answers": ["es"] },
+    { "question": "être – il/elle/on → ?", "answers": ["est"] },
+    { "question": "être – nous → ?", "answers": ["sommes"] },
+    { "question": "être – vous → ?", "answers": ["êtes", "etes"] },
+    { "question": "être – ils/elles → ?", "answers": ["sont"] },
+    { "question": "Je ___ de Strasbourg.", "answers": ["suis"] },
+    { "question": "Tu ___ de Berlin.", "answers": ["es"] },
+    { "question": "Il ___ en cinquième.", "answers": ["est"] },
+    { "question": "Elle ___ en cinquième.", "answers": ["est"] },
+    { "question": "On ___ ensemble.", "answers": ["est"] },
+    { "question": "Nous ___ à Strasbourg en cinquième B.", "answers": ["sommes"] },
+    { "question": "Vous ___ en sixième A?", "answers": ["êtes", "etes"] },
+    { "question": "Ils ___ aussi en sixième A.", "answers": ["sont"] },
+    { "question": "Elles ___ aussi en sixième A.", "answers": ["sont"] },
+    { "question": "Ist être ein regelmäßiges oder unregelmäßiges Verb?", "answers": ["unregelmäßig", "irrégulier", "irregulier"] },
+    { "question": "être – 1. Person Singular → ?", "answers": ["suis"] },
+    { "question": "être – 2. Person Singular → ?", "answers": ["es"] },
+    { "question": "être – 3. Person Singular → ?", "answers": ["est"] },
+    { "question": "être – 1. Person Plural → ?", "answers": ["sommes"] },
+    { "question": "être – 2. Person Plural → ?", "answers": ["êtes", "etes"] },
+    { "question": "être – 3. Person Plural → ?", "answers": ["sont"] }
+  ]
+}

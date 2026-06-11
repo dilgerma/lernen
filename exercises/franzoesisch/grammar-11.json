@@ -1,0 +1,23 @@
+{
+  "id": "fra-grammar-11",
+  "title": "§11 – Le verbe lire",
+  "description": "Das unregelmäßige Verb lire – mit -s- in den Pluralformen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "lire – je → ?", "answers": ["lis"] },
+    { "question": "lire – tu → ?", "answers": ["lis"] },
+    { "question": "lire – il/elle/on → ?", "answers": ["lit"] },
+    { "question": "lire – nous → ?", "answers": ["lisons"] },
+    { "question": "lire – vous → ?", "answers": ["lisez"] },
+    { "question": "lire – ils/elles → ?", "answers": ["lisent"] },
+    { "question": "Qu'est-ce que tu ___? (lire)", "answers": ["lis"] },
+    { "question": "Lukas ___ un livre de Jules Verne. (lire)", "answers": ["lit"] },
+    { "question": "Yasmine et Clara ___ une bédé. (lire)", "answers": ["lisent"] },
+    { "question": "Vous ___ la bédé ensemble? (lire)", "answers": ["lisez"] },
+    { "question": "Oui, moi, je ___ et Clara écoute! (lire)", "answers": ["lis"] },
+    { "question": "Nous ___ un roman. (lire)", "answers": ["lisons"] },
+    { "question": "In den Pluralformen von lire wird ein ___ vor die Endung eingefügt.", "answers": ["s", "-s-"] },
+    { "question": "lire: Endungen Singular: -s, ___, -t", "answers": ["s"] },
+    { "question": "lire: Endungen Plural: -ons, ___, -ent", "answers": ["ez"] }
+  ]
+}

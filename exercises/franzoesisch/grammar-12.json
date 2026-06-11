@@ -1,0 +1,27 @@
+{
+  "id": "fra-grammar-12",
+  "title": "§12 – Le verbe écrire",
+  "description": "Das unregelmäßige Verb écrire – mit -v- in den Pluralformen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "écrire – j' → ?", "answers": ["écris", "ecris"] },
+    { "question": "écrire – tu → ?", "answers": ["écris", "ecris"] },
+    { "question": "écrire – il/elle/on → ?", "answers": ["écrit", "ecrit"] },
+    { "question": "écrire – nous → ?", "answers": ["écrivons", "ecrivons"] },
+    { "question": "écrire – vous → ?", "answers": ["écrivez", "ecrivez"] },
+    { "question": "écrire – ils/elles → ?", "answers": ["écrivent", "ecrivent"] },
+    { "question": "J'___ une phrase. (écrire)", "answers": ["écris", "ecris"] },
+    { "question": "Tu ___ un livre? (écrire)", "answers": ["écris", "ecris"] },
+    { "question": "Il ___ dans la cuisine. (écrire)", "answers": ["écrit", "ecrit"] },
+    { "question": "Nous ___ un rap. (écrire)", "answers": ["écrivons", "ecrivons"] },
+    { "question": "Vous ___ les questions. (écrire)", "answers": ["écrivez", "ecrivez"] },
+    { "question": "Ils ___ les mots. (écrire)", "answers": ["écrivent", "ecrivent"] },
+    { "question": "In den drei Pluralformen von écrire wird ein ___ vor die Endung eingefügt.", "answers": ["v", "-v-"] },
+    { "question": "Imperativ (tu) → ___!", "answers": ["Écris", "Ecris"] },
+    { "question": "Imperativ (nous) → ___!", "answers": ["Écrivons", "Ecrivons"] },
+    { "question": "Imperativ (vous) → ___!", "answers": ["Écrivez", "Ecrivez"] },
+    { "question": "écrire: Die Endungen lauten: -s, -s, -t, ___, ez, ent", "answers": ["ons"] },
+    { "question": "Ist écrire ein regelmäßiges oder unregelmäßiges Verb?", "answers": ["unregelmäßig", "irrégulier", "irregulier"] },
+    { "question": "Vergleich: Bei lire kommt -s- in die Pluralformen, bei écrire kommt ___.", "answers": ["v", "-v-"] }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "fra-grammar-38",
+  "title": "§38 – Le complément d'objet indirect",
+  "description": "Direktes oder indirektes Objekt: à/au/à la/aux vs. le/la/les einsetzen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Ein indirektes Objekt steht ___ der Präposition 'à'.", "answers": ["mit", "nach"] },
+    { "question": "à + le = ___", "answers": ["au"] },
+    { "question": "à + les = ___", "answers": ["aux"] },
+    { "question": "Clara aime ___ musique. (direktes Objekt → le/la/les)", "answers": ["la"] },
+    { "question": "Clara écrit ___ sa grand-mère. (indirektes Objekt → à/au/à la/aux)", "answers": ["à", "a"] },
+    { "question": "Noah parle ___ professeur. (indirektes Objekt, à + le)", "answers": ["au"] },
+    { "question": "Jade téléphone ___ amis. (indirektes Objekt, à + les)", "answers": ["aux"] },
+    { "question": "Clara téléphone ___ Yasmine.", "answers": ["à", "a"] },
+    { "question": "Noah veut parler ___ professeur de français.", "answers": ["au"] },
+    { "question": "Madame Leforestier parle ___ élèves.", "answers": ["aux"] },
+    { "question": "Théo aime ___ dessin. (direktes Objekt)", "answers": ["le"] },
+    { "question": "Théo aime ___ bédé. (direktes Objekt)", "answers": ["la"] },
+    { "question": "Amandine aime écouter ___ CDs de Zaz. (direktes Objekt)", "answers": ["les"] },
+    { "question": "Jade dit bonjour ___ mère de Lukas.", "answers": ["à la", "a la"] },
+    { "question": "téléphoner, parler, écrire, dire bonjour: Diese Verben verlangen indirektes Objekt mit ___", "answers": ["à", "a"] },
+    { "question": "aimer, écouter, regarder: Diese Verben verlangen ___ Objekt (ohne Präposition).", "answers": ["direktes"] },
+    { "question": "Wie erkennt man ein indirektes Objekt?", "answers": ["Es steht mit à", "Es steht mit a", "mit à", "mit a"] },
+    { "question": "Il écrit ___ ses amis. (à + les = ?)", "answers": ["à ses", "a ses", "aux"] }
+  ]
+}

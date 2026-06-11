@@ -1,0 +1,33 @@
+{
+  "id": "fra-grammar-37",
+  "title": "§37 – Le futur proche",
+  "description": "Futur proche bilden: Präsensform von aller + Infinitiv",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Futur proche = Präsensform von ___ + Infinitiv", "answers": ["aller"] },
+    { "question": "Je ___ manger à la cantine. (futur proche)", "answers": ["vais"] },
+    { "question": "Tu ___ noter les idées. (futur proche)", "answers": ["vas"] },
+    { "question": "Il/Elle ___ aller au Vaisseau. (futur proche)", "answers": ["va"] },
+    { "question": "Nous ___ visiter le collège. (futur proche)", "answers": ["allons"] },
+    { "question": "Vous ___ faire une balade? (futur proche)", "answers": ["allez"] },
+    { "question": "Ils/Elles ___ passer une journée à Kehl. (futur proche)", "answers": ["vont"] },
+    { "question": "Tu (faire) une balade dans les Vosges? → Tu ___ une balade.", "answers": ["vas faire"] },
+    { "question": "Samedi, je (aller) à Strasbourg. → Samedi, je ___.", "answers": ["vais aller"] },
+    { "question": "Noah (préparer) des spaghettis. → Noah ___ des spaghettis.", "answers": ["va préparer", "va preparer"] },
+    { "question": "Nous (ne … pas / manger) au musée. → Nous ___ au musée.", "answers": ["n'allons pas manger", "ne allons pas manger"] },
+    { "question": "Vous (chanter) avec Yasmine? → Vous ___ avec Yasmine?", "answers": ["allez chanter"] },
+    { "question": "Ils (visiter) Strasbourg en bateau. → Ils ___ Strasbourg en bateau.", "answers": ["vont visiter"] },
+    { "question": "Elle (ne … pas / chatter) avec ses copines. → Elle ___ avec ses copines.", "answers": ["ne va pas chatter"] },
+    { "question": "Verneinung futur proche: ne ___ konjugiertes Verb ___ + Infinitiv", "answers": ["ne … pas"] },
+    { "question": "Je ne ___ pas rentrer à la maison. (Verneinung futur proche)", "answers": ["vais"] },
+    { "question": "On ne ___ pas visiter le collège. (Verneinung futur proche)", "answers": ["va"] },
+    { "question": "Ils ne ___ pas manger au Musée du chocolat.", "answers": ["vont"] },
+    { "question": "Je ___ mes devoirs demain. (faire, futur proche)", "answers": ["vais faire"] },
+    { "question": "Tu ___ le week-end à Genève. (passer, futur proche)", "answers": ["vas passer"] },
+    { "question": "Les élèves de Kehl ___ lundi. (arriver, futur proche)", "answers": ["vont arriver"] },
+    { "question": "Est-ce que vous ___ le Musée du chocolat? (visiter, futur proche)", "answers": ["allez visiter"] },
+    { "question": "Qu'est-ce que nous ___? (manger, futur proche)", "answers": ["allons manger"] },
+    { "question": "Théo n'a pas ses devoirs. Il ___ des problèmes. (avoir, futur proche)", "answers": ["va avoir"] },
+    { "question": "Der Infinitiv steht bei der Verneinung ___ dem 'pas'.", "answers": ["hinter", "nach"] }
+  ]
+}

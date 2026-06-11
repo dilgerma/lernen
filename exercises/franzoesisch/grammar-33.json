@@ -1,0 +1,24 @@
+{
+  "id": "fra-grammar-33",
+  "title": "§33 – Les jours de la semaine – avec ou sans article",
+  "description": "Wochentage mit oder ohne bestimmten Artikel: einmaliges vs. regelmäßiges Ereignis",
+  "type": "vocabulary",
+  "items": [
+    { "question": "'lundi' bedeutet: am Montag (einmalig) oder immer montags (regelmäßig)?", "answers": ["am Montag", "einmalig"] },
+    { "question": "'le lundi' bedeutet: am Montag (einmalig) oder immer montags (regelmäßig)?", "answers": ["immer montags", "regelmäßig"] },
+    { "question": "(Montags) ___, on a français.", "answers": ["Le lundi"] },
+    { "question": "(Am Dienstag) ___, j'ai une interro de maths.", "answers": ["Mardi"] },
+    { "question": "(Am Mittwoch) ___, je vais au CDI avec Yann.", "answers": ["Mercredi"] },
+    { "question": "(Donnerstags) ___, les filles mangent à la cantine.", "answers": ["Le jeudi"] },
+    { "question": "(Freitags) ___, je suis chez ma grand-mère.", "answers": ["Le vendredi"] },
+    { "question": "(Am Samstag) ___, on va au cinéma.", "answers": ["Samedi"] },
+    { "question": "Immer montags → ___", "answers": ["le lundi"] },
+    { "question": "Am Dienstag (einmalig) → ___", "answers": ["mardi"] },
+    { "question": "Immer mittwochs → ___", "answers": ["le mercredi"] },
+    { "question": "Am Freitag (einmalig) → ___", "answers": ["vendredi"] },
+    { "question": "Immer freitags → ___", "answers": ["le vendredi"] },
+    { "question": "Am Donnerstag (einmalig) → ___", "answers": ["jeudi"] },
+    { "question": "Regel: Für ein regelmäßiges Ereignis benutzt man den Wochentag ___ Artikel.", "answers": ["mit", "mit dem bestimmten"] },
+    { "question": "Regel: Für ein einmaliges Ereignis benutzt man den Wochentag ___ Artikel.", "answers": ["ohne", "ohne Artikel"] }
+  ]
+}

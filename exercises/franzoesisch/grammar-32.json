@@ -1,0 +1,33 @@
+{
+  "id": "fra-grammar-32",
+  "title": "§32 – Les adjectifs bon et nul",
+  "description": "Adjektive bon und nul in der richtigen Form einsetzen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "bon → weiblich Singular", "answers": ["bonne"] },
+    { "question": "bon → männlich Plural", "answers": ["bons"] },
+    { "question": "bon → weiblich Plural", "answers": ["bonnes"] },
+    { "question": "nul → weiblich Singular", "answers": ["nulle"] },
+    { "question": "nul → männlich Plural", "answers": ["nuls"] },
+    { "question": "nul → weiblich Plural", "answers": ["nulles"] },
+    { "question": "Il est ___ en maths. (bon)", "answers": ["bon"] },
+    { "question": "Elle est ___ en maths. (bon)", "answers": ["bonne"] },
+    { "question": "Ils sont ___ en SVT. (bon)", "answers": ["bons"] },
+    { "question": "Elles sont ___ en français. (bon)", "answers": ["bonnes"] },
+    { "question": "Il est ___ en maths. (nul)", "answers": ["nul"] },
+    { "question": "Elle est ___ en allemand. (nul)", "answers": ["nulle"] },
+    { "question": "Ils sont ___ en musique. (nul)", "answers": ["nuls"] },
+    { "question": "Elles sont ___ en EPS. (nul)", "answers": ["nulles"] },
+    { "question": "Ils sont ___ en français. (bon)", "answers": ["bons"] },
+    { "question": "Marie est ___ en SVT. (bon)", "answers": ["bonne"] },
+    { "question": "Alexandre est ___ en EPS. (bon)", "answers": ["bon"] },
+    { "question": "Elles sont ___ en musique. (nul)", "answers": ["nulles"] },
+    { "question": "Léa et Lola sont ___ en français. (nul)", "answers": ["nulles"] },
+    { "question": "Elle est ___ en maths. (nul)", "answers": ["nulle"] },
+    { "question": "Hugo et sa sœur sont ___ en allemand. (nul)", "answers": ["nuls"] },
+    { "question": "Il est ___ en EPS. (nul)", "answers": ["nul"] },
+    { "question": "Wie ändert sich bon in der weiblichen Form? bon → ___", "answers": ["bonne"] },
+    { "question": "Wie ändert sich nul in der weiblichen Form? nul → ___", "answers": ["nulle"] },
+    { "question": "nul: Bei der Aussprache gibt es im Gegensatz zu bon ___ Änderung.", "answers": ["keine"] }
+  ]
+}

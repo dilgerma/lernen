@@ -1,0 +1,24 @@
+{
+  "id": "fra-grammar-35",
+  "title": "§35 – L'interrogation avec pronom interrogatif",
+  "description": "Fragen mit Fragewort + est-ce que bilden: quand, à quelle heure, pourquoi, où, comment",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Warum? → ___", "answers": ["pourquoi"] },
+    { "question": "Wann? → ___", "answers": ["quand"] },
+    { "question": "Um wie viel Uhr? → ___", "answers": ["à quelle heure", "a quelle heure"] },
+    { "question": "Wo / Wohin? → ___", "answers": ["où", "ou"] },
+    { "question": "Wie? → ___", "answers": ["comment"] },
+    { "question": "Welches Fach? → ___", "answers": ["quelle matière", "quelle matiere"] },
+    { "question": "___ est-ce que tu vas à l'école? (wann)", "answers": ["Quand"] },
+    { "question": "___ est-ce que les élèves vont à la cantine? (wohin)", "answers": ["Où", "Ou"] },
+    { "question": "___ est-ce que Jade aime manger à la cantine le vendredi? (warum)", "answers": ["Pourquoi"] },
+    { "question": "___ est-ce qu'ils vont lundi matin? (wohin)", "answers": ["Où", "Ou"] },
+    { "question": "___ est-ce que tu écris «nul» dans ta phrase? (wie)", "answers": ["Comment"] },
+    { "question": "___ est-ce que vous arrivez? (um wie viel Uhr)", "answers": ["À quelle heure", "A quelle heure"] },
+    { "question": "___ est-ce que Noah mange à la cantine? (wann)", "answers": ["Quand"] },
+    { "question": "Reihenfolge: Fragewort + ___ + Subjekt + Verb (+ Ergänzung)", "answers": ["est-ce que"] },
+    { "question": "Das Fragewort steht ___ am Anfang der Frage.", "answers": ["immer"] },
+    { "question": "Die Wortstellung nach dem Fragewort bleibt wie im ___.", "answers": ["Aussagesatz"] }
+  ]
+}

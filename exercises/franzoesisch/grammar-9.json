@@ -1,0 +1,33 @@
+{
+  "id": "fra-grammar-9",
+  "title": "§9 – Les verbes en -er (regarder, écouter, jouer)",
+  "description": "Regelmäßige Verben auf -er: Stamm + Endung (-e, -es, -e, -ons, -ez, -ent)",
+  "type": "vocabulary",
+  "items": [
+    { "question": "Endung für je (Verben auf -er): regard___", "answers": ["e"] },
+    { "question": "Endung für tu (Verben auf -er): regard___", "answers": ["es"] },
+    { "question": "Endung für il/elle/on (Verben auf -er): regard___", "answers": ["e"] },
+    { "question": "Endung für nous (Verben auf -er): regard___", "answers": ["ons"] },
+    { "question": "Endung für vous (Verben auf -er): regard___", "answers": ["ez"] },
+    { "question": "Endung für ils/elles (Verben auf -er): regard___", "answers": ["ent"] },
+    { "question": "Je ___ la télé. (regarder)", "answers": ["regarde"] },
+    { "question": "Tu ___ la télé? (regarder)", "answers": ["regardes"] },
+    { "question": "Il ___ la télé. (regarder)", "answers": ["regarde"] },
+    { "question": "Nous ___ la télé. (regarder)", "answers": ["regardons"] },
+    { "question": "Vous ___ la télé? (regarder)", "answers": ["regardez"] },
+    { "question": "Ils ___ la télé. (regarder)", "answers": ["regardent"] },
+    { "question": "J'___ de la musique. (écouter)", "answers": ["écoute", "ecoute"] },
+    { "question": "Tu ___ de la musique? (écouter)", "answers": ["écoutes", "ecoutes"] },
+    { "question": "Elle ___ de la musique. (écouter)", "answers": ["écoute", "ecoute"] },
+    { "question": "Nous ___ de la musique. (écouter)", "answers": ["écoutons", "ecoutons"] },
+    { "question": "Vous ___ de la musique? (écouter)", "answers": ["écoutez", "ecoutez"] },
+    { "question": "Ils ___ de la musique. (écouter)", "answers": ["écoutent", "ecoutent"] },
+    { "question": "Je ___ au foot. (jouer)", "answers": ["joue"] },
+    { "question": "Nous ___ au foot. (jouer)", "answers": ["jouons"] },
+    { "question": "Ils ___ au foot. (jouer)", "answers": ["jouent"] },
+    { "question": "Wie nennt man Verben, die im Infinitiv auf -er enden?", "answers": ["regelmäßige Verben", "verbes réguliers", "verbes reguliers"] },
+    { "question": "Stamm von regarder → ___", "answers": ["regard"] },
+    { "question": "Stamm von écouter → ___", "answers": ["écout", "ecout"] },
+    { "question": "Stamm von jouer → ___", "answers": ["jou"] }
+  ]
+}

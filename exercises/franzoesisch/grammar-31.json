@@ -1,0 +1,28 @@
+{
+  "id": "fra-grammar-31",
+  "title": "§31 – Le verbe aller",
+  "description": "Das unregelmäßige Verb aller – richtige Form einsetzen",
+  "type": "vocabulary",
+  "items": [
+    { "question": "aller – je → ?", "answers": ["vais"] },
+    { "question": "aller – tu → ?", "answers": ["vas"] },
+    { "question": "aller – il/elle/on → ?", "answers": ["va"] },
+    { "question": "aller – nous → ?", "answers": ["allons"] },
+    { "question": "aller – vous → ?", "answers": ["allez"] },
+    { "question": "aller – ils/elles → ?", "answers": ["vont"] },
+    { "question": "Elle ___ au CDI.", "answers": ["va"] },
+    { "question": "Je ___ à l'école.", "answers": ["vais"] },
+    { "question": "Nous ___ à Strasbourg.", "answers": ["allons"] },
+    { "question": "Vous ___ à la cantine?", "answers": ["allez"] },
+    { "question": "Elles ___ au TJP.", "answers": ["vont"] },
+    { "question": "Il ___ chez Karim.", "answers": ["va"] },
+    { "question": "Ils ___ à la Vitamine C.", "answers": ["vont"] },
+    { "question": "Tu ___ au collège.", "answers": ["vas"] },
+    { "question": "On ___ bien.", "answers": ["va"] },
+    { "question": "Imperativ (tu) → ___!", "answers": ["Va"] },
+    { "question": "Imperativ (nous) → ___!", "answers": ["Allons"] },
+    { "question": "Imperativ (vous) → ___!", "answers": ["Allez"] },
+    { "question": "Ist aller ein regelmäßiges oder unregelmäßiges Verb?", "answers": ["unregelmäßig", "irrégulier", "irregulier"] },
+    { "question": "Welche zwei aller-Formen werden regelmäßig gebildet?", "answers": ["nous allons", "vous allez"] }
+  ]
+}
